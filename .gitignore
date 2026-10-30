@@ -1,0 +1,18 @@
+# Raw, processed and derived human data stay on VM.
+data/
+metadata/
+outputs/
+.venv/
+__pycache__/
+*.pyc
+*.part
+*.fastq
+*.fastq.gz
+*.bam
+*.cram
+*.h5ad
+*.h5
+*.rds
+*.mtx.gz
+.env
+*.token
