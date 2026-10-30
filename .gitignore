@@ -16,3 +16,10 @@ __pycache__/
 *.mtx.gz
 .env
 *.token
+
+# Spatial IBD pilot — keep downloaded human data off GitHub.
+archives/
+processed/
+pilot_6k/
+*.csv.gz
+*.tar.gz
