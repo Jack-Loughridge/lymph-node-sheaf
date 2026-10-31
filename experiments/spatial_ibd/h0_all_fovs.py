@@ -381,8 +381,8 @@ def main():
         meta_path=root/"metadata"/(prefix+"_metadata_file.csv")
         if not expr_path.exists() or not meta_path.exists():
             raise FileNotFoundError(f"Missing {expr_path} or {meta_path}")
-        with pd.read_csv(expr_path, compression="gzip", nrows=0) as hdr:
-            gene_columns=list(hdr.columns[3:])
+        hdr = pd.read_csv(expr_path, compression="gzip", nrows=0)
+        gene_columns = list(hdr.columns[3:])
         genes=set(map(str.upper, gene_columns))
         res=catalog_complexes(catalog,genes,args.resource)
         # Actual observed panel gene names are used, preventing case mismatch.
