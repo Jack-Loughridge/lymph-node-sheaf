@@ -350,7 +350,7 @@ def main():
     p.add_argument("--root",type=Path,
        default=Path.home()/"Real_Data/spatial_ibd_sheaf/pilot_6k")
     p.add_argument("--previous",type=Path,
-       default=Path.home()/"Real_Data/spatial_ibd_sheaf/outputs/organoid_79_audit/"+FACTOR_FILE)
+       default=Path.home()/"Real_Data/spatial_ibd_sheaf/outputs/organoid_79_audit"/FACTOR_FILE)
     p.add_argument("--out",type=Path,
        default=Path.home()/"Real_Data/spatial_ibd_sheaf/outputs/organoid_response_audit")
     p.add_argument("--supplement",type=Path,
