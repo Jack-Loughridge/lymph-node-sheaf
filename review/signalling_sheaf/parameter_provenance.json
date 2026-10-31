@@ -1,0 +1,164 @@
+{
+  "external_experiments": [
+    "signed_log2FC_and_FDR",
+    "organoid_receiver_sheet",
+    "canonical_receptor_gene_composition"
+  ],
+  "CosMx_inferred": [
+    "normalised_transcripts",
+    "spatial_geometry",
+    "proxy_annotations",
+    "relative_allocations",
+    "signed_response_alignment",
+    "normalisation_statistics"
+  ],
+  "assumptions": {
+    "marker_detection_count": 1,
+    "marker_quorum": 2,
+    "min_total_biological_counts": 50,
+    "minimum_receivers_per_type": 5,
+    "minimum_programme_targets": 5,
+    "kernel": "gaussian",
+    "kernel_bandwidth": "radius/2",
+    "no_self_edges": true,
+    "BMP_shared_capacity_gene": "BMPR2",
+    "direction_only_weights": true
+  },
+  "uncalibrated": [
+    "secretion",
+    "receptor_protein",
+    "affinity",
+    "diffusion_radius",
+    "active_ligand_processing",
+    "tissue_baseline",
+    "exposure_response_gain"
+  ],
+  "beta_grid": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "nominal_beta": 0.5,
+  "maps_fitted_to_response": false,
+  "response_feature_exclusions": {
+    "input_genes": [
+      "ACVR1",
+      "BMP2",
+      "BMP6",
+      "BMPR1A",
+      "BMPR2",
+      "IFNG",
+      "IFNGR1",
+      "IFNGR2",
+      "TNF",
+      "TNFRSF1A"
+    ],
+    "annotation_markers": [
+      "CA2",
+      "CCNA2",
+      "CD3D",
+      "CD3E",
+      "CLDN4",
+      "COL1A1",
+      "COL1A2",
+      "DCN",
+      "EPCAM",
+      "FABP1",
+      "GUCA2B",
+      "KRT18",
+      "KRT19",
+      "KRT20",
+      "KRT8",
+      "LST1",
+      "MCM5",
+      "MKI67",
+      "MUC2",
+      "PCNA",
+      "PDGFRA",
+      "PTPRC",
+      "SLC26A2",
+      "TFF3",
+      "TOP2A",
+      "TYROBP"
+    ]
+  },
+  "routes": {
+    "IFNG": [
+      [
+        "IFNG",
+        [
+          "IFNGR1",
+          "IFNGR2"
+        ]
+      ]
+    ],
+    "TNF": [
+      [
+        "TNF",
+        [
+          "TNFRSF1A"
+        ]
+      ]
+    ],
+    "BMP": [
+      [
+        "BMP2",
+        [
+          "BMPR1A",
+          "BMPR2"
+        ]
+      ],
+      [
+        "BMP6",
+        [
+          "ACVR1",
+          "BMPR2"
+        ]
+      ]
+    ]
+  },
+  "marker_sets": {
+    "epithelial": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "CLDN4"
+    ],
+    "immune": [
+      "PTPRC",
+      "CD3D",
+      "CD3E",
+      "LST1",
+      "TYROBP"
+    ],
+    "stromal": [
+      "COL1A1",
+      "COL1A2",
+      "DCN",
+      "PDGFRA"
+    ],
+    "cycling": [
+      "MKI67",
+      "PCNA",
+      "TOP2A",
+      "CCNA2",
+      "MCM5"
+    ],
+    "absorptive": [
+      "CA2",
+      "SLC26A2",
+      "GUCA2B",
+      "KRT20",
+      "FABP1"
+    ],
+    "goblet": [
+      "MUC2",
+      "TFF3"
+    ]
+  },
+  "reference_statistics": "transductive within proxy type across selected FOVs; no disease labels",
+  "spatial_null": "four-ligand bundles permuted within FOV and proxy-type strata; receiver inputs/outcomes fixed",
+  "energy_comparability": "Use fixed-allocation MSE as primary; eliminated sheaf metric changes with beta and graph degree"
+}

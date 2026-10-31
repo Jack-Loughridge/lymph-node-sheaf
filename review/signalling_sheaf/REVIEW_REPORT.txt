@@ -1,0 +1,199 @@
+Initial IFNG / TNF / shared BMP cellular-sheaf pilot: independent review
+2026-10-31. Frozen numerical results from outputs/signalling_sheaf_pilot.
+
+1. Mathematical object and implemented operator
+
+The implementation is an affine factor-graph constraint model with an explicit
+cellular-sheaf realization on an AUGMENTED bipartite variable-factor graph. It is
+not a sheaf directly on the original physical cell-neighbourhood graph. Algebra.py
+constructs the sparse operator after eliminating factor-vertex coordinates; it
+does not materialize the full incidence coboundary or its null-space bases.
+
+Variables have scalar vertex stalk R: sender inputs s_il, route contributions
+q_ijl, receiver total exposures t_jp, and observed response scores r_jp. Ligands
+l are IFNG,TNF,BMP2,BMP6; programmes p are IFNG,TNF,BMP. BMP routes remain distinct
+but both aggregate to a single BMP coordinate. All positive sender contributions
+sum before the single response equation for each receiver/programme. Unexposed
+receivers are retained. Sender supplies and observed responses are fixed boundaries.
+
+Local factors, with response mean mu_cp and SD sigma_cp frozen by receiver type c:
+  allocation:  q_ijl - a_ijl s_il = 0, a_ijl=q0_ijl/S_il;
+  aggregation: t_jp - sum_(i,l mapping to p) q_ijl = 0;
+  response:    r_jp - beta t_jp/sigma_cp = -beta mu_cp/sigma_cp.
+Allocation q0 is computed without response genes. Only positive routes are stored.
+
+For a degree-d factor row A_f x=b_f, the factor vertex has affine stalk
+z0_f+ker(A_f), with z0_f=A_f^T b_f/||A_f||^2. Its associated linear stalk is
+ker(A_f), dimension d-1. Each variable-factor incidence EDGE has stalk R.
+Variable restrictions are identity; factor restrictions are coordinate
+projections z0_f[v]+(Z_f u_f)[v], with Z_f an orthonormal kernel basis.
+These are affine restrictions. A strict vector-space cellular sheaf is obtained
+from the homogeneous equations, or by adding a constant coordinate fixed to 1
+for each affine factor and including its incidence in the augmented graph.
+The latter has the same zero-set compatibility after that boundary is fixed,
+but its extra constant incidences must not silently be assigned a new Euclidean
+metric and claimed to reproduce the current affine energy.
+
+Orient incidence edges consistently from variable to factor. The affine
+coboundary is delta(x,u)_(vf)=x_v-z0_f[v]-(Z_f u_f)[v]. Its linear part delta_0
+uses z0=0. Global sections of the homogeneous sheaf are ker(delta_0).
+For nonzero offsets, compatible sections form an affine solution set, possibly
+empty, rather than a vector-space kernel.
+
+Eliminating u gives min_u ||delta(x,u)||^2 = sum_f (A_f x-b_f)^2/||A_f||^2.
+Define D_f=A_f/||A_f|| and h_f=b_f/||A_f||. D is the implemented compatibility
+operator. ker(D) is the homogeneous compatible variable space, identified with
+the projection of ker(delta_0); factor coordinates reconstruct uniquely because
+Z_f has independent columns. Affine compatibility is Dx=h. If nonempty, its
+solution set is x_*+ker(D), subsequently intersected with fixed observations.
+The observed anchored system need not admit an exact section.
+
+Energy E(x)=||Dx-h||^2 is the eliminated incidence energy. With boundary x_B fixed,
+minimize ||D_F x_F -(h-D_B x_B)||^2 over auxiliary q,t only. The normal operator
+L_F=D_F^T D_F is positive semidefinite; its kernel is ker(D_F). This is a weighted
+local-constraint operator after elimination, not the full incidence sheaf Laplacian.
+The implementation checks sparse least-squares convergence and stationarity.
+Fixed and relaxed allocation/aggregation/response energy blocks are exported.
+Relaxed q,t may be negative and are algebraic diagnostics, not physical transport.
+The actual primary prediction keeps q0 fixed; relaxed energy uses response data
+and cannot be presented as independent receiver-prediction performance.
+
+2. Receiver-prediction target, baseline and observed results
+
+The target r_jp is signed alignment of observed gene expression with external
+organoid perturbation directions, not a measured tissue treatment effect. Genes
+are log-normalised by biological library size, standardized within receiver proxy
+type across the selected FOVs, combined with direction-only weights, then the
+programme is centred/scaled within that type. BMP averages the BMP2/BMP6 signed
+weights. Raw signed log2FC, adjusted p and all exclusions remain in the manifest.
+
+Four fixed FOVs contain 2,969 QC cells; the scorable receivers are 46 TA-like and
+219 colonocyte-like proxies (265 total per programme). There are no validated
+local subtype annotations. Ambiguous epithelial cells receive no response map.
+The retained target counts for TA-like / colonocyte-like are IFNG 39/92, TNF 24/9,
+and shared BMP 147/19. Stem and goblet signatures were excluded because their
+source workbook sheets were duplicated.
+
+Define e_jp=(t0_jp-mu_cp)/sigma_cp. The fixed prediction is r_hat_jp=beta e_jp;
+primary error is mean_j (r_jp-r_hat_jp)^2, pooled by receiver counts across FOVs.
+All receivers, including zero-exposure cells, remain in the denominator. The
+cell-intrinsic baseline beta=0 predicts the centred type mean, r_hat=0. Its pooled
+MSE is 1 by target standardisation, not a separately trained competitive model.
+
+At nominal beta=0.5, pooled fixed-allocation MSE (lower is better):
+Programme   Intrinsic    Spatial      Shuffled mean   Shuffle 2.5%-97.5% interval
+IFNG        1.000000     1.294940     1.220541        [1.131598, 1.332811]
+TNF         1.000000     1.254088     1.173160        [1.086112, 1.281151]
+BMP         1.000000     1.225118     1.432674        [1.284826, 1.569100]
+
+No programme improves the intrinsic baseline at nominal gain. There are only
+10 IFNG-, 34 TNF- and eight BMP-exposed receivers. BMP's better shuffle ordering
+does not establish predictive validity: its observed response/exposure cross
+moment is only 0.0248824 (IFNG -0.0449405; TNF -0.00408767).
+
+The 20 seeded nulls permute entire four-ligand bundles within each FOV/proxy-type
+stratum; receptors, responses, receiver labels and geometry stay fixed. Allocation
+is recomputed; observed normalization statistics and gain are frozen. Intervals
+are empirical null quantiles, not confidence intervals for disease effects.
+Lower-tail rank fractions at .5 are IFNG .904762, TNF .952381, BMP .047619,
+using (1 + number of null MSEs <= observed)/(20+1). They are descriptive, with
+coarse resolution, and do not establish donor-level significance. This is a
+transductive diagnostic, without a held-out cell/FOV/donor prediction assessment.
+
+3. Nominal gain and sensitivity (existing grid only)
+
+Beta is a dimensionless, nonnegative coefficient mapping one SD of centered
+relative incoming exposure to beta SDs of signed response alignment. A receiver
+at the exposure mean is predicted at zero; at one SD above it is predicted at
+beta. A zero-exposure receiver may have a negative centred prediction. Sigma=1
+is used if exposure variance is zero. Beta is not receptor affinity, transport
+mass, a fitted regression coefficient, or an experimental dose-response slope.
+The nominal .5 is an arbitrary prespecified assumption, shared across programmes.
+No gain was fitted or selected from this analysis.
+
+Existing grid, pooled observed MSE / shuffled mean MSE:
+Beta       IFNG                  TNF                   BMP
+0          1.000000 / 1.000000    1.000000 / 1.000000    1.000000 / 1.000000
+0.25       1.084970 / 1.061161    1.064544 / 1.029624    1.050059 / 1.117727
+0.50       1.294940 / 1.220541    1.254088 / 1.173160    1.225118 / 1.432674
+1.00       2.089881 / 1.833956    2.008175 / 1.801961    1.950235 / 2.654229
+
+Every tested positive gain worsens observed MSE relative to beta=0. Magnitudes
+are strongly gain-dependent. MSE(beta)=E[r^2]+beta^2 E[e^2]-2 beta E[r e].
+Observed E[r^2]=E[e^2]=1 (up to floating error). Frozen scaling means null MSE
+changes reflect exposure amplitude as well as response alignment. Smaller relaxed
+sheaf energy across gains is not predictive improvement: row normalization also
+changes the metric. Full-precision values and all grid null quantiles are in
+residual_summary.csv; residual_decomposition.json records existing moments.
+
+4. Feature overlap and circularity
+
+Zero retained response targets overlap with the 10 selected input genes:
+ACVR1,BMP2,BMP6,BMPR1A,BMPR2,IFNG,IFNGR1,IFNGR2,TNF,TNFRSF1A.
+All 26 annotation markers are also removed from every response programme.
+TNF is specifically excluded when it occurs as a perturbation response target.
+These exclusions are checked against response_weights.csv and the signed manifest.
+No response gene, disease label, or fitted response coefficient enters allocation.
+
+Direct target-gene reuse is therefore excluded, but statistical independence is
+not established. Inputs and targets share the same transcript libraries and
+library-size denominator (which includes target counts), compositional effects,
+cell state, and receiver selection. Both normalizations use the evaluated cells.
+Different response signatures may overlap with one another; that is distinct
+from input-target overlap. Boundary-anchored r also influences relaxed auxiliary
+states, so reporting their minimized energy as prediction would be circular.
+The primary fixed-allocation comparison avoids that response-driven repair.
+
+5. Spatial kernel versus COMMOT and parameter provenance
+
+The actual backend is a bounded Gaussian kernel, not optimal transport. For each
+ligand, senders distribute transcript supply proportional to distance weight times
+minimum same-cell receptor-subunit expression. Radius is 2.5 median cell diameters
+in pixels per FOV; bandwidth is radius/2. Route receiver capacities and a shared
+BMPR2 capacity are then enforced by downward scaling. No self, cross-FOV or
+cross-specimen links are allowed. Unused supply after capping is not redistributed.
+
+In contrast, COMMOT exposes collective optimal transport with transport costs,
+entropy regularization, unmatched-mass penalties and collective LR setups. The
+current kernel has no corresponding joint transport objective or convergence
+criterion, and only a manually imposed shared BMP budget. Its caps and fixed
+range are assumptions, not calibrated physical secretion/occupancy constraints.
+COMMOT itself would not supply the missing exposure-response calibration.
+Official API: https://commot.readthedocs.io/en/latest/api/commot.tl.spatial_communication.html
+The optional adapter was not executed because COMMOT/anndata were unavailable.
+It calls each programme separately, so it would not automatically deliver a
+joint all-programme competition model. Its masking and post-cap behavior require
+validation with an installed compatible version before use. These outputs must
+not be described as COMMOT results.
+
+External: perturbation signs/log2FC/FDR, organoid type context, curated receptors.
+CosMx-derived: transcript proxies, geometry, segmentation diameter, proxy labels,
+relative allocations, response scores and normalization statistics.
+Assumed: marker quorum/QC, min-subunit rule, range/kernel, caps, direction weights,
+shared BMP programme, uniform incidence metric and gain grid.
+Uncalibrated: secretion, receptor protein/occupancy, affinity, diffusion, activation,
+tissue baseline and exposure-response magnitude. Organoid effects versus cytomix
+are contextual effects, not physical dose-response calibration.
+
+6. Frozen review package and validation
+
+No new model run, null experiment, gain fitting or numerical result modification
+was performed for this review. Original output directories remain untouched.
+The original mathematical specification predates implementation and is retained
+byte-for-byte. All source files and tests are published byte-for-byte from the
+validated workspace. Tests use synthetic fixtures; the real cell cache is excluded.
+
+Recovery validation: all 23 unit tests passed; all 13 numerical CSVs matched saved
+hashes and the seeded repeat; code and source hashes matched; numerical/export
+validation passed. Worst solver stationarity was 9.77e-10. The GitHub review set
+contains aggregate programme summaries and gene definitions, not raw expression,
+cell IDs/coordinates, cell predictions, q0 edges, q/t states or observation caches.
+Gene-level response weights and manifest describe external perturbation evidence,
+not individual human tissue observations. RELEASE_MANIFEST.json records exact
+published-file hashes and original numerical provenance.
+
+Reproduction: see REPRODUCIBILITY.txt. Code/algebra tests run without human data.
+Full pilot reproduction/validation needs separately held public-source inputs and
+the local cache; those data are deliberately not in the repository. The review
+package alone cannot regenerate tissue results. No classifier, disease/age effect,
+validated subtype matching or higher-dimensional cohomology claim is made.

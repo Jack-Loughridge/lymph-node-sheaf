@@ -1,0 +1,246 @@
+{
+  "release": "Frozen initial signalling sheaf for independent review",
+  "numerical_results_modified": false,
+  "new_experiments": false,
+  "unit_tests_passed": 23,
+  "input_response_gene_overlap": [],
+  "annotation_response_gene_overlap": [],
+  "original_run": {
+    "completed_utc": "2026-10-31T17:52:23.835148+00:00",
+    "allocator": "kernel",
+    "nulls": 20,
+    "seed": 20261031,
+    "radius_diameters": 2.5,
+    "fovs": 4,
+    "qc_cells": 2969,
+    "versions": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3"
+    },
+    "specification_sha256": "819691e0de8275cc607dc54f6c3553ffa23ff321c42e42bf1498e2f78c945217"
+  },
+  "original_numerical_tables": [
+    {
+      "file": "signed_response_gene_manifest.csv",
+      "rows": 898,
+      "columns": 11,
+      "sha256": "ac98df5325b35af0290b12bd58dfdf80363750ff8be4a37b334b8580340afebc"
+    },
+    {
+      "file": "response_weights.csv",
+      "rows": 330,
+      "columns": 4,
+      "sha256": "898772faa265c1ee664fe7c6b81e880371cfccf8d0583047bef64be0346e4db8"
+    },
+    {
+      "file": "response_normalisation.csv",
+      "rows": 6,
+      "columns": 9,
+      "sha256": "5920a8b2dfab8df7b3bbd7dc75b86b57be19321f613c990339ab79f0773d8d62"
+    },
+    {
+      "file": "gene_normalisation.csv",
+      "rows": 330,
+      "columns": 6,
+      "sha256": "97a56c6f4475f266520c0b908b5621ea02782b21424f6387d215295822192fce"
+    },
+    {
+      "file": "data_join_audit.csv",
+      "rows": 4,
+      "columns": 7,
+      "sha256": "324193b4cecf158111ae07dc9a9a6269fb1e27795c8df252b477b74d6f69f747"
+    },
+    {
+      "file": "fov_selection.csv",
+      "rows": 4,
+      "columns": 5,
+      "sha256": "c3c05da445fb2ef8b42a79247f38639ffb1fab66a07afaec3a3597d4589b357a"
+    },
+    {
+      "file": "annotation_summary.csv",
+      "rows": 16,
+      "columns": 7,
+      "sha256": "2fe178a7b6cf1391f8787f18730879c1e66673e67956df27777a5d72de36376c"
+    },
+    {
+      "file": "allocation_summary.csv",
+      "rows": 12,
+      "columns": 12,
+      "sha256": "313323b72d8854713771bc8b2527e721c6dc21baba1e63db833f5359963fc023"
+    },
+    {
+      "file": "fixed_allocation_residuals.csv",
+      "rows": 3024,
+      "columns": 10,
+      "sha256": "54acfdfa69f08d8d035509e81057e88ebb846beac5f2d519100a1b8109d3e661"
+    },
+    {
+      "file": "sheaf_energies.csv",
+      "rows": 264,
+      "columns": 24,
+      "sha256": "18b17ca74959a07d4ff33283add9b192541089bec40973420e957698575358d7"
+    },
+    {
+      "file": "shuffle_movement.csv",
+      "rows": 80,
+      "columns": 3,
+      "sha256": "8cf5d3b87422fd5cc826f1e4c59f34bc453d9dfcdd9c20341530bb63c1931904"
+    },
+    {
+      "file": "algebra_checks.csv",
+      "rows": 24,
+      "columns": 5,
+      "sha256": "df5a160605c074059853f4e2d9581611794c85de0c69c95b21215198ebc0ac32"
+    },
+    {
+      "file": "residual_summary.csv",
+      "rows": 12,
+      "columns": 9,
+      "sha256": "3c7ad8a5557f327285fc159fc996db441b3d5c7b255e2f2d9fffeb3ebc6df29b"
+    }
+  ],
+  "published_files": [
+    {
+      "path": "review/signalling_sheaf/REPRODUCIBILITY.txt",
+      "bytes": 2325,
+      "sha256": "74d5a401764d24051f413a7ebaa04a69b0c3ee91a4e6d90680fcdc0eb5e9ba81"
+    },
+    {
+      "path": "review/signalling_sheaf/REVIEW_REPORT.txt",
+      "bytes": 12835,
+      "sha256": "ff94ae8652c3bcd4ee8a3bfe6012514325d89cff7cce5196e4367be23253693c"
+    },
+    {
+      "path": "review/signalling_sheaf/parameter_provenance.json",
+      "bytes": 2945,
+      "sha256": "fc7a3023e2b37d72d898a7dcb2f6c2b320057727067df5b759eb1e83b4f83f53"
+    },
+    {
+      "path": "review/signalling_sheaf/reproducibility.json",
+      "bytes": 248,
+      "sha256": "b734b6fd01c786b0231cc9161baa9a84ec4da3caebc963765027fb48620a0cde"
+    },
+    {
+      "path": "review/signalling_sheaf/residual_decomposition.json",
+      "bytes": 14495,
+      "sha256": "78dd15a987dc11808dc10c9b2e2530d0ed2e4ba1fa32dd6ef45f99e516f2a6c9"
+    },
+    {
+      "path": "review/signalling_sheaf/residual_summary.csv",
+      "bytes": 1274,
+      "sha256": "3c7ad8a5557f327285fc159fc996db441b3d5c7b255e2f2d9fffeb3ebc6df29b"
+    },
+    {
+      "path": "review/signalling_sheaf/response_weights.csv",
+      "bytes": 13362,
+      "sha256": "898772faa265c1ee664fe7c6b81e880371cfccf8d0583047bef64be0346e4db8"
+    },
+    {
+      "path": "review/signalling_sheaf/signed_response_gene_manifest.csv",
+      "bytes": 82425,
+      "sha256": "ac98df5325b35af0290b12bd58dfdf80363750ff8be4a37b334b8580340afebc"
+    },
+    {
+      "path": "review/signalling_sheaf/tests.log",
+      "bytes": 2343,
+      "sha256": "f6d7bb80d964b299c987b74c68f200cb278c923937e41091bca5df6adb38f68e"
+    },
+    {
+      "path": "review/signalling_sheaf/validation.json",
+      "bytes": 404,
+      "sha256": "12835462b5946f72da0c75e7613707b3bc27637719dc38dbe86d048e64b2d7ca"
+    },
+    {
+      "path": "src/organoid_audit/README.txt",
+      "bytes": 3168,
+      "sha256": "79b3aa79404cfea63d9f6165d83f6f8f3f244294e12831f1ba43e092822a1b02"
+    },
+    {
+      "path": "src/organoid_audit/audit_organoid_response_genes.py",
+      "bytes": 27684,
+      "sha256": "01d8d7887f44943d9182b1fe84045bf44095b61840e83739b11a8cb73c191044"
+    },
+    {
+      "path": "src/organoid_audit/requirements.txt",
+      "bytes": 43,
+      "sha256": "28a5539a8e998a073d0b92b214655d9619823493878706c6a86383eb14076aba"
+    },
+    {
+      "path": "src/organoid_audit/specimens.py",
+      "bytes": 332,
+      "sha256": "87306ee8be647569124c2ff92b4d9b13e394a9265d774480e928eea940039971"
+    },
+    {
+      "path": "src/organoid_audit/summarize_audit.py",
+      "bytes": 9701,
+      "sha256": "fc71cfa2824e2543abed66032eafce1d240335246caf0bad593d526fe87005b2"
+    },
+    {
+      "path": "src/organoid_audit/validate_audit.py",
+      "bytes": 8730,
+      "sha256": "92e55fbddfdfa1acbcc340f896b4c0ed339d8d885fb34bffccb133520331ce44"
+    },
+    {
+      "path": "src/signalling_sheaf/MODEL_SPECIFICATION.txt",
+      "bytes": 11308,
+      "sha256": "819691e0de8275cc607dc54f6c3553ffa23ff321c42e42bf1498e2f78c945217"
+    },
+    {
+      "path": "src/signalling_sheaf/README.txt",
+      "bytes": 6589,
+      "sha256": "daabba7c2f331b9ad1bb9b4a420c31af857b58c91cd5c699ccbe4dd8058ffe3c"
+    },
+    {
+      "path": "src/signalling_sheaf/algebra.py",
+      "bytes": 5131,
+      "sha256": "9ca552bcf72843508c3ff8aa9630ef09a8bc4b8327a18826481bf813a4634c60"
+    },
+    {
+      "path": "src/signalling_sheaf/allocation.py",
+      "bytes": 4478,
+      "sha256": "7d8d5ea3d0fd74ad1a46da307ecec4bbe0c6ead92345eb75c8fe75a5b2ff1a03"
+    },
+    {
+      "path": "src/signalling_sheaf/diagnose_results.py",
+      "bytes": 2091,
+      "sha256": "7344f05e6e05be8a64f2b5d1e1a8186c8f1285359cb0fc754dbc8f09658e48c4"
+    },
+    {
+      "path": "src/signalling_sheaf/plot_results.py",
+      "bytes": 1923,
+      "sha256": "e78115dd4bf91720739552335821ac2bb1c8a5debd7ca6b2f4f78b3434b6092c"
+    },
+    {
+      "path": "src/signalling_sheaf/prepare.py",
+      "bytes": 9357,
+      "sha256": "232a83c14e4e781f915beb394cdca405fbbd8494cc33fc7c3c29f964064f83cc"
+    },
+    {
+      "path": "src/signalling_sheaf/requirements.txt",
+      "bytes": 135,
+      "sha256": "887d288810dbfba2255395213a1b801afbf356ada7164701e2cf28b85b966c64"
+    },
+    {
+      "path": "src/signalling_sheaf/run_pilot.py",
+      "bytes": 19570,
+      "sha256": "5687eb9d8198cd4c75fc230b60e6809a3833c850f87d2d0ee0caf81d67928e3a"
+    },
+    {
+      "path": "src/signalling_sheaf/validate.py",
+      "bytes": 6372,
+      "sha256": "49dad58a545f21221b9ddc1878285ee6ce75d30eb823edbcac053aa2e7b1468e"
+    },
+    {
+      "path": "tests/test_organoid_response_audit.py",
+      "bytes": 6453,
+      "sha256": "c554a6c2b13875da46540638ca8f62e53b0fd3d41683c3959d338840c7a0d06f"
+    },
+    {
+      "path": "tests/test_signalling_sheaf.py",
+      "bytes": 6406,
+      "sha256": "fa568cd9c40ec8d8b6c0d8235218c80e6ceeacf315e2c7beb8ac4397291421f9"
+    }
+  ],
+  "manifest_scope": "This manifest fingerprints all release source, tests and review evidence except itself and the repository README navigation edit. Original numerical manifests document local files; only explicitly listed review files are published."
+}

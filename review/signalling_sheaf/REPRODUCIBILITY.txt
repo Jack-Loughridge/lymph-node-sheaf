@@ -1,0 +1,38 @@
+Reviewing the frozen pilot
+
+Python 3.10 was used originally. Numerical dependencies:
+  python3 -m pip install -r src/signalling_sheaf/requirements.txt
+No installation or new experiments were performed during review preparation.
+
+Synthetic tests (no human observations required):
+  python3 -m unittest discover -s tests -v
+14 signalling-sheaf tests and nine corrected organoid-audit tests.
+The latter use standard-library synthetic workbook/count fixtures.
+
+Read REVIEW_REPORT.txt together with the preserved preimplementation definition:
+  src/signalling_sheaf/MODEL_SPECIFICATION.txt
+Published summaries and gene definitions are in this directory. Full-precision
+existing gain-grid results are residual_summary.csv. RELEASE_MANIFEST.json
+fingerprints the publication set and all original numerical-table manifests.
+
+Full numerical reproduction needs the separately stored GSE312415 CosMx inputs
+and corrected Capeling signed_response_genes.csv. Original scripts document
+--root, --signatures, --cache and --out overrides. Never reuse an output directory.
+The response_weights and signed_response_gene_manifest here are review evidence;
+they do not substitute for the complete corrected audit input table.
+
+Example for an authorized data holder, after arranging those existing inputs:
+  python3 src/signalling_sheaf/run_pilot.py --root /path/to/pilot_6k --signatures /path/to/signed_response_genes.csv --cache data/review_inputs.npz --out outputs/review_reproduction --allocator kernel --nulls 20
+  python3 src/signalling_sheaf/validate.py outputs/review_reproduction
+These commands are documentation only; no analysis was rerun for this release.
+
+Original source/validation artifacts contain historical VM paths. Existing
+README.txt files describe the original run and prepublication status. The review
+report describes this release. validate.py checks local code and cache hashes;
+it cannot run on the aggregate-only review folder. Verification of release files
+uses SHA256 values in RELEASE_MANIFEST.json instead.
+
+Excluded from GitHub: data/, original output directories, count matrices,
+metadata observations, coordinates, cell IDs, cached NPZs, cell-wise predictions,
+allocation edges and relaxed auxiliary states. Files are published using an
+explicit allowlist, not a recursive upload of the workspace or review ZIP.

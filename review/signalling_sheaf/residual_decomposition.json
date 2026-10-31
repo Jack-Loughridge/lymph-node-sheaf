@@ -1,0 +1,447 @@
+{
+  "identity": "MSE(beta)=E[r^2]+beta^2 E[e^2]-2 beta E[r e]",
+  "interpretation": "Frozen observed exposure scaling means null MSE differences can reflect both amplitude and response alignment; no gain was fitted.",
+  "values": [
+    {
+      "programme": "BMP",
+      "trial": -1,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.0000000000000018,
+      "response_exposure_cross_moment": 0.02488236096235119
+    },
+    {
+      "programme": "BMP",
+      "trial": 0,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.5154851394018731,
+      "response_exposure_cross_moment": -0.11167141267292702
+    },
+    {
+      "programme": "BMP",
+      "trial": 1,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.2019937685548268,
+      "response_exposure_cross_moment": 0.005757898598442113
+    },
+    {
+      "programme": "BMP",
+      "trial": 2,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.5812311659268126,
+      "response_exposure_cross_moment": -0.023268165104288308
+    },
+    {
+      "programme": "BMP",
+      "trial": 3,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.5226331511029407,
+      "response_exposure_cross_moment": -0.015065671718144102
+    },
+    {
+      "programme": "BMP",
+      "trial": 4,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.6770416653723252,
+      "response_exposure_cross_moment": 0.0463323384846106
+    },
+    {
+      "programme": "BMP",
+      "trial": 5,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.6146905571035397,
+      "response_exposure_cross_moment": -0.10907707210100304
+    },
+    {
+      "programme": "BMP",
+      "trial": 6,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.9982445170033802,
+      "response_exposure_cross_moment": -0.05141233035674575
+    },
+    {
+      "programme": "BMP",
+      "trial": 7,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.53878603777253,
+      "response_exposure_cross_moment": -0.03478214196815288
+    },
+    {
+      "programme": "BMP",
+      "trial": 8,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 2.0374908590435314,
+      "response_exposure_cross_moment": -0.044791844609833875
+    },
+    {
+      "programme": "BMP",
+      "trial": 9,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.5830464340181614,
+      "response_exposure_cross_moment": -0.13139022423272229
+    },
+    {
+      "programme": "BMP",
+      "trial": 10,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.3955346950315661,
+      "response_exposure_cross_moment": 0.04361475869255549
+    },
+    {
+      "programme": "BMP",
+      "trial": 11,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.4551145807893935,
+      "response_exposure_cross_moment": -0.10023985297100135
+    },
+    {
+      "programme": "BMP",
+      "trial": 12,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.6502111652822684,
+      "response_exposure_cross_moment": 0.024441429035507944
+    },
+    {
+      "programme": "BMP",
+      "trial": 13,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.511274320036307,
+      "response_exposure_cross_moment": -0.05553705455284508
+    },
+    {
+      "programme": "BMP",
+      "trial": 14,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.83682973882134,
+      "response_exposure_cross_moment": -0.0015151682964567037
+    },
+    {
+      "programme": "BMP",
+      "trial": 15,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.4142499055870594,
+      "response_exposure_cross_moment": -0.0707057664858084
+    },
+    {
+      "programme": "BMP",
+      "trial": 16,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.899392387522596,
+      "response_exposure_cross_moment": -0.10776480331524585
+    },
+    {
+      "programme": "BMP",
+      "trial": 17,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.4392997405531442,
+      "response_exposure_cross_moment": -0.03249866362750464
+    },
+    {
+      "programme": "BMP",
+      "trial": 18,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.1420177915763592,
+      "response_exposure_cross_moment": 0.00964868581515943
+    },
+    {
+      "programme": "BMP",
+      "trial": 19,
+      "intrinsic_second_moment": 0.9999999999999998,
+      "standardised_exposure_second_moment": 1.5407092194921024,
+      "response_exposure_cross_moment": -0.004730255202079592
+    },
+    {
+      "programme": "IFNG",
+      "trial": -1,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.0,
+      "response_exposure_cross_moment": -0.0449404563554161
+    },
+    {
+      "programme": "IFNG",
+      "trial": 0,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8159977127260003,
+      "response_exposure_cross_moment": -0.05442943991904303
+    },
+    {
+      "programme": "IFNG",
+      "trial": 1,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.0108072552799268,
+      "response_exposure_cross_moment": -0.09079735221182461
+    },
+    {
+      "programme": "IFNG",
+      "trial": 2,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7738567804984751,
+      "response_exposure_cross_moment": -0.0015409650291682286
+    },
+    {
+      "programme": "IFNG",
+      "trial": 3,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9246911716816655,
+      "response_exposure_cross_moment": -0.05770085489750798
+    },
+    {
+      "programme": "IFNG",
+      "trial": 4,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8053753575035341,
+      "response_exposure_cross_moment": -0.029904281272292943
+    },
+    {
+      "programme": "IFNG",
+      "trial": 5,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8028703086926221,
+      "response_exposure_cross_moment": -0.0039675315367131425
+    },
+    {
+      "programme": "IFNG",
+      "trial": 6,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8400322378355263,
+      "response_exposure_cross_moment": -0.012568281942087367
+    },
+    {
+      "programme": "IFNG",
+      "trial": 7,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7344463769659466,
+      "response_exposure_cross_moment": 0.019400598131517954
+    },
+    {
+      "programme": "IFNG",
+      "trial": 8,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7498529530024545,
+      "response_exposure_cross_moment": 0.017493279045421195
+    },
+    {
+      "programme": "IFNG",
+      "trial": 9,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.6903645574051396,
+      "response_exposure_cross_moment": -0.006975429361189001
+    },
+    {
+      "programme": "IFNG",
+      "trial": 10,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9083364692941682,
+      "response_exposure_cross_moment": -0.06569473920129432
+    },
+    {
+      "programme": "IFNG",
+      "trial": 11,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.5103594587165858,
+      "response_exposure_cross_moment": -0.0010959985769285474
+    },
+    {
+      "programme": "IFNG",
+      "trial": 12,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.6262335070096405,
+      "response_exposure_cross_moment": -0.039621551281290746
+    },
+    {
+      "programme": "IFNG",
+      "trial": 13,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7377070440323745,
+      "response_exposure_cross_moment": 0.002956862210443001
+    },
+    {
+      "programme": "IFNG",
+      "trial": 14,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8069818578088572,
+      "response_exposure_cross_moment": -0.038671558105744186
+    },
+    {
+      "programme": "IFNG",
+      "trial": 15,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8947724292842292,
+      "response_exposure_cross_moment": -0.06213359204573021
+    },
+    {
+      "programme": "IFNG",
+      "trial": 16,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.0987362581949167,
+      "response_exposure_cross_moment": -0.046313042840213425
+    },
+    {
+      "programme": "IFNG",
+      "trial": 17,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7640887293056142,
+      "response_exposure_cross_moment": 0.015754234920339227
+    },
+    {
+      "programme": "IFNG",
+      "trial": 18,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7046863045145919,
+      "response_exposure_cross_moment": -0.020134861879646415
+    },
+    {
+      "programme": "IFNG",
+      "trial": 19,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.5148117787134918,
+      "response_exposure_cross_moment": -0.00611427068892989
+    },
+    {
+      "programme": "TNF",
+      "trial": -1,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.0,
+      "response_exposure_cross_moment": -0.0040876682301700384
+    },
+    {
+      "programme": "TNF",
+      "trial": 0,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9073036016641929,
+      "response_exposure_cross_moment": -0.027214810450237437
+    },
+    {
+      "programme": "TNF",
+      "trial": 1,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9629187958441907,
+      "response_exposure_cross_moment": 0.07454124062049705
+    },
+    {
+      "programme": "TNF",
+      "trial": 2,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8499601980794935,
+      "response_exposure_cross_moment": -0.00484983243287207
+    },
+    {
+      "programme": "TNF",
+      "trial": 3,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9068902167235215,
+      "response_exposure_cross_moment": 0.09015588515260342
+    },
+    {
+      "programme": "TNF",
+      "trial": 4,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8895992888800581,
+      "response_exposure_cross_moment": 0.10434904864898775
+    },
+    {
+      "programme": "TNF",
+      "trial": 5,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9271989375005347,
+      "response_exposure_cross_moment": 0.08093896170981063
+    },
+    {
+      "programme": "TNF",
+      "trial": 6,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7471720675150628,
+      "response_exposure_cross_moment": 0.09515318266915673
+    },
+    {
+      "programme": "TNF",
+      "trial": 7,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.972207156881824,
+      "response_exposure_cross_moment": 0.1324562374368381
+    },
+    {
+      "programme": "TNF",
+      "trial": 8,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.7108527038493087,
+      "response_exposure_cross_moment": 0.08868789485338224
+    },
+    {
+      "programme": "TNF",
+      "trial": 9,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9107527678833378,
+      "response_exposure_cross_moment": 0.07477222883199897
+    },
+    {
+      "programme": "TNF",
+      "trial": 10,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9572588115939169,
+      "response_exposure_cross_moment": 0.11298315054702668
+    },
+    {
+      "programme": "TNF",
+      "trial": 11,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9481441452993131,
+      "response_exposure_cross_moment": 0.09663385447113981
+    },
+    {
+      "programme": "TNF",
+      "trial": 12,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.1026656968128563,
+      "response_exposure_cross_moment": 0.049755819674919266
+    },
+    {
+      "programme": "TNF",
+      "trial": 13,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9480503058896677,
+      "response_exposure_cross_moment": -0.013860444629505198
+    },
+    {
+      "programme": "TNF",
+      "trial": 14,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 1.0051408934375203,
+      "response_exposure_cross_moment": -0.054394985574051535
+    },
+    {
+      "programme": "TNF",
+      "trial": 15,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.790739772632369,
+      "response_exposure_cross_moment": -0.02025482043984206
+    },
+    {
+      "programme": "TNF",
+      "trial": 16,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8806508350946842,
+      "response_exposure_cross_moment": 0.012597291828046586
+    },
+    {
+      "programme": "TNF",
+      "trial": 17,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9630318256998631,
+      "response_exposure_cross_moment": -0.006872480024822325
+    },
+    {
+      "programme": "TNF",
+      "trial": 18,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.8852309815361945,
+      "response_exposure_cross_moment": 0.1378316379857556
+    },
+    {
+      "programme": "TNF",
+      "trial": 19,
+      "intrinsic_second_moment": 1.0,
+      "standardised_exposure_second_moment": 0.9599207354721191,
+      "response_exposure_cross_moment": 0.06982284578943232
+    }
+  ]
+}

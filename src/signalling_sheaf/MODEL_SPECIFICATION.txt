@@ -1,0 +1,170 @@
+Minimal spatial signalling factor-graph sheaf: specification before implementation
+2026-10-31
+
+SCOPE AND EVIDENCE
+Four previously selected FOVs (37,25,21,6; one per specimen). No disease/age model.
+The available CosMx CSVs have no published cell-type annotations. Existing broad
+classes are marker proxies. TA-like and colonocyte-like labels below are provisional.
+B_Stem_DEGs and C_Goblet_DEGs are duplicated source tables and remain excluded.
+Unresolved epithelial, goblet-like and mixed cells do not receive a response map.
+They can still be candidate senders. FOV boundaries truncate neighbourhoods.
+
+External experiment: usable Capeling DE genes, direction of log2FC, treatment and
+organoid receiver type; adjusted p<0.05, |log2FC|>1. These are contextual effects
+versus cytomix, not physical dose-response slopes or tissue baseline abundances.
+Direction-only weights are a modelling choice; raw signed log2FC is preserved.
+Canonical receptors are externally curated. This pilot uses conservative routes:
+IFNG -> IFNGR1_IFNGR2; TNF -> TNFRSF1A;
+BMP2 -> BMPR1A_BMPR2; BMP6 -> ACVR1_BMPR2.
+Alternative receptor routes are deliberately omitted and their omission is explicit.
+BMP2 and BMP6 have separate input/transport routes but ONE response coordinate.
+
+CosMx-derived: biological counts, size factors, coordinates, segmentation diameter,
+provisional marker labels, ligand/receptor transcript proxies, allocation matrices,
+signed response scores, and descriptive normalisation statistics. No response data
+are used to allocate signals. No disease labels are used for maps or parameters.
+
+Assumed: marker thresholds, radius=2.5 median cell diameters within each FOV,
+Gaussian distance bandwidth radius/2, no self edges, min-subunit receptor rule,
+unit direction weights, shared BMP receptor budget, and uniform factor weights.
+All quantities are dimensionless proxies. Pixel coordinates are NOT called microns.
+Uncalibrated: secretion, receptor protein/occupancy, diffusion range, affinities,
+ligand activation, response baseline and magnitude, and exposure-response gains.
+Beta in {0,.25,.5,1} is a prespecified sensitivity grid, not experimental potency.
+No beta is fitted or selected by best observed residual. Nominal beta=.5 is arbitrary.
+
+ANNOTATION AND RESPONSE MEASUREMENT
+Biological QC: >=50 counts excluding Negative* and SystemControl* (344 controls).
+Gene expression h_ig=log(1+10000*count_ig/biological_total_i).
+Epithelial proxy: >=2 EPCAM/KRT8/KRT18/KRT19/CLDN4 detected; <2 immune markers
+(PTPRC,CD3D,CD3E,LST1,TYROBP), <2 stromal markers (COL1A1,COL1A2,DCN,PDGFRA).
+TA-like: epithelial with >=2 MKI67/PCNA/TOP2A/CCNA2/MCM5, <2 absorptive markers,
+and <2 goblet markers. Colonocyte-like: epithelial with >=2 CA2/SLC26A2/GUCA2B/
+KRT20/FABP1, <2 cycling and <2 goblet markers (MUC2/TFF3).
+Initial CA1/SLC26A3/AQP8/MS4A12 choices and several goblet markers are absent
+from this panel. Available absorptive markers include progenitor/differentiation
+markers and lack sufficient specificity for validated colonocyte identification.
+The panel-compatible recipe above was fixed after header inspection, before any
+response modelling. Ambiguity is explicit. Labels do not establish histological identity.
+Protein PanCK/CD45/CD68 intensities are reported as corroborating summaries only;
+no cross-slide fluorescence threshold is invented.
+All annotation markers and ALL selected ligand/receptor genes are excluded from
+EVERY response signature, including TNF when TNF appears as a perturbation target.
+This prevents direct feature reuse, although library/compositional dependence remains.
+
+For organoid type c and programme p, retain covered usable targets G_cp.
+For IFNG/TNF: w_cpg=sign(experimental_log2FC)/|G_cp|.
+For BMP: w_c,BMP=(w_c,BMP2+w_c,BMP6)/2 on the union of targets (missing=0).
+This is a shared programme, not independent evidence for BMP2 versus BMP6.
+Experimental direction/magnitude and exclusions remain in a gene manifest.
+Normalise h genes within provisional receiver type across selected FOVs; constant
+genes get zero z-score. Compute sum_g w_cpg*z_jg, then centre/scale this programme
+score within receiver type to obtain r_jp. A zero-variance programme is unscorable.
+Require >=5 retained programme genes and >=5 matched receivers per type overall.
+This measures signed expression alignment, NOT a perturbation-induced change.
+Reference statistics use these selected cells: transductive, descriptive, no held-out
+prediction. Receiver-type centring is the fixed cell-intrinsic intercept baseline.
+
+RELATIVE ALLOCATION (OUTSIDE THE LINEAR SHEAF)
+Let S_il=h_i,ligand and R_jl=min(h_jg: g in receptor complex l).
+Only matched epithelial proxy receivers j are targets; all QC cells i are senders.
+Admissible directed edges satisfy d_ij<=radius, i!=j, S_il>0, R_jl>0.
+No cross-FOV/specimen edges. Kernel K_ij=exp[-d_ij^2/(2*(radius/2)^2)].
+Initial route weights v_ijl=K_ij*R_jl. Sender budget is S_il.
+q0_ijl=S_il*v_ijl/sum_j(v_ijl), or 0 if the denominator is zero.
+Scale each route's incoming column down if it exceeds R_jl (never up).
+For BMP2 and BMP6 together, scale both incoming columns down when their sum
+exceeds h_j,BMPR2. Thus shared BMPR2 is not counted as two independent budgets.
+This guarantees nonnegative q0, sender sums<=S, route receiver sums<=R, spatial
+support, and shared BMP budget. It is a simple bounded kernel allocation, NOT
+COMMOT or an optimal-transport solution, and need not use all available capacity.
+No output response enters this allocation.
+
+Optional COMMOT backend: same custom LR routes and normalized input expression,
+heteromeric min rule, within-FOV distances, no spatial smoothing. Block self and
+unmatched receiver destinations with an explicit distance mask, then verify support
+and capacities and apply the same conservative BMP shared-budget cap. Backend and
+any postprocessing are recorded. COMMOT/anndata are absent initially; kernel is
+an explicit fallback, not a substitute claimed to be COMMOT. Relative allocation
+and exposure-response calibration are independent stages under either backend.
+COMMOT reference: https://commot.readthedocs.io/en/latest/api/commot.tl.spatial_communication.html
+
+VARIABLE STALKS AND LOCAL FACTORS
+Programmes p={IFNG,TNF,BMP}. Input ligands l={IFNG,TNF,BMP2,BMP6}.
+Let M_pl=1 when l maps to programme p and 0 otherwise (both BMP ligands map to BMP).
+Scalar variable nodes have stalk R (equivalently collect each cell's scalars into
+vector stalks). Variables:
+ s_il: sender input, boundary-fixed to S_il;
+ q_ijl: auxiliary incoming signalling contribution on an admissible route;
+ t_jp: receiver total exposure, summed across ALL senders/routes;
+ r_jp: response coordinate, boundary-fixed to the observed signed programme score.
+Zero-allocation routes can be omitted (and disconnected receivers retained).
+Define a_ijl=q0_ijl/S_il, fixed AFTER the allocation step. Do not fit a to r.
+Type-specific exposure mean mu_cp and SD sigma_cp are computed from observed
+q0 totals across selected FOVs and frozen for every null. SD=1 if variance is zero.
+
+Each local factor is one affine equation A_f*x_neighbours=b_f:
+ allocation: q_ijl-a_ijl*s_il=0;
+ aggregation: t_jp-sum_(i,l) M_pl*q_ijl=0;
+ response: r_jp-beta_p*t_jp/sigma_cp = -beta_p*mu_cp/sigma_cp.
+There is ONE response constraint per receiver/programme. In particular, no equation
+requires r_jp to equal any individual sender's output. An isolated receiver has
+t_jp=0 and still contributes a response residual. Inputs and outputs are not the
+same genes. Large exposure is not intrinsically better compatibility.
+
+TRUE FACTOR-GRAPH SHEAF REALISATION
+Make a bipartite graph with the scalar variable nodes and the local factor nodes.
+For a linear row A_f, the factor stalk is ker(A_f) subset R^degree(f).
+For an affine row, use the affine fibre z0_f+ker(A_f), where
+ z0_f=A_f^T*b_f/||A_f||^2; alternatively homogenise with a boundary-fixed constant 1.
+Every variable-factor incidence edge has stalk R. Variable-to-edge restriction is
+identity. Factor-to-edge restriction is the corresponding coordinate projection
+of z0_f+Z_f*u_f, with columns of Z_f an orthonormal basis for ker(A_f).
+The affine cellular coboundary is delta(x,u)_(vf)=x_v-z0_f[v]-(Z_f*u_f)[v].
+Use equal weights on all incidences of a factor. Eliminating u_f analytically gives
+ min_u sum_v |delta_(vf)|^2 = |A_f*x-b_f|^2/||A_f||^2.
+Therefore define D_f=A_f/||A_f|| and h_f=b_f/||A_f||. The implemented sparse
+compatibility operator is the ELIMINATED sheaf operator D, not the raw incidence
+delta. Its zero set is precisely the global-section compatibility condition.
+A test explicitly compares the eliminated energy with the lifted delta energy.
+
+ENERGY AND OBSERVATION BOUNDARIES
+ E_beta(x)=||D*x-h||^2; sender s and response r are fixed observations.
+Free auxiliary q,t are solved by sparse least squares. Report allocation,
+aggregation and response energy terms, their sum, convergence and stationarity.
+No unanchored all-zero solution is permitted. L=D_free^T*D_free is positive
+semidefinite. A zero residual means compatibility under these maps, not true biology.
+The algebraic auxiliary solution is unconstrained real-valued. Negative adjusted
+fluxes are counted and prevent interpreting that solution as physical transport.
+Nonnegative q0 (before relaxation) remains the only reported allocation estimate.
+
+PRIMARY DIAGNOSTIC (NO RESPONSE-DRIVEN FLUX REPAIR)
+At x0=(S,q0,t0,r), allocation and aggregation vanish. Define
+ e_jp = r_jp-beta_p*(t0_jp-mu_cp)/sigma_cp.
+Report mean(e^2) by FOV/programme/type and all receivers, including zero-exposure
+receivers. This unweighted fixed-allocation discrepancy is primary and comparable
+across graphs. Also report E_beta(x0), min E_beta and each energy block per receiver.
+Lower minimised energy alone can follow from auxiliary flexibility: it is not
+predictive performance or evidence favouring signalling.
+
+BASELINES AND NULLS
+Cell-intrinsic intercept: beta=0, predicts centred r=0; no neighbour information.
+Spatial null: permute complete four-ligand input bundles among sender positions
+WITHIN each FOV and proxy-type stratum. Hold receiver identities, receptor inputs,
+responses, coordinates, gene maps, exposure reference statistics and beta fixed.
+Recompute bounded allocations and auxiliary solutions. This is a sender-position
+shuffle, not a cell-type composition or response-gene shuffle. Use 20 seeded draws;
+report realised moved fractions and finite-null descriptive quantiles. No disease
+significance test or independent-FOV/donor claim. Preserve unmatched receiver states.
+Run the prespecified beta grid for observed and shuffled fixed-allocation residuals;
+solve the sheaf at nominal .5 and beta=0, including shuffled nominal solves.
+
+LIMITS / NEXT STEPS
+No calibrated dose-response, validated subtype annotations, protein availability,
+latent ligand activation, cross-FOV communication, background correction, fitted
+restriction maps, disease classifier, age association or high-dimensional cohomology
+is claimed. Sensitivity to radius, phenotype thresholds, incomplete receptor routes,
+programme transfer and controls must precede biological interpretation.
+Annotation references (marker choices remain assumptions):
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7041720/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9046244/

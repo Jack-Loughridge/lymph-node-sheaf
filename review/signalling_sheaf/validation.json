@@ -1,0 +1,12 @@
+{
+  "table_manifest_checks": "passed",
+  "algebra_energy_and_sum_checks": "passed",
+  "signed_feature_role_checks": "passed",
+  "join_and_annotation_count_checks": "passed",
+  "baseline_and_null_recomputation": "passed",
+  "source_code_and_cache_hashes": "passed",
+  "tables": 13,
+  "qc_cells": 2969,
+  "worst_stationarity": 9.765352310642856e-10,
+  "minimum_shuffle_moved_fraction": 0.986764705882353
+}

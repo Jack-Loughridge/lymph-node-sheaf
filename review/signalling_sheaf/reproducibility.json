@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "same_seed": true,
+  "same_null_draws": true,
+  "identical_numerical_csvs": 13,
+  "repeat_directory": "outputs/signalling_sheaf_pilot_repeat",
+  "comparison": "SHA256 equality of all 13 CSV outputs; timestamps excluded"
+}

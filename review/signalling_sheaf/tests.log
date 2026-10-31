@@ -1,0 +1,33 @@
+test_aliases (test_organoid_response_audit.AuditTests) ... ok
+test_controls_and_real_gene_names (test_organoid_response_audit.AuditTests) ... ok
+test_count_scan_qc_and_receptor_target_codetection (test_organoid_response_audit.AuditTests) ... Scanning test_exprMat_file.csv.gz
+QC: {'GEO': 3}
+ok
+test_duplicate_sheets_signed_genes_and_skips (test_organoid_response_audit.AuditTests) ... Stem: 1 rows, 1 strong
+Goblet: 1 rows, 1 strong
+TA: 6 rows, 1 strong
+ok
+test_empty_csv_has_schema (test_organoid_response_audit.AuditTests) ... ok
+test_malformed_workbook_fails (test_organoid_response_audit.AuditTests) ... ok
+test_receptor_requires_same_cell_all_subunits (test_organoid_response_audit.AuditTests) ... ok
+test_scientific_notation_text (test_organoid_response_audit.AuditTests) ... ok
+test_strict_thresholds (test_organoid_response_audit.AuditTests) ... ok
+test_bmp_routes_sum_into_one_coordinate (test_signalling_sheaf.AlgebraTests) ... ok
+test_disconnected_receiver_kept_and_intrinsic_baseline (test_signalling_sheaf.AlgebraTests) ... ok
+test_eliminated_energy_equals_true_incidence_sheaf (test_signalling_sheaf.AlgebraTests) ... ok
+test_multiple_senders_one_receiver_exact_section (test_signalling_sheaf.AlgebraTests) ... ok
+test_operator_psd_stationarity_and_observation_anchoring (test_signalling_sheaf.AlgebraTests) ... ok
+test_bmp_shared_receptor_not_double_counted (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_bundle_shuffle_preserves_strata_and_gene_bundles (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_commot_not_silently_substituted (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_composite_join_cannot_cross_slides (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_fixed_residual_zero_gain_is_intrinsic (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_proxy_annotations_preserve_ambiguous_cells (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_receptor_subunits_spatial_mask_no_self_and_budget (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_response_does_not_enter_allocation_features (test_signalling_sheaf.DataAndAllocationTests) ... ok
+test_signed_manifest_keeps_input_exclusion_and_bmp_pooling (test_signalling_sheaf.DataAndAllocationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.079s
+
+OK

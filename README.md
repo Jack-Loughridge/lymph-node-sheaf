@@ -31,3 +31,11 @@ curl -sS -o /dev/null -w 'Search: %{http_code}\n' https://search.api.sennetconso
 SenNet documentation: https://docs.sennetconsortium.org/apis/getting-started
 
 **VM space:** 26 GB available at project start; no bulk downloads until sizes and access rights have been verified.
+
+## Initial IFNG / TNF / BMP signalling sheaf review
+
+The separate CosMx IBD pilot is ready for mathematical and scientific review. See the [review report](review/signalling_sheaf/REVIEW_REPORT.txt), [preimplementation mathematical specification](src/signalling_sheaf/MODEL_SPECIFICATION.txt), and [reproduction instructions](review/signalling_sheaf/REPRODUCIBILITY.txt).
+
+The implemented affine factor-graph operator has a cellular-sheaf realization on an augmented variable–factor graph. Four fixed FOVs were analyzed with response-blind bounded spatial-kernel allocation; these are not COMMOT results. None of the three programmes improves the intrinsic baseline at nominal gain 0.5. Receiver labels and exposure-response gains remain provisional. The report gives the complete existing gain grid and shuffled comparisons.
+
+This release includes source, 23 synthetic tests, external gene definitions and aggregate programme summaries only. Raw or cell-level human observations, coordinates, allocation edges and caches remain excluded. No additional experiments or changes to numerical results were made for this review. The [release manifest](review/signalling_sheaf/RELEASE_MANIFEST.json) fingerprints the published source and evidence.
