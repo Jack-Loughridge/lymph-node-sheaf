@@ -1,0 +1,9 @@
+marker,condition,reported_replicate_values,mean_reported_normalized_value,warning
+smed03831,1.5dpa control RNAi,4,1.0,FISH aggregate source values; not ten-gene response map
+smed03831,1.5dpa med8 RNAi,2,0.20500000000000002,FISH aggregate source values; not ten-gene response map
+smed03831,3dpa control RNAi,2,1.0,FISH aggregate source values; not ten-gene response map
+smed03831,3dpa med8 RNAi,4,0.46749999999999997,FISH aggregate source values; not ten-gene response map
+sfrp1,1.5dpa control RNAi,2,1.0,FISH aggregate source values; not ten-gene response map
+sfrp1,1.5dpa med8 RNAi,3,1.0266666666666666,FISH aggregate source values; not ten-gene response map
+sfrp1,3dpa control RNAi,2,1.0,FISH aggregate source values; not ten-gene response map
+sfrp1,3dpa med8 RNAi,4,0.48250000000000004,FISH aggregate source values; not ten-gene response map

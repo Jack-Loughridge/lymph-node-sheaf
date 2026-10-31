@@ -1,0 +1,28 @@
+Frozen search and audit protocol, 2026-10-31
+Scope: international cross-organism discovery; no pilot edits or disease modelling.
+Benchmark: original acceptance document, hash recorded in INITIAL_INPUTS.json.
+Discovery target >=12 candidates; deep source/file audit >=5; real small-file
+inspection for up to 3 feasible finalists before considering predictive tests.
+Rank by intervention-to-spatial receiver match, measured resolution/coverage,
+independent replication, public usable processed files, then anatomical reach.
+Do not count cells/sections as animals or cultures. Do not treat inferred spatial
+positions, deconvolution or imputed transcriptomes as measured cell observations.
+At least two mechanistically distinct programmes; >=10 response variables and
+>=5 detected in >=20% correctly typed receivers; no input-target reuse.
+Required counts/fractions, 5% held-out gains, donor uncertainty and stability
+thresholds remain those in the fixed benchmark. Physiological responses require
+a declared measurement model; a single readout does not silently replace ten
+independent response variables. Pathway hypotheses are feasibility candidates,
+not post-hoc selected predictive successes.
+No prediction until actual annotations, feature detection, spatial units, sample
+IDs, complete mechanisms and external response maps support resolution/coverage.
+If eligible, freeze dataset-specific maps/grid and train/test units before test
+outcomes. Fit normalization/calibration only in training units. Compare intrinsic
+target-excluded baseline and geometry/type-preserving null; bootstrap animals.
+Stop a candidate after a structural mismatch or inaccessible mandatory files;
+record uncertainty separately from biological failure. No indefinite rescue.
+Prefer metadata/panels/small processed tables. Cap any initial payload at 50 MB;
+inspect a manifest/size before transfer, retain payloads only under ignored data/.
+Record retrieval failure without concluding the source is absent/private.
+Do not export observations, push GitHub, modify microbiome, classify disease,
+fit Alpha-learning or perform pushforwards. Report their future requirements.

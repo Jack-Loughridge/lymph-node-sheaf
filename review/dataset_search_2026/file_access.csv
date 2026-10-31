@@ -1,0 +1,37 @@
+candidate,file_or_resource,size_as_reported,endpoint,status,limitation
+CD5K,stromal cytokine counts,1.7 MB,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307526/suppl/GSE307526_processed_bulkRNAseq_cytokine_stimulations.csv.gz,MANIFEST VERIFIED / TRANSFER BLOCKED,GEO indexed manifest; executor DNS fails; no matrix inspected
+CD5K,spatial study,unknown,https://singlecell.broadinstitute.org/single_cell/study/SCP3259,ACCESS UNRESOLVED,no usable processed file manifest
+CD5K,annotation notebook,4112 bytes,https://api.github.com/repos/Teichlab/crohns-fibroblast-atlas/git/blobs/8ed30965477b4fb06da117ec96f613e5933e629b,TEXT PAYLOAD VERIFIED,contains recorded schema not underlying counts
+DSS,gene_names.csv,7.05 KB,https://datadryad.org/downloads/file_stream/3040601,MANIFEST VERIFIED / TRANSFER BLOCKED,web 403; executor DNS fails
+DSS,gene_names_day35.csv,7.06 KB,https://datadryad.org/downloads/file_stream/3040611,MANIFEST VERIFIED / TRANSFER BLOCKED,web 403
+DSS,adata.h5ad,17.96 GB,https://doi.org/10.5061/dryad.rjdfn2zh3,MANIFEST VERIFIED,not downloaded; entire deposit108.70GB; full object exceeds approximately18GB free disk with working space
+DSS,adata_day35.h5ad,1.51 GB,https://doi.org/10.5061/dryad.rjdfn2zh3,MANIFEST VERIFIED,not downloaded; not interchangeable with original time-course cohort
+DSS,cell_properties_day35.csv,14.11 MB,https://doi.org/10.5061/dryad.rjdfn2zh3,MANIFEST VERIFIED,not transferred
+IMMUNEDICT,SuppTable3_Cytokine_Signatures.xlsx,unknown,https://immune-dictionary.org/static/dataFiles/SuppTable3_Cytokine_Signatures.xlsx,ENDPOINT RESOLVES / BINARY UNREAD,web unsupported XLSX content type; size not recovered; no signature genes inspected
+PFISH,processed tables,unknown,https://sspsygene.ucsc.edu/projects/,ACCESS UNRESOLVED,502 through web; do not confuse GSE221321 with spatial tables
+WORM,WT mutant trial exports,unknown,https://osf.io/e2syt/,ACCESS UNRESOLVED,403 through web; control-trace completeness not established
+WORM,DANDI001075,unknown,https://dandiarchive.org/dandiset/001075,ACCESS UNRESOLVED,web timeout and executor DNS fail
+WORM,reference anatomical edges,55102 bytes,https://api.github.com/repos/leiferlab/pumpprobe/git/blobs/f312c4db1018229cb5707b259440cce768e1e727,TEXT PAYLOAD VERIFIED,external EM reference; not physiological measurements in experimental animals
+WORM,gap-gene class expression,12761 bytes,https://api.github.com/repos/leiferlab/pumpprobe/git/blobs/2ccf9f9eb6c74cace0c14645be24aa0112bf929b,TEXT PAYLOAD VERIFIED,CeNGeN reference class averages; not cell detection percentages
+PLAN,QC source table,573 bytes,https://api.github.com/repos/BGI-Qingdao/4D-BioReconX/git/blobs/337073e4791b9df9099d12a9a162aa352a6c1431,TEXT PAYLOAD VERIFIED,16 animal-summary rows; not expression matrix
+PLAN,med8 FISH source table,673 bytes,https://api.github.com/repos/BGI-Qingdao/4D-BioReconX/git/blobs/ce961c31b31524d57df32dfdc5e961402ce5eaf3,TEXT PAYLOAD VERIFIED,two reported markers; does not identify ten-gene response maps
+PLAN,STT0000028,18.96 GB old project,https://db.cngb.org/stomics/project/STT0000028,METADATA VERIFIED,older statistics differ from current STDS0000399; current payload names/sizes unresolved
+SPSEQ,example object.RDS,69403001 bytes,https://github.com/kimberle9/spatialperturbseq/blob/master/inst/extdata/object.RDS,FILE MANIFEST VERIFIED,no binary transfer; exceeds initial50MB screening cap; no R/Seurat reader
+SPSEQ,GSE274447_RAW.tar,2.0 GB,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274447,MANIFEST VERIFIED,GEF archive; no processed annotation joins verified
+SPSEQ,GSE274058_RAW.tar,363.0 MB,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274058,MANIFEST VERIFIED,separate dissociated perturbation reference
+AGE500,Figshare27919227v4,10.91 GB total,https://figshare.com/articles/dataset/Aging_MERFISH_Brains/27919227,LANDING VERIFIED,individual object names/sizes unavailable; avoid accidental microglia-only selection
+AGE500,sample-list notebook,3731 bytes,https://api.github.com/repos/doughenze/Microglial_Morphology/git/blobs/5da32b8233421d862c5ddce1f51e03675ae04d5f,TEXT PAYLOAD VERIFIED,source sample list and processing logic; no actual cell table
+SPAC,CRA023189,unknown,https://ngdc.cncb.ac.cn/gsa/browse/CRA023189/CRR2671153,RAW RUN METADATA INDEXED,processed cell matrix manifest not verified
+SPAC,processed portal,unknown,https://spac.pku-genomics.org/,ACCESS UNRESOLVED,landing has no readable manifest; code alone does not establish payload
+ZFHEART,Stereo-seq-regeneration.rds,505.4 MB,https://zenodo.org/records/14991776/files/Stereo-seq-regeneration.rds?download=1,MANIFEST VERIFIED,measured bins; not downloaded
+ZFHEART,Stereo-seq-3D.h5ad,84.4 MB,https://zenodo.org/records/14991776/files/Stereo-seq-3D.h5ad?download=1,MANIFEST VERIFIED,measured bins; not downloaded
+ZFHEART,Stereo-seq-regeneration.meta.txt,21.4 MB,https://zenodo.org/records/14991776/preview/Stereo-seq-regeneration.meta.txt?include_deleted=0,WEB PREVIEW INSPECTED,partial indexed preview not complete downloaded table; cell-like IDs are not proof of single-cell measurements
+ZFHEART,Stereo-seq-regeneration-impute.rds,14.1 GB,https://zenodo.org/records/14991776,MANIFEST VERIFIED / EXCLUDED,imputed values cannot serve as independent measured response targets
+AXOLIMB,14dpa matrix.mtx.gz,1.7 MB,https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8900nnn/GSM8900427/suppl/GSM8900427_limb_14dpa_matrix.mtx.gz,MANIFEST VERIFIED / TRANSFER BLOCKED,standard GEO sample URL attempted; DNS fails before endpoint confirmation
+AXOLIMB,14dpa gene_panel.json.gz,3.4 KB,https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8900nnn/GSM8900427/suppl/GSM8900427_limb_14dpa_gene_panel.json.gz,MANIFEST VERIFIED / TRANSFER BLOCKED,standard GEO sample URL attempted; DNS fails before endpoint confirmation
+AXOLIMB,14dpa cells.csv.gz,808.8 KB,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8900427,MANIFEST VERIFIED,sample metadata includes physical section size; cell table not downloaded
+PLANT,CZI image collection,34.3 GB total,https://zenodo.org/records/3737795,MANIFEST VERIFIED,raw collection; individual CZI approximately377.8MB; no processed per-cell table transfer
+PMAP,processed Perturb-map derivative,18.32 MB total,https://figshare.com/articles/dataset/Datasets_-_Perturb-Map/29198468,LANDING VERIFIED,derivative is Visium; no cell-level transcriptome rescue
+PMAP,segmented imaging,unknown,https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD267,ACCESS UNRESOLVED,no usable file list; molecular panel not audited
+HYDRA,related calcium tracking movies,unknown,https://www.ebi.ac.uk/biostudies/studies/S-BSST428,ACCESS UNRESOLVED,not established as same regeneration intervention experiment
+ALLEN,MERFISH expression matrices,14.2 GB,s3://allen-brain-cell-atlas/expression_matrices/MERFISH-C57BL6J-638850/20230830,OFFICIAL PATH VERIFIED,one animal; no file download

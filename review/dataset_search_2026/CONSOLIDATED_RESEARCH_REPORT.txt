@@ -1,0 +1,507 @@
+INTERNATIONAL DATASET SEARCH FOR BIOLOGICAL VALIDATION OF CELLULAR SHEAVES
+Evidence checked 31 October 2026. Decision: conditional dataset recommendation;
+NO candidate is biologically validated, and none has demonstrated A-C passage.
+
+Recommendation
+
+The best next pair is the Crohn's Xenium5K tissue atlas (SCP3259) and its separate
+CCD18-Co stromal cytokine experiment (GSE307526), initially testing IFNG and TNF
+in appropriately matched stromal receivers. It has the most favorable combination
+of broad measured molecular coverage, tissue-specific perturbation biology and a
+reported eight-donor spatial cohort. This remains a conditional recommendation:
+the spatial file manifest, donor-to-section mapping, actual receptor detection,
+response-gene detection and culture independence have not been verified in usable
+payloads. It is not yet a download-ready or gate-passing replacement. The ranking
+does not assert it will yield a positive result.
+
+The best model-organism option for experimentally anchored physiological maps is
+the C. elegans optogenetic propagation atlas. The best whole-organism regeneration
+anatomy is PRISTA4D. Neither currently establishes the fixed two-programme,
+ten-variable, coverage and independent-validation requirements. Their strengths
+are complementary scientifically, but worm neural responses cannot calibrate
+planarian regeneration constraints: that is not a valid two-dataset strategy.
+
+The broad search therefore does not overturn the initial NO-GO. It narrows the
+next defensible acquisition and experiment rather than supplying an unvalidated
+organisation metric. Access limitations and absent evidence are distinguished
+from demonstrated biological inadequacy throughout the tables.
+
+1. Scope, search procedure and limits
+
+Both VM-only decision files were located at the requested review paths. I read
+the criteria, consolidated decision, subcriterion ledger and mathematical model
+specification. INITIAL_INPUTS.json records their SHA256 hashes before this search.
+The original pilot, its threshold choices and numerical outputs were preserved.
+
+Discovery covered 20 candidates across human, mouse, zebrafish, axolotl, planarian,
+C. elegans, Hydra and Arabidopsis systems. It included published papers, preprints
+and 2026 releases, with targeted searches of GEO/SRA, CELLxGENE, Zenodo, Figshare,
+BioImage Archive/BioStudies, Allen resources, STOmicsDB, GSA, OSF/DANDI,
+institutional portals and author GitHub repositories. Negative or uninformative
+repository searches are retained rather than represented as evidence of absence.
+This is a systematic bounded search, not a claim to exhaust every international
+repository. The source captures document the searches and their date-specific
+access outcomes; dynamic repository coverage may change.
+
+The ranked table is tables/ranked_candidates.csv. Ten candidates receive 21
+subcriterion assessments each in tables/acceptance_ledger.csv. Ten were taken
+beyond discovery to source, code, replication or small-file checks. Other
+candidates were rejected earlier for clear measurement/intervention mismatches
+or unresolved mandatory prerequisites. Rank measures priority for this project,
+not publication quality. There is no synthetic numerical ranking score fitted
+to favor a particular candidate.
+
+Access evidence has four different meanings: an indexed manifest; a live landing
+page; actual retrieved text payload; and successfully parsed scientific matrix.
+Only the third was achieved for the small GitHub files. No new cell-expression
+matrix with matched spatial positions was loaded. A notebook's recorded AnnData
+schema does not count as loading that AnnData object. An indexed metadata preview
+does not count as downloading a complete table. No missing exposure counts are
+reported as zero.
+
+Direct executor requests failed DNS for Zenodo, Figshare, NCBI, DANDI and Dryad.
+The web service could inspect several public manifests, but returned access
+errors, browser checks or unsupported binary content for mandatory payloads.
+The connected GitHub reader successfully retrieved exact small text files. I
+used that supported route for data/source inspection; no network restrictions
+were bypassed. The environment lacks h5py, anndata, Scanpy and Seurat readers.
+These are executor limitations, not findings that datasets are withdrawn/private.
+No arbitrary large download or repeated attempt at the same failed endpoint was
+used as a substitute for analysis. Initial payload screening was capped at 50 MB.
+Approximately 18 GB disk was free; a 17.96-GB h5ad plus working files would not be
+a sensible first acquisition here. Most candidates lack enough payload evidence
+for an honest wall-clock/RAM estimate: the table marks those costs unknown.
+For planning only, a dense float32 matrix of one million cells by 5,000 genes
+requires 20 GB before metadata or model copies. A 10,000-cell by 100-feature
+audit requires 4 MB for that matrix. Use sparse selected-feature arrays and one
+specimen at a time; do not allocate all-pairs spatial distances. Neighborhood
+search and fixed low-dimensional predictions can use CPU, while image decoding
+or re-segmentation is a separate, much larger task. Full-scale runtime remains
+unbenchmarked until sparsity, object size and available memory are inspected.
+
+2. Ranked shortlist and the decisive biological details
+
+Ranks 1-5 are the strongest biological alternatives, with different unresolved
+requirements. Ranks 6-8 are useful matched-design or age/perturbation resources.
+The complete 20-row table records every source, organism, measured modality,
+experimental unit, contrast, file access, size/cost and rejection reason.
+
+1) Crohn Xenium5K / stromal cytokines. The original source code was downloaded,
+not merely viewed as a search snippet. Its saved annotation output records a
+181,597-by-5,001 mesenchymal object with a counts layer, spatial coordinates,
+sample field, CellTypist information and refined author annotations. This is
+useful evidence of the intended data schema, not proof of annotation completeness
+or an actual gene-by-cell audit. The small cytokine source is explicitly a
+CCD18-Co cell-line experiment: 44 libraries, four reported replicates per group,
+not four independent human perturbation donors. An eight-donor CD atlas could
+support donor-held-out local response testing; it does not create a healthy
+comparison. Paired affected/unaffected CD contrasts need the actual donor table.
+The epithelial organoid maps must be replaced with stromal maps. Author notebooks
+project positive DEG scores and standardize across the object; that analysis is
+not our signed, feature-disjoint, held-out validation and should not be copied
+as evidence that D passes. Obtain independent perturbation reproducibility and
+test cell-line-to-tissue transfer rather than assuming it.
+Sources: https://doi.org/10.1038/s41590-026-02617-0
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307526
+https://github.com/Teichlab/crohns-fibroblast-atlas/blob/main/xenium/3a1_xenium5k_annotation.ipynb
+
+2) Mouse DSS colon MERFISH / mouse Immune Dictionary. The colon resource reports
+940 measured genes and 15 animals across inflammation and recovery. Dryad
+documents measured cell counts and centroid coordinates in microns, with both
+AnnData and component CSV exports. This is a substantially better measurement
+prospect than imputing cells into Visium spots. Its main processed object is
+17.96 GB; the 7.05-KB gene list should be checked first. The day35 object is
+1.51 GB and is a separate late-recovery subset, not the entire original cohort.
+The public Immune Dictionary supplies in vivo responses of more than 17 mouse
+immune populations to 86 cytokines. However, these are lymph-node responses,
+not colonic stromal or tissue-resident macrophage responses. Use only genuinely
+matched immune populations and prove transfer. The colon paper describes some
+slice-level differential-expression replication; our analysis must regroup by
+animal. Repeated numbers such as m2 across acquisition dates cannot safely be
+deduplicated into animals without metadata. This pair ranks below the Crohn
+pair because the response-context mismatch is more pronounced and the spatial
+gene panel smaller. The dictionary alone has no spatial sender geometry.
+Sources: https://doi.org/10.1016/j.cell.2024.03.013
+https://doi.org/10.5061/dryad.rjdfn2zh3
+https://doi.org/10.1038/s41586-023-06816-9
+https://immune-dictionary.org/download/
+
+3) Perturb-FISH. This is the strongest retrieved study design for directly
+linking perturbation identity, neighboring-cell transcription and an orthogonal
+functional measurement: THP1 LPS screens and separate astrocyte calcium screens.
+Its code explicitly includes registration between live calcium and fixed-cell
+MERFISH. Neighbor and density effects have orthogonal follow-up, rather than
+being defined only by ligand-receptor correlations. Nevertheless, a single
+THP1 screen is not a multicompartment organ, and astrocyte ASD-gene perturbations
+do not automatically isolate two intercellular mechanisms. The processed-table
+portal returned 502; independently cultured units and donor/differentiation
+batches remain unverified. Matching perturbations and phenotypes in the same
+cells is valuable, but FOVs and randomly split cells cannot replace independent
+cultures. GSE221321 supplies a dissociated reference, not the spatial tables.
+Sources: https://doi.org/10.1016/j.cell.2025.02.012
+https://github.com/lbinan/Perturb-FISH
+https://sspsygene.ucsc.edu/projects/
+
+4) C. elegans optogenetic propagation atlas. The study reports direct stimulation
+and whole-head calcium imaging in 113 WT-background animals and 18 unc-31 mutants,
+with 23,433 measured neuron pairs. This provides a stronger causal input-output
+starting point than expression proximity. NeuroPAL identities and a stereotyped
+nervous system favor reproducible circuit-level maps and later anatomical
+aggregation. The downloaded reference tables distinguish chemical and electrical
+edges and include gap-junction genes. They are external anatomy/transcriptome
+references, not the experimental animals' measured synaptic mechanisms.
+
+Calcium propagation can include polysynaptic and extrasynaptic paths. A measured
+stimulus-response kernel must not be relabeled a direct local synapse. Soma
+distance is especially inadequate when neurites contact elsewhere. unc-31
+perturbs dense-core secretion, not every transmission mechanism separately.
+Ten correlated frames of a calcium trace do not automatically satisfy ten
+informative response variables per programme; a physiology-specific observable
+definition would need to preserve the benchmark rather than silently relax it.
+OSF returned 403 and DANDI was inaccessible here. I did not verify complete
+negative-control traces, stimulation target assignments or mutant trial exports.
+Third-party reproducibility commentary surfaced during search; its claims of
+missing controls were not independently established here and are not treated as
+facts. Reconstruct those points from primary payloads before choosing this route.
+Sources: https://doi.org/10.1038/s41586-023-06683-4
+https://doi.org/10.17605/OSF.IO/E2SYT
+https://github.com/leiferlab/pumpprobe
+
+5) PRISTA4D. This has the best fit to the eventual whole-organism regeneration
+question, with serial-section reconstruction, regional anatomy and positional
+programmes. The current STDS0000399 record reports two animals per regeneration
+stage. A downloaded figure source independently contains 16 rows across eight
+stages, two each. Large cell totals do not fix the two-per-stage limitation.
+The older STT0000028 page lists 55 sections and 18.96 GB; the newer page describes
+370 sections but also shows sample/section totals of 34. The paper/preprint
+records also differ in totals. Do not combine these versions or assume one
+landing page supplies the complete final release. Request a versioned manifest
+and unique animal/section mapping before downloading.
+
+med8 RNAi and FISH provide real intervention/phenotype evidence, but med8 is a
+broad transcriptional regulator, not a selective Wnt or BMP sender perturbation.
+The downloaded FISH source reports only two markers, with two to four listed
+replicate values per condition. Thirty-six spatial domains are useful anatomy,
+not proof of >=90% broad lineage and >=70% receiver-subtype annotation. Nor does
+715-nm assay sampling establish independent measured cells at that pitch. This
+atlas is a future spatial target after a matched planarian pathway-perturbation
+reference and sufficient biological replication become available. Grouping early
+and late stages after seeing results would not repair the fixed comparison gate.
+Sources: https://db.cngb.org/stomics/datasets/STDS0000399
+https://db.cngb.org/stomics/project/STT0000028
+https://doi.org/10.1093/gigascience/giag064
+https://github.com/BGI-Qingdao/4D-BioReconX/tree/main/Data
+
+6) Mouse Spatial Perturb-Seq. Sparse in vivo perturbations, mSafe controls and
+whole-transcriptome segmented cells are highly relevant. However, the paper's
+four spatial mice and GEO's three deposited mice do not establish eight
+independent spatial units. Five dissociated animals in GSE274058 cannot be added
+to spatial test n. The exact example RDS is listed at 69,403,001 bytes; no binary
+reader/download was available here, so only its manifest and vignette were
+inspected. Risk-gene KO neighbor effects are a good mechanism-development
+benchmark, but cannot by themselves identify two specific extracellular routes.
+Sources: https://doi.org/10.1038/s41467-026-69677-6
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274447
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274058
+https://github.com/kimberle9/spatialperturbseq
+
+7) Ageing MERFISH / microglial morphology. The 500-gene, 12-mouse design has six
+animals per age group, three per sex-age cell; the downloaded sample-list code
+agrees. IBA1 morphology provides a useful independent measurement, though not an
+independently intervened receiver programme. Figshare v4 is 10.91 GB, but its
+individual object manifest was unavailable. The landing page describes both an
+all-cell cleaned object and a final microglia-only analysis object: the latter
+would lose most potential sender types. This is an attractive later age-transfer
+target only after matching mouse brain perturbations and measured panel overlap.
+Pairing it with the under-replicated hippocampal Spatial Perturb-Seq resource
+does not fix the latter's pathway specificity or make age transfer automatic.
+Sources: https://doi.org/10.1038/s43587-026-01089-z
+https://figshare.com/articles/dataset/Aging_MERFISH_Brains/27919227
+https://github.com/doughenze/Microglial_Morphology
+
+8) SPAC-seq. The 2026 screen adds actual adhesion/immune-interaction hypotheses,
+including Icam1 and Cd44/Spp1, beyond generic risk-gene perturbations. Original
+scripts and the GSA CRA023189 accession were verified. The portal exposed no
+usable processed manifest. A three-mouse spatial screen and five-mouse bulk
+screen must not be pooled as eight spatial animals. Cell segmentation, the
+intervention-to-response map and distinct mechanisms still need file-level
+verification. It is a serious emerging alternative, not an omitted modality.
+Sources: https://doi.org/10.1016/j.cell.2026.04.049
+https://github.com/zenglab-pku/SPAC-seq
+https://ngdc.cncb.ac.cn/gsa/browse/CRA023189/CRR2671153
+
+Other instructive candidates. The zebrafish heart atlas has an excellent organ
+model and accessible manifest, but measured spatial expression is in roughly
+35-micron bins. Its imputed cell distributions cannot substitute for independent
+cell-level expression targets. The axolotl limb Xenium resource has genuinely
+small processed files: the 14dpa matrix is 1.7 MB and cells about 809 KB, with a
+100-gene panel. It deserves a cheap panel audit after access is restored, but
+six stage samples do not establish replicated comparison groups. Axolotl brain
+regeneration is promising anatomy without verified matched interventions.
+
+The Arabidopsis auxin system directly measures an input sensor and delayed DR5
+response in 3D, with transport and morphology. It is an excellent example of a
+biologically meaningful constraint, but does not supply two established
+ten-variable programmes. Importantly its deposit calls E-series the biological
+replicas and SAM numbers technical replicas; do not count dozens of meristems
+as an independently replicated cohort. Hydra electrical/heptanol experiments
+have attractive regeneration outcomes but no verified registered cell table,
+broad response measurement or mechanism-specific local perturbation here.
+
+Perturb-map combines cell-level protein imaging with Visium transcriptomes;
+neither the small processed derivative nor computational deconvolution turns
+those transcriptomic spots into measured cells. Perturb-DBiT also requires
+careful distinction between pixels and segmented cells. Gastruloid clonal
+patterning, zebrafish sensorimotor calcium, the Arabidopsis life-cycle atlas,
+Allen SEA-AD and Allen whole-brain MERFISH are retained as comparisons. The last
+named mouse-brain resource is one animal, despite millions of cells. SEA-AD's
+large cohort is not evidence of matched local perturbation responses. The table
+gives primary links and the known/unknown access fields for each.
+
+3. What was actually computed from retrieved files
+
+src/dataset_search/audit_small_files.py parses ten retrieved source/data files
+and verifies their exact Git blob SHA1 and SHA256. No downloaded repository code
+was executed. The script's own calculations use existing NumPy/pandas.
+
+PRISTA4D: the QC source table contains 16 rows, eight stages and exactly two
+rows/stage. Its reported QC segmented-unit total is 3,508,004. This is a sum of
+published animal-summary values, not a new count of independent cells after
+inspecting segmentation. The FISH table has smed03831 control/med8 means of
+1.000/0.205 at 1.5dpa and 1.000/0.4675 at 3dpa; sfrp1 at 3dpa is 1.000/0.4825.
+These measurements demonstrate availability of a small functional source table.
+They are not fitted sheaf constraints or ten-gene perturbation signatures.
+
+Worm: the downloaded adult anatomical reference has 2,204 chemical edge rows
+and 296 electrical rows, with reported contact sums 7,465 and 406. These are
+table rows/contacts, not independently observed physiological interactions.
+The gap-gene table has 21 genes across 128 reference classes. unc-7 has nonzero
+reference averages in 86 classes and unc-9 in 107; these are NOT percentages of
+cells with detected transcripts or proof of functional junctions. Four listed
+gap genes have zero reference averages across all classes in this thresholded
+reference; absence there is not evidence of absent in vivo coupling.
+
+Ageing MERFISH: source-code parsing recovers 12 distinct entries, with three
+female and three male entries at each age. This confirms the intended metadata
+design, not successful joins, retained cell counts or spatial annotation quality.
+
+Crohn: the recorded 181,597 x 5,001 schema contains raw-count and annotation
+fields. The cytokine notebooks load external DEG CSV paths not distributed as
+gene tables in the inspected tree. They provide scoring logic, not actual
+receptor/signature overlap or detection counts. No claimed panel overlap was
+inferred from the number 5,001 alone.
+
+These outputs are in small_file_audit/. file_access.csv records named payloads,
+sizes, endpoints and the precise level of access verification. The actual
+retrieved text envelopes remain under ignored data/dataset_search_2026/.
+No raw human observations were acquired or exported.
+
+Stage 3 is therefore PARTIAL/BLOCKED for biological coverage, not completed
+coverage validation. For the best spatial alternatives, actual ligand/receptor
+overlap, downstream target detection and exposed-receiver counts remain NOT
+EVALUABLE. Stage 4 was not run. Missing matched matrices and structural
+replication/measurement failures prevent a defensible predictive experiment.
+Running an intrinsic baseline on reference class averages or a domain-summary
+table would not answer the stated receiver-response question.
+
+4. Acceptance decision and jointly missing requirements
+
+The ledger assesses each A-F subcriterion for ten candidates. Every D/E item is
+NOT EVALUABLE: no >=5% held-out gain, paired interval, two-route success or
+stability result is claimed. Only reported replication-design subchecks pass for
+ageing MERFISH and the worm experiment; those do not pass biological validation.
+PRISTA4D fails the intended stage-wise >=3/group minimum. Spatial Perturb-Seq
+fails the >=8 spatial-unit minimum. The zebrafish heart measured-bin input fails
+the cell-resolved observation requirement for the proposed cell sheaf. Unknown
+identity completeness or background coverage is marked NOT EVALUABLE, not FAIL.
+
+No published count of cell classes demonstrates the 90%/70% annotation gates.
+No large nominal panel demonstrates ten actually informative targets with five
+detected in 20% of correctly typed receivers. No inferred LR network establishes
+100 measured competent/exposed receivers in three independent specimens.
+No significant spatial correlation establishes a 5% gain over a strong intrinsic
+model and matched null. No successful phenotype rescue automatically identifies
+the local response map responsible for it.
+
+The recurrent joint limitations are: broad molecular measurement plus geometry
+without interventions (atlases); interventions plus geometry but few independent
+animals (spatial screens); direct dynamics without enough mechanism-resolved
+observables or matched identities (physiology); and accessible references without
+the complete matched response/metadata payload. A second dataset can resolve the
+first limitation only if tissue, species, receiver identity, stimulus timing and
+observable targets match. It cannot manufacture missing spatial replication,
+unmeasured receptor components or independent held-out outcomes.
+
+This is an access/feasibility decision under the observed environment. It is not
+a proof that no publicly hosted dataset worldwide could meet the criteria, nor
+that the strongest untransferred matrices will fail. The bounded stopping point
+is appropriate because further performance optimization is impossible without
+mandatory inputs, while further indiscriminate discovery would not resolve the
+specific measured deficiencies already identified.
+
+5. Concrete implementation and defensible validation experiment
+
+Step A: acquire a minimal, versioned Crohn pair. First retrieve the live SCP3259
+manifest, measured gene panel, sample-to-donor/affected-status table, coordinate
+units, segmentation/QC documentation, full sender population annotations and
+raw-count-compatible spatial object. Retrieve the 1.7-MB GSE307526 file with
+unstimulated and IFNG/TNF culture metadata. Verify culture replicates represent
+independent biological cultures, not repeated libraries or wells from one
+preparation. Inspect gene IDs, time/dose and cell-line provenance. Do not download
+multi-GB counts before these metadata are usable. Use a reader environment with
+pinned versions after actual access is working. This search has not installed one.
+
+Step B: freeze the candidate-specific measurement plan before response outcomes.
+Use gut stromal receivers whose identity is independently supported; retain
+ambiguous cells in completeness denominators. IFNG and TNF are provisional,
+mechanistically distinct choices made here, not selected after test performance.
+Use full canonical receptor requirements; alternate routes need external
+mechanistic justification, not better cell counts. Quantify receptor dropout,
+control probes, molecule assignment, tissue/FOV edges and positive/negative
+controls. Derive the noise floor solely from independent technical controls,
+never by maximizing exposure. Apply QC and the physical 1.5/2.5/4-cell-diameter
+range as prespecified sensitivities, documenting whether each is appropriate
+for these soluble routes rather than treating radius as an affinity estimate.
+
+Step C: derive and freeze signed external stromal programmes. A prospective
+choice is treatment versus unstimulated FDR<0.05 and |log2FC|>1, without choosing
+the threshold for the tissue results. Retain both signs and all exclusion reasons.
+Remove all candidate ligand/receptor inputs and annotation features from targets.
+Check culture-replicate reproducibility and stimulus overlap. Do not count IFNA
+and IFNG shared interferon targets as automatically distinct evidence; do not
+apply epithelial signatures to fibroblasts. Quantify exactly the benchmark's
+target counts and detection rates by donor/receiver subtype. Require >=2 passing
+programmes before proceeding. If a programme fails, record failure rather than
+searching many pathways for whichever passes on held-out donors.
+
+Step D: compute exposure without observing target responses. Use actual physical
+neighborhoods, no self/cross-donor links, complete same-cell receptors and a
+fixed allocation implementation with synthetic conservation/support checks.
+Report exposed counts AND fractions in every eligible donor, including zeros.
+Enforce >=100 total/route and >=20% appropriate receivers in >=3 specimens.
+A correctly installed COMMOT backend could be compared with a documented bounded
+kernel, but neither creates missing measured receptors or validates exposure.
+Do not interpret transcript counts as calibrated ligand concentrations.
+
+Step E: only after A-C pass, freeze the donor splits, target definitions and model
+grid. Use all eight tissue donors if their independence is verified; leave out
+one donor at a time, with any selection/calibration nested in the other seven.
+All sections of a donor remain together. Perturbation-culture maps are external
+and fixed, not fitted from disease labels. All normalization, feature selection,
+library-size adjustment and calibration are fitted in training donors only.
+No learned restriction-map/Alpha-learning analysis is proposed.
+
+Fit a strong receiver-intrinsic target-excluded model using cell subtype, its
+own non-target/non-input expression, QC covariates and independently annotated
+anatomical compartment. Predeclare regularized regression as the primary model;
+an additional nonlinear baseline may be declared before the test if sample size
+supports it. Compare its prediction with the same baseline plus fixed signaling
+inputs, so added value cannot arise from unequal intrinsic feature sets.
+Use training-only gain calibration; leave test responses untouched.
+
+Use 100 prespecified complete-sender-bundle shuffles within donor, anatomical
+region, sender type and local-density strata. Preserve geometry, recipient state,
+receptor availability, boundaries and composition; report the moved fraction and
+strata too small to shuffle. Repeat all necessary allocation computations. Use
+the same frozen prediction procedure for the null model. Nearest-neighbor-only
+or random-cell splits would leak spatial/culture structure and are prohibited.
+
+Report MSE per donor, programme, subtype and exposed/all-eligible receiver scope.
+Require >=5% lower held-out MSE than BOTH baselines for >=2 programmes. Estimate
+paired differences with donor-level resampling (not cell bootstrap), state the
+limited precision at n=8 and require the 95% interval to exclude zero. Keep all
+donors in the prespecified comparison; no favorable FOV or radius selection.
+Inspect edge/interior and panel-missingness effects. Predeclare 50 80%-retention
+repeats stratified by donor/anatomical region/type/density. Enforce >=80% direction
+agreement, median >=half effect, >=2/3 radii direction agreement and multiple
+technical detection/QC floors. These are a future frozen design, not test results.
+
+Step F: if either coverage or prediction fails, stop that model. The fallback is
+DSS plus an appropriately matched mouse perturbation reference, beginning with
+its tiny gene manifest. If neither can obtain matching programmes, the concrete
+experimental gap is a replicated, cell-typed intestinal stromal/immune cytokine
+perturbation reference plus spatial tissue expression with documented controls.
+For whole-planarian regeneration, the analogous gap is >=3 independent animals
+per prespecified condition (>=8 total) and at least two specific communication
+interventions with multi-variable measured receiver responses, matched to the
+same receiver populations in PRISTA4D. A pleiotropic med8 knockdown or extra
+serial sections cannot fill that gap. No new experiment is represented as
+already publicly available.
+
+6. Implications for multiscale sheaves and higher-level organisation
+
+The current affine factor-graph construction already distinguishes sender input,
+allocated contributions, receiver total input and receiver response. A new
+restriction map must keep that causal/aggregation structure. For contact or
+gap-junction mechanisms, replace a diffusion-radius edge with measured membrane
+contact or wiring support and appropriate bidirectional conductance constraints.
+For neural physiology, delayed temporal kernels require a time-indexed model;
+an effective whole-network propagation kernel is not automatically a local edge.
+For metabolic exchange, metabolite balance, transporter availability and measured
+flux/response would be necessary; no audited candidate here supplied that full
+combination. Morphogen sensors can provide much better inputs than ligand RNA,
+but need independent downstream observables and replication.
+
+No new H0, frustration or pushforward computation was performed. After a model
+passes D/E, freeze a compatibility filtration based on externally validated
+residual/noise calibration. Specify how directed or signed interactions enter
+the undirected support used for H0; ordinary H0 connectivity does not preserve
+causal direction, inhibition or frustration. A connected component of compatible
+edges does not guarantee a jointly compatible global section around cycles.
+Report connected-pair fractions with fixed denominators, physical separations,
+region sizes and composition/density-matched nulls. Do not infer healthier tissue
+from a larger component or lower energy.
+
+Energy comparisons must fix observation anchors, restriction-map calibration and
+normalization for graph size, degree, noise and stalk dimension. The relaxed
+sheaf's flexibility must not repair away observed biological errors and then
+be called predictive success. Anatomical pushforward partitions should be chosen
+from independent histology/ontology: intestinal mucosa/submucosa/muscle, brain
+regions/circuits, or planarian head/trunk/tail/pharynx. Registration deformation,
+cross-section uncertainty and long neurites can change inferred boundaries.
+
+The central organisation hypothesis requires another independent validation
+beyond local prediction: does a frozen organisation metric explain measured
+function or regeneration success beyond cell-intrinsic states, composition and
+injury severity? Use a separate outcome cohort or animal-held-out evaluation;
+reserve ageing/disease labels and functional outcomes from map fitting. A-C
+feasibility, D/E local response prediction and a successful organisation test
+are three different scientific achievements. None is established by the current
+search report alone.
+
+7. Reproduction, checkpoints and delivery
+
+SEARCH_PROTOCOL.txt records scope, gates and stopping rules. catalogue.json is
+the curated evidence input. Discovery/access JSON captures preserve source URLs,
+retrieval observations and limitations. file_access.csv is the small payload
+manifest. small_file_audit/ contains computed aggregates and exact source hashes.
+tables/ contains the 20-row ranking and 210-row criterion ledger. The source
+reader envelopes are in ignored data/; copy neither observations nor arbitrary
+notebook outputs to GitHub. No GitHub write, commit or push was performed.
+
+From repository root, using fresh output directories:
+  python3 src/dataset_search/audit_small_files.py /tmp/sheaf-search-small-audit
+  python3 src/dataset_search/build_tables.py /tmp/sheaf-search-tables
+  python3 -m unittest discover -s tests -v
+
+The source-envelope paths are fixed to data/dataset_search_2026; reacquire the
+listed immutable Git blobs if that ignored cache is unavailable, using:
+  python3 src/dataset_search/acquire_small_files.py --log /tmp/new-source-access.json
+This downloader is capped at 1 MB per response, verifies the immutable blob,
+reuses exact cached files and logs failures. It verified all ten existing source
+files here without another network attempt. Exact blob
+verification rejects changed or truncated inputs. No source scripts are run.
+The first two commands refuse overwriting existing output files. The final
+manifest records source, tables and report hashes for this checkpoint. All 32
+tests pass, including the preserved tests and three new source-integrity tests.
+The original four documentation hashes and all 13 initial pilot table hashes
+are checked again at delivery. No microbiome files, raw pilot observations,
+disease classification, multiscale pushforward or learned maps were changed.
+
+FINAL DECISION: no biologically validated replacement is established. Prioritize
+the Crohn spatial/stromal-perturbation pair for the specified minimal acquisition
+and prospective donor-held-out experiment. Keep PRISTA4D as the best long-term
+whole-body regeneration target and the worm atlas as the strongest physiological
+mechanism benchmark, each with explicit missing requirements. Do not promote
+any of these recommendations to a biological PASS before real coverage and
+independent prediction meet the unchanged gates.

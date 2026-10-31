@@ -1,0 +1,9 @@
+Publication checkpoint authorized by the user after completion of the search.
+The report is preserved as written. Its statements that no push was performed
+describe the search checkpoint before this separate publication action.
+Only the consolidated report, curated catalogue/tables, aggregate summaries,
+source hashes and reproducibility code are published. Raw source envelopes,
+web snapshots (which can contain individual-cell previews), matrices, individual
+identifiers/coordinates and physiological observations are excluded.
+The publication manifest records exact delivered files. GitHub was updated via
+its connected API because the VM snapshot has no usable local Git repository.

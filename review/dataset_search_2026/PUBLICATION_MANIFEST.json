@@ -1,0 +1,106 @@
+{
+  "scope": "Completed dataset search: report, curated evidence tables, aggregate audits and reproducibility code only",
+  "exclusions": [
+    "all ignored data/ and outputs/",
+    "all raw source-data/cache envelopes",
+    "all web snapshots and notebook outputs, which may contain cell-level previews",
+    "individual-level expression, coordinates, IDs, morphology and physiological trials"
+  ],
+  "files": [
+    {
+      "path": "review/dataset_search_2026/CONSOLIDATED_RESEARCH_REPORT.txt",
+      "bytes": 33662,
+      "sha256": "03f2ddd4d96bf0a19ae9e33ea816bea029249c6d7f8a1c745d10587d888093a5"
+    },
+    {
+      "path": "review/dataset_search_2026/DECISION.json",
+      "bytes": 1027,
+      "sha256": "e545d194ce43c3e70f7f5adff06d59adce731ed6a848188b232a815d88fef45b"
+    },
+    {
+      "path": "review/dataset_search_2026/INITIAL_INPUTS.json",
+      "bytes": 511,
+      "sha256": "b7fba9b48c7acd55fae74e79f3a26dc3599418e960e04466e1e3877c274f5190"
+    },
+    {
+      "path": "review/dataset_search_2026/SEARCH_PROTOCOL.txt",
+      "bytes": 2146,
+      "sha256": "9a4d5137445a741908f935c74923d003037a607b56a6e40ccad32f8986f7bc82"
+    },
+    {
+      "path": "review/dataset_search_2026/catalogue.json",
+      "bytes": 23021,
+      "sha256": "9a3c54e1fe3c52ea3102966a1c0cc4c9043737d8e8ca169c2caf031b3b68baef"
+    },
+    {
+      "path": "review/dataset_search_2026/file_access.csv",
+      "bytes": 6846,
+      "sha256": "1e2c3bb67c75bf817a7e70d46618f86c3d059cf3e44be68f431ecf4054f4ca75"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/SMALL_FILE_AUDIT.json",
+      "bytes": 4392,
+      "sha256": "8af0f0c1836490ffeaad8e1fb73f803818634821493c8b66c1b20c21e52ce66f"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/age_source_sample_summary.csv",
+      "bytes": 79,
+      "sha256": "07b422362a8b8f857244e99fc715985e238be86f220a8a32d939bbeeeecd4ec2"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/planarian_perturbation_summary.csv",
+      "bytes": 845,
+      "sha256": "8a2cbeef034f129a12ab3a4b9bc1d62e339c7ad8a6f4b743fd3d9db3d7d4d9fd"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/planarian_source_summary.csv",
+      "bytes": 175,
+      "sha256": "7999a372415b9ba440493fda6592a5098c0839e21328398b21c5f01dcfa64427"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/worm_anatomical_edge_summary.csv",
+      "bytes": 97,
+      "sha256": "3adc7ead9ce2ee43588958c7a8f28413677f4fd951828ec915bf3f204dea0f1b"
+    },
+    {
+      "path": "review/dataset_search_2026/small_file_audit/worm_gap_reference_coverage.csv",
+      "bytes": 475,
+      "sha256": "867a3fbbead7dca555af41bdf1cd9843728d4b71796f2426422c4c308fad4037"
+    },
+    {
+      "path": "review/dataset_search_2026/tables/acceptance_ledger.csv",
+      "bytes": 86973,
+      "sha256": "1e1eb221a21710c740f6a408330c2800644bc217511ef12725c60fb8983653b8"
+    },
+    {
+      "path": "review/dataset_search_2026/tables/ranked_candidates.csv",
+      "bytes": 19023,
+      "sha256": "db3c8552e5ae5125f3ccad9d4b8802aef773ffed54a33af144e86b5968794a46"
+    },
+    {
+      "path": "src/dataset_search/acquire_small_files.py",
+      "bytes": 3026,
+      "sha256": "180ae482768ab4980e6c12d17e26ba044d761144fa7412d09fafb00a0a283350"
+    },
+    {
+      "path": "src/dataset_search/audit_small_files.py",
+      "bytes": 7194,
+      "sha256": "e207432c4bfe4ea42d95d3d942dd30725834082bbedb558fbd0b80cfbd892326"
+    },
+    {
+      "path": "src/dataset_search/build_tables.py",
+      "bytes": 6991,
+      "sha256": "e8c05a5edab6d478f01ca6fb69d9005559c3c910cffbaa50cf0929076df0a435"
+    },
+    {
+      "path": "tests/test_dataset_search.py",
+      "bytes": 1088,
+      "sha256": "5bdb42d7fa0d157ff66314c3344f0dd09808d79645d6f470164300ee2afd7add"
+    },
+    {
+      "path": "review/dataset_search_2026/PUBLICATION_NOTE.txt",
+      "bytes": 688,
+      "sha256": "7bdf2a8e243ee882b625d38f6171bf887fbfc4e381e693f7e090f471061af44b"
+    }
+  ]
+}

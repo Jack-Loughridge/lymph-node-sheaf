@@ -1,0 +1,24 @@
+{
+  "decision": "CONDITIONAL recommendation; no biologically validated dataset",
+  "recommended_pair": [
+    "SCP3259 spatial tissue",
+    "GSE307526 matched-lineage cytokine cultures"
+  ],
+  "candidates": 20,
+  "organisms": 8,
+  "detailed_candidate_ledgers": 10,
+  "subcriteria_assessed": 210,
+  "file_access_records": 36,
+  "immutable_small_files_verified": 10,
+  "stage1": "completed broad discovery",
+  "stage2": "completed bounded deep evidence audit",
+  "stage3": "PARTIAL/BLOCKED: source/reference audits complete; no new matched cell expression matrix loaded; biological overlap/detection/exposure NOT EVALUABLE",
+  "stage4": "NOT EVALUABLE; not run without prerequisites",
+  "stage5": "completed joint-gap analysis and conditional recommendation",
+  "tests": 32,
+  "deterministic_reproduction": "PASS: all small audit and catalogue/ledger exports byte-identical",
+  "original_documents_unchanged": 4,
+  "frozen_pilot_tables_unchanged": 13,
+  "new_raw_human_data_downloaded": false,
+  "github_write_performed": false
+}

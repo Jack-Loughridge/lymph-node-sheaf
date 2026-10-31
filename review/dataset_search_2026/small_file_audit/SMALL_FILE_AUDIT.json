@@ -1,0 +1,95 @@
+{
+  "status": "completed small-file/source-schema audit; biological coverage NOT EVALUABLE",
+  "planarian_timepoints": 8,
+  "planarian_source_rows": 16,
+  "planarian_minimum_rows_per_timepoint": 2,
+  "planarian_total_segmented_units_in_source": 3508004,
+  "worm_gap_reference_genes": 21,
+  "worm_reference_classes": 128,
+  "crohn_schema": {
+    "recorded_object_rows": 181597,
+    "recorded_object_features": 5001,
+    "recorded_counts_layer": true,
+    "recorded_spatial_coordinates": true,
+    "recorded_author_annotations": true,
+    "loaded_matrix": false,
+    "actual_detection_and_exposure": null
+  },
+  "age_distinct_source_sample_entries": 12,
+  "no_new_cell_expression_matrix_loaded": true,
+  "exposed_receiver_counts": null,
+  "held_out_mse_improvement": null,
+  "interpretation": "Source tables are real downloads with verified hashes. They do not substitute for matched spatial matrices, independent response maps or donor-held-out prediction.",
+  "inputs": [
+    {
+      "name": "plan_fig1c",
+      "git_blob": "337073e4791b9df9099d12a9a162aa352a6c1431",
+      "bytes": 573,
+      "sha256": "f0150c72a9a45563b86cb944ac80a8e15f0d99c8da12e5bf0279dd90d17e0126",
+      "source_url": "https://api.github.com/repos/BGI-Qingdao/4D-BioReconX/git/blobs/337073e4791b9df9099d12a9a162aa352a6c1431"
+    },
+    {
+      "name": "plan_fig1d",
+      "git_blob": "ae8609937cbabc5b125c37dc46ea9be7ddb422f6",
+      "bytes": 829,
+      "sha256": "c0a50fa08a61aee2c67f5ffe14206ee53b2dcb3123d66f933f57ff003f17d354",
+      "source_url": "https://api.github.com/repos/BGI-Qingdao/4D-BioReconX/git/blobs/ae8609937cbabc5b125c37dc46ea9be7ddb422f6"
+    },
+    {
+      "name": "plan_fig4j",
+      "git_blob": "ce961c31b31524d57df32dfdc5e961402ce5eaf3",
+      "bytes": 673,
+      "sha256": "d4da3382a62d85d542e2cd688cef23fb594bf53738e9b8547082c016757fd89a",
+      "source_url": "https://api.github.com/repos/BGI-Qingdao/4D-BioReconX/git/blobs/ce961c31b31524d57df32dfdc5e961402ce5eaf3"
+    },
+    {
+      "name": "worm_gap_expression",
+      "git_blob": "2ccf9f9eb6c74cace0c14645be24aa0112bf929b",
+      "bytes": 12761,
+      "sha256": "ac96905ac5d89068412966cd8e6ab0bca653fe3d94394b7aec44b22fb2bb7954",
+      "source_url": "https://api.github.com/repos/leiferlab/pumpprobe/git/blobs/2ccf9f9eb6c74cace0c14645be24aa0112bf929b"
+    },
+    {
+      "name": "worm_connectome",
+      "git_blob": "f312c4db1018229cb5707b259440cce768e1e727",
+      "bytes": 55102,
+      "sha256": "1370d2a7e26a17e0765edfa834c95ca59ab44d8587efb5fda330432233074165",
+      "source_url": "https://api.github.com/repos/leiferlab/pumpprobe/git/blobs/f312c4db1018229cb5707b259440cce768e1e727"
+    },
+    {
+      "name": "crohn_annotation",
+      "git_blob": "8ed30965477b4fb06da117ec96f613e5933e629b",
+      "bytes": 4112,
+      "sha256": "cd12bb60629e3c107961ece39a4b8b9951f1f4a131db7c4582c09e56e37f2c56",
+      "source_url": "https://api.github.com/repos/Teichlab/crohns-fibroblast-atlas/git/blobs/8ed30965477b4fb06da117ec96f613e5933e629b"
+    },
+    {
+      "name": "crohn_response_a",
+      "git_blob": "6a3c136fc2090ce5f9d099677d4533b63da8c5c9",
+      "bytes": 20636,
+      "sha256": "c68f924cb8fbf8e66d791ea03921246a7de98d8b1a4608c29426305180360bfb",
+      "source_url": "https://api.github.com/repos/Teichlab/crohns-fibroblast-atlas/git/blobs/6a3c136fc2090ce5f9d099677d4533b63da8c5c9"
+    },
+    {
+      "name": "crohn_response_b",
+      "git_blob": "f8ccdcd19470ab4b29170c228c0c95e7c009d4e7",
+      "bytes": 28572,
+      "sha256": "a4095ee465f1a9e159a8dadf002dc29af1888693a81c3b218ceebfd5c42e283b",
+      "source_url": "https://api.github.com/repos/Teichlab/crohns-fibroblast-atlas/git/blobs/f8ccdcd19470ab4b29170c228c0c95e7c009d4e7"
+    },
+    {
+      "name": "age_metadata_code",
+      "git_blob": "5da32b8233421d862c5ddce1f51e03675ae04d5f",
+      "bytes": 3731,
+      "sha256": "08408ec3fe085f1b7ee68823c9490cb361f86769c0f3ea442d3f72b7e1f5196a",
+      "source_url": "https://api.github.com/repos/doughenze/Microglial_Morphology/git/blobs/5da32b8233421d862c5ddce1f51e03675ae04d5f"
+    },
+    {
+      "name": "sp_vignette",
+      "git_blob": "66a3c1b56ae2813688e4a8b80bafcd44ef93c86e",
+      "bytes": 8974,
+      "sha256": "99c58b392cb6488671d5dd71ea0cc004c52169040d947417e4eb0b27310a2f19",
+      "source_url": "https://api.github.com/repos/kimberle9/spatialperturbseq/git/blobs/66a3c1b56ae2813688e4a8b80bafcd44ef93c86e"
+    }
+  ]
+}
