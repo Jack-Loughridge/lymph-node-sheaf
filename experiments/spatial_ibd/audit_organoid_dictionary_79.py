@@ -89,6 +89,8 @@ def main():
         default=Path.home()/"Real_Data/spatial_ibd_sheaf/outputs/organoid_79_audit")
     p.add_argument("--min-total-umis",type=int,default=50)
     p.add_argument("--chunksize",type=int,default=256)
+    p.add_argument("--panel-only",action="store_true",
+                   help="Report measured ligand and receptor genes without scanning all cell counts")
     args=p.parse_args()
     root=args.root.expanduser(); out=args.out.expanduser()
     out.mkdir(parents=True,exist_ok=True)
@@ -130,6 +132,26 @@ def main():
             "full_panel_lr_eligible":int(bool(symbol and symbol in panel and covered_rec)),
             "example_panel_receptor_complexes":";".join("_".join(r) for r in covered_rec[:15]),
         })
+    if args.panel_only:
+        write_csv(out/"79_factor_panel_and_liana_coverage.csv",rows)
+        ligand_measured=sum(x["factor_gene_in_cosmx_panel"] for x in rows)
+        LR_eligible=sum(x["full_panel_lr_eligible"] for x in rows)
+        missing=[x["factor_reagent_name"] for x in rows
+                 if x["status"]=="single_gene_symbol"
+                 and not x["factor_gene_in_cosmx_panel"]]
+        summary={
+            "number_of_treatments":79,
+            "ambiguous_gene_family":"IFNA (cannot represent by one HGNC symbol)",
+            "single_gene_factors":78,
+            "ligand_genes_in_CosMx_panel":ligand_measured,
+            "factors_with_ligand_and_complete_LIANA_receptor_in_panel":LR_eligible,
+            "not_measured_ligand_genes":missing,
+            "note":"Panel presence only: does not establish actual expression, protein secretion, or downstream response."
+        }
+        (out/"panel_only_summary.json").write_text(json.dumps(summary,indent=2))
+        print(json.dumps(summary,indent=2))
+        print("See",out/"79_factor_panel_and_liana_coverage.csv")
+        return
     flookup={x["factor_reagent_name"]:x for x in rows}
     sample_counts={}
     stats={ (geo,name):[0,0] for group in SPECIMENS.values()
