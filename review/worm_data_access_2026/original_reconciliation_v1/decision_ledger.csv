@@ -1,0 +1,4 @@
+option,decision,evidence,next
+Complete measured neural-state sheaf,NO-GO under frozen complete-case gate,29/29 ROIs and traces present; 0 complete-case target traces; 19 descriptive observed summaries,Resolve original masks and matchless provenance; no blind expansion
+Experimentally constrained input-output sheaf,PARTIAL GO for formulation and reconciliation only,25 recipient-qualified events from prior frozen diagnostic; original autoresponse status unknown,Crosswalk intended stimulus identity and curation; independent-animal validation against strong baselines
+WT versus unc-31,NO-GO pending access and protocol audit,No original WT/mutant export payload available here; no mutant audit,Obtain originals and animal keys; reconcile pulse protocols and inclusion; do not infer direct coupling

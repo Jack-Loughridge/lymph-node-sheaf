@@ -1,0 +1,21 @@
+{
+  "scope": "Technical QC only; rules frozen after schema/identity-scale inspection and before extended trace/outcome summaries. Not a biological acceptance-criteria replacement.",
+  "primary_identity_minimum": 0.9,
+  "identity_sensitivity_thresholds": [1.0, 0.8],
+  "identity_requirements": "Explicit manual target id; explicit numeric PumpProbe-to-NeuroPAL join; unique nonempty canonical name; confidence finite and in [0,1]; no nearest-position imputation. Author confidence is not independently calibrated correctness.",
+  "baseline_window_seconds": [-10.0, 0.0],
+  "response_window_seconds": [1.0, 20.0],
+  "stimulus_artifact_exclusion": "Response starts 1 s after onset, at least 0.5 s after stored 0.5 s pulse; no response-amplitude or autoresponse requirement.",
+  "minimum_finite_fraction_in_each_window": 0.95,
+  "maximum_time_gap_multiplier_of_median_dt": 3.0,
+  "maximum_consecutive_missing_seconds": 2.0,
+  "minimum_frames_each_window": 5,
+  "baseline_requirement": "F0 median finite baseline >0 and >=5 times robust baseline difference noise for fractional fluorescence use; negative samples alone do not cause whole-animal exclusion.",
+  "baseline_snr_sensitivity": [0.0, 3.0],
+  "noise_estimator": "MAD(diff(finite adjacent baseline))/0.67448975/sqrt(2). Never bridge a missing sample to estimate noise.",
+  "trial_requirement": "Eligible manual high-confidence target with usable target trace and >=1 different high-confidence receiver with usable trace. Also report >=5 and >=10 receiver coverage; receiver-trial masks are retained.",
+  "exclusions": "Out of bounds; overlap with another stimulus in analyzed baseline/response windows; long timestamp gap; low finite fraction; long missing run; nonpositive or low-SNR baseline; entirely flat recording ROI; missing/ambiguous/low-confidence manual target.",
+  "washout_caveat": "The 10 s baseline is not assumed free of previous physiological response; report time since previous pulse and retain a separate 30 s prewindow plus 30 s prior-response-washout sensitivity from prepared audit. No claim of original sham-statistic reproduction.",
+  "no_normalization_fit": true,
+  "no_response_or_sheaf_fit": true
+}

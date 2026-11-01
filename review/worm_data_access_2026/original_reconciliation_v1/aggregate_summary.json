@@ -1,0 +1,24 @@
+{
+  "nwb_reconciliation": {
+    "high_confidence_events": 29,
+    "target_rois_found": 29,
+    "any_missing_timestamps": 0,
+    "failed_95pct_completeness": 29,
+    "failed_only_95pct_completeness": 5,
+    "same_frozen_windows_5pct_run_component_pass": 6,
+    "long_missing_run_over_2s": 21,
+    "low_or_undefined_snr": 11,
+    "nonpositive_or_absent_baseline": 3,
+    "nwb_60s_5pct_run_component_pass": 12,
+    "nwb_90s_5pct_run_component_pass": 12,
+    "nwb_90s_30pct_run_component_pass": 22,
+    "observed_target_summary_available": 19,
+    "original_full_inclusion_decisions_known": 0
+  },
+  "original_export_status": "NOT_AVAILABLE",
+  "expansion_performed": false,
+  "source_component_checks_not_full_author_inclusion": true,
+  "frozen_qc_modified": false,
+  "no_interpolation_or_response_fit_performed": true,
+  "event_level_csv": "data/worm_data_access_2026/original_reconciliation_v1/event_failure_decomposition.csv"
+}

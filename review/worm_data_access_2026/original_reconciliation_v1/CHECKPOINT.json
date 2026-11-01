@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-01",
+  "original_recording_files_hash_verified": 3,
+  "events_reconciled_with_NWB": 29,
+  "original_export_archives_retrieved": 0,
+  "original_cross_repository_session_matches_verified": 0,
+  "source_files_hash_verified": 6,
+  "new_tests_passed": 12,
+  "original_frozen_files_unchanged": 21,
+  "frozen_qc_modified": false,
+  "new_animals_downloaded": 0,
+  "models_fitted": 0,
+  "publication_policy": "Only explicit code/configuration/public-source-metadata and aggregate-report allowlist; event-level observations remain ignored"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "subject": "sub-36",
+    "filename": "sub-36_ses-20220331-114306_desc-segmentation_ophys+ogen.nwb",
+    "bytes": 14677722,
+    "asset_id": "673e796f-6d4e-4822-923a-199d3766f734",
+    "s3_url": "https://dandiarchive.s3.amazonaws.com/blobs/5b9/d99/5b9d9992-8465-420e-9d5a-2595b0194ca0",
+    "api_url": "https://api.dandiarchive.org/api/assets/673e796f-6d4e-4822-923a-199d3766f734/download/",
+    "sha256": "01263dccbf63cf97289026c90d581232d60da293d48c6ba40fe9f1392c9585eb",
+    "dandi_etag": "791ed0ff298cf0a7085323b09a8a60b0-1",
+    "version": "0.240930.1859"
+  },
+  {
+    "subject": "sub-72",
+    "filename": "sub-72_ses-20230309-143050_desc-segmentation_ophys+ogen.nwb",
+    "bytes": 16792862,
+    "asset_id": "79830866-9ef7-4682-ba62-cfbb71c09b88",
+    "s3_url": "https://dandiarchive.s3.amazonaws.com/blobs/6b8/6dd/6b86dd15-7517-4d34-b44a-6c526d3cdd1c",
+    "api_url": "https://api.dandiarchive.org/api/assets/79830866-9ef7-4682-ba62-cfbb71c09b88/download/",
+    "sha256": "e49b0c07fffc69eac825320658b7d9d267058210736252744be20285fa01896d",
+    "dandi_etag": "0baafe5565bbdc22e3d65887999198a5-1",
+    "version": "0.240930.1859"
+  },
+  {
+    "subject": "sub-80",
+    "filename": "sub-80_ses-20230314-164209_desc-segmentation_ophys+ogen.nwb",
+    "bytes": 14177165,
+    "asset_id": "a6f148b1-3897-4664-8fd2-fbbeaa55d7c4",
+    "s3_url": "https://dandiarchive.s3.amazonaws.com/blobs/f61/dd7/f61dd73b-6dbd-4ec7-ba5d-e801c1f36bad",
+    "api_url": "https://api.dandiarchive.org/api/assets/a6f148b1-3897-4664-8fd2-fbbeaa55d7c4/download/",
+    "sha256": "e9ab75144798d086d114f4a0dc8a48b9a7cdd27decc86472d2807a67a41f3047",
+    "dandi_etag": "344c0e884c4aab5c42a1bda69a270d0b-1",
+    "version": "0.240930.1859"
+  }
+]

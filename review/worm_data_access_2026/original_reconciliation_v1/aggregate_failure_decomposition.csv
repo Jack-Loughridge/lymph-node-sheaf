@@ -1,0 +1,4 @@
+subject,high_confidence_events,target_rois_found,any_missing_timestamps,failed_95pct_completeness,failed_only_95pct_completeness,same_frozen_windows_5pct_run_component_pass,long_missing_run_over_2s,low_or_undefined_snr,nonpositive_or_absent_baseline,nwb_60s_5pct_run_component_pass,nwb_90s_5pct_run_component_pass,nwb_90s_30pct_run_component_pass,observed_target_summary_available,full_trace_green_red_missing_masks_equal,observed_green_values_preserved_by_stored_interpolation,original_full_inclusion_decisions_known
+sub-36,2,2,0,2,0,0,2,1,0,1,1,2,2,True,True,0
+sub-72,12,12,0,12,2,3,7,7,0,5,6,10,8,True,True,0
+sub-80,15,15,0,15,3,3,12,3,3,6,5,10,9,True,True,0
