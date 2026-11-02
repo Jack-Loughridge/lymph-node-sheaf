@@ -1,0 +1,26 @@
+test_ambiguous_sample_not_guessed (test_spatial_audit.SpatialAuditTests.test_ambiguous_sample_not_guessed) ... ok
+test_bad_categorical_code (test_spatial_audit.SpatialAuditTests.test_bad_categorical_code) ... ok
+test_complete_complex_is_AND (test_spatial_audit.SpatialAuditTests.test_complete_complex_is_AND) ... ok
+test_marker_availability_does_not_impute (test_spatial_audit.SpatialAuditTests.test_marker_availability_does_not_impute) ... ok
+test_missing_category_not_last_label (test_spatial_audit.SpatialAuditTests.test_missing_category_not_last_label) ... ok
+test_no_sender_no_exposure (test_spatial_audit.SpatialAuditTests.test_no_sender_no_exposure) ... ok
+test_panel_incompatible_markers_are_unevaluable (test_spatial_audit.SpatialAuditTests.test_panel_incompatible_markers_are_unevaluable) ... ok
+test_physical_radius_boundary (test_spatial_audit.SpatialAuditTests.test_physical_radius_boundary) ... ok
+test_shared_slide_resolved_by_explicit_biobank (test_spatial_audit.SpatialAuditTests.test_shared_slide_resolved_by_explicit_biobank) ... ok
+test_sparse_rows_and_offsets (test_spatial_audit.SpatialAuditTests.test_sparse_rows_and_offsets) ... ok
+test_threshold_requires_all_subunits (test_spatial_audit.SpatialAuditTests.test_threshold_requires_all_subunits) ... ok
+test_unknown_condition_not_called_healthy (test_spatial_audit.SpatialAuditTests.test_unknown_condition_not_called_healthy) ... ok
+test_absolute_path (test_transfer.TransferTests.test_absolute_path) ... ok
+test_corruption (test_transfer.TransferTests.test_corruption) ... ok
+test_duplicate (test_transfer.TransferTests.test_duplicate) ... ok
+test_matching_payload (test_transfer.TransferTests.test_matching_payload) ... ok
+test_missing (test_transfer.TransferTests.test_missing) ... ok
+test_no_source_modification (test_transfer.TransferTests.test_no_source_modification) ... ok
+test_size (test_transfer.TransferTests.test_size) ... ok
+test_traversal (test_transfer.TransferTests.test_traversal) ... ok
+test_windows_path (test_transfer.TransferTests.test_windows_path) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.029s
+
+OK

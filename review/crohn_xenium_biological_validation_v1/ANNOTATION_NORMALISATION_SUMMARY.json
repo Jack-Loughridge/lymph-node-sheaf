@@ -1,0 +1,23 @@
+{
+  "initial_structural_markers": [
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "DCN",
+    "LUM",
+    "PDGFRA"
+  ],
+  "initial_structural_markers_measured": [
+    "PDGFRA"
+  ],
+  "initial_ge2_marker_eligibility_status": "NOT EVALUABLE: only one prescribed marker is measured; empty mask is not absence of fibroblasts",
+  "diagnostic_panel_markers": [
+    "FAP",
+    "PDPN"
+  ],
+  "independent_orthogonal_validation": false,
+  "broad_refined_field_concordance_among_annotated": 0.8950147911616134,
+  "refined_annotation_coverage_in_QC": 0.7881946587803523,
+  "normalised_X_checked_rows": 16000,
+  "normalisation_checks_all_pass": true
+}

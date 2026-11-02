@@ -1,0 +1,4 @@
+programme,max_receptor_fraction,max_local_candidate_fraction,max_local_candidate_count_in_one_tissue
+IFNG,0.031955688112484,0.0093457943925233,50
+IL1B,0.0153887688984881,0.0034364261168384,22
+TNF,0.2687634024303074,0.0331568040524982,297

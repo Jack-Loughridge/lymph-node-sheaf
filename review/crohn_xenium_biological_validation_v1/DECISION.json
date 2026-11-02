@@ -1,0 +1,13 @@
+{
+  "decision": "NO-GO",
+  "scope": "Validated local signalling and multiscale sheaf with current measured assay under frozen criteria",
+  "spatial_ingestion": "PARTIAL GO",
+  "prediction_fitted": false,
+  "patient_mapping_S1_verified": false,
+  "external_signatures_verified": false,
+  "subtype_receptor_bound_passing_scenarios": {
+    "IFNG": 0,
+    "IL1B": 0,
+    "TNF": 11
+  }
+}

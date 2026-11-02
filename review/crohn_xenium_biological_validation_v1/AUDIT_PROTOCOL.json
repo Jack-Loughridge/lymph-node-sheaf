@@ -1,0 +1,16 @@
+{
+  "scope": "Actual sparse spatial audit. No patient-grouped inference or predictive fitting until S1 mapping and external cytokine signatures are verified.",
+  "primary_programmes": {"IFNG":{"ligand":"IFNG","receptor":["IFNGR1","IFNGR2"]},"TNF":{"ligand":"TNF","receptor":["TNFRSF1A"]},"IL1B":{"ligand":"IL1B","receptor":["IL1R1","IL1RAP"]}},
+  "OSM_policy": "OSMR absent from actual panel; exclude from primary complete-receptor analysis. Inventory LIFR/IL6ST only; do not use alternate route to rescue primary results.",
+  "QC": {"primary_min_raw_panel_counts":100,"primary_min_detected_panel_genes":20,"sensitivity_min_counts":[20,50],"coordinate_requirement":"finite and positive cell area"},
+  "receiver": "Primary: refined annot_new contains fibroblast (including myofibroblast), source broad Mesenchymal, xenium4 confidence >=0.8, and >=2 detected structural fibroblast markers (COL1A1,COL1A2,COL3A1,DCN,LUM,PDGFRA). Also report all annotated fibroblasts and all mesenchymal cells as separate sensitivity denominators.",
+  "annotation_policy": "Author confidence is not independent identity validation. Marker corroboration is reported explicitly and is not substituted for orthogonal protein evidence. Do not fit new cell identities using outcomes.",
+  "sender": "Primary immune classes B and B plasma, Myeloid, T and NK cells; no self edges. Quantify ligand expression in all source lineages separately.",
+  "background_screen": "Per biosample, ligand and every receptor subunit must have >= max(2, 1+empirical 99.9th percentile of per-cell negative-control probe+codeword counts in QC cells), and exceed the same cell's total negative controls. This is a conservative aggregate-control screen, not a calibrated per-probe error model. Missing per-probe controls remain a limitation.",
+  "sensitivity": "Upper bound: raw >=1 molecule, no background or spatial constraint (receptor competence bounds possible exposure). Also raw >=2 and >=3 molecule co-detection. Do not choose favourable thresholds.",
+  "radii": "1.5, 2.5, 4 times each biosample's median QC segmentation-equivalent diameter from cell_area; nominal 2.5. Units follow unscaled standard Xenium centroids/area with 10x documentation.",
+  "background_robustness": "Report screen exposures and receptor-only permissive bounds. Exposure is transcript-based plausibility, not measured protein occupancy or secreted ligand.",
+  "gene_exclusions": "All ligand/receptor inputs; all primary annotation/marker genes and explicit state-label marker genes must be excluded from external outcome dictionary before overlap/counting. Cell-type DEGs stored in uns are not cytokine perturbation signatures.",
+  "sample_mapping": "Use complete biosample identifier plus embedded biobank where available and workbook row/SCP order; never collapse donor_id to independent patient. Keep mapping provisional until S1 verified, and keep exact crosswalk under ignored data/.",
+  "stopping_rule": "If fewer than two programmes can possibly reach >=20% receiver coverage even under >=1-count complete-receptor upper bound across specimens, do not fit or impute receptors. Unresolved signature/mapping gates remain NOT EVALUABLE. No held-out validation before prerequisites pass."
+}

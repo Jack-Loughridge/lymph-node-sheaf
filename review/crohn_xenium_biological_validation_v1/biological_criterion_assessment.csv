@@ -1,0 +1,15 @@
+criterion,status,evidence
+A1,PASS,"100% unique expression-row and composite specimen/cell joins; all 2,131,098 centroids finite. Tissue boundaries respected; no exact tissue outline."
+A2,PASS,Unscaled Xenium x/y centroids and cell areas; standard units micrometres and square micrometres; coordinates match obsm/spatial.
+A3,NOT EVALUABLE,Broad labels assigned to 100%; credible independent validation unavailable. Refined QC label completeness 78.8195%; annotation agreement is not accuracy.
+A4,NOT EVALUABLE,Only PDGFRA of six frozen structural markers measured; >=2-marker eligibility cannot be assessed. FAP/PDPN diagnostics cannot replace gate.
+B1,NOT EVALUABLE,"IFNG, TNF, IL1B ligands and canonical receptor genes present; external perturbation payload and gene-disjoint dictionary not inspected."
+B2,NOT EVALUABLE,No verified cytokine signatures: >=10 response genes and >=5 detected in >=20% receivers cannot be evaluated.
+B3,NOT EVALUABLE,"Culture replicate effects, significance and reproducibility unavailable; four cell-line cultures would not be independent tissue patients."
+C1,FAIL,"Across all tested author fibroblast subtypes, IFNG and IL1B each have zero QC/subtype scenarios satisfying even receptor-only >=100 and >=20% in >=3 tissues; two programmes cannot pass."
+C1 patient identity,NOT EVALUABLE,Workbook supports 16 tissues/8 provisional pairs; authoritative S1 unavailable. No patient-grouped statistics performed.
+C2,NOT EVALUABLE,"Aggregate negative-control screen evaluated, but per-probe calibrated controls and protein occupancy absent. Liberal bounds already fail."
+C3,PASS,"Coverage sensitivity across 1.5/2.5/4 diameters, raw thresholds 1/2/3 and QC count floors 20/50/100/200; all canonical subunits retained. This methodological PASS does not pass C."
+D1-D4,NOT EVALUABLE,No response prediction fitted: prerequisites failed/unverified. No MSE improvements or patient confidence interval claimed.
+E1-E4,NOT EVALUABLE,Coverage sensitivity completed; predictive sign stability and downsampling not evaluated because no model fitted.
+F,NOT EVALUABLE,"Eight workbook patients provisionally recovered, not seven slide categories; S1 not verified. Affected/adjacent pairing is not independent case/control replication."

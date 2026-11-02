@@ -1,0 +1,10 @@
+{
+  "file": "xenium5k_scVI_CellCharter_batch2_reannot_SCP.h5ad",
+  "bytes": 8984620838,
+  "sha256": "74759d2d474964dcb537533127f0683bdb9180030f3b94a8f3f8271a061494bb",
+  "cells": 2131098,
+  "genes": 5001,
+  "format": "H5AD / CSR raw counts and log-normalised X",
+  "source": "https://singlecell.broadinstitute.org/single_cell/study/SCP3259",
+  "private_linkage_published": false
+}
