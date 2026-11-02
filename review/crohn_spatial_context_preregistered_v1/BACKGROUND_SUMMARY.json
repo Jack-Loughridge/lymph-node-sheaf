@@ -1,0 +1,9 @@
+{
+  "official_equivalent": false,
+  "negative_control_features_retained_in_gene_matrix": 0,
+  "panel_control_denominator_verified": false,
+  "probe_and_codeword_counts_available_separately": true,
+  "per_probe_profiles_available": false,
+  "original_files_verified_unchanged": 53,
+  "run_specific_panel_json_and_analysis_summary_missing": true
+}

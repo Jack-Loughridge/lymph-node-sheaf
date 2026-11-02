@@ -1,0 +1,32 @@
+[
+  {
+    "file": "GSE307526_processed_bulkRNAseq_cytokine_stimulations.csv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307526/suppl/GSE307526_processed_bulkRNAseq_cytokine_stimulations.csv.gz",
+    "status": "BLOCKED",
+    "error": "HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE307nnn/GSE307526/suppl/GSE307526_processed_bulkRNAseq_cytokine_stimulations.csv.gz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7095c8e4baf0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+  },
+  {
+    "file": "41590_2026_2617_MOESM3_ESM.pdf",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM3_ESM.pdf",
+    "status": "BLOCKED",
+    "error": "HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM3_ESM.pdf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7095c8e4afe0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+  },
+  {
+    "file": "41590_2026_2617_MOESM6_ESM.csv",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM6_ESM.csv",
+    "status": "BLOCKED",
+    "error": "HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM6_ESM.csv (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7095c8e4bdf0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+  },
+  {
+    "file": "41590_2026_2617_MOESM9_ESM.csv",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM9_ESM.csv",
+    "status": "BLOCKED",
+    "error": "HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM9_ESM.csv (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7095c8e4bcd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+  },
+  {
+    "file": "41590_2026_2617_MOESM12_ESM.csv",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM12_ESM.csv",
+    "status": "BLOCKED",
+    "error": "HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41590-026-02617-0/MediaObjects/41590_2026_2617_MOESM12_ESM.csv (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7095c8e4ba00>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+  }
+]

@@ -1,0 +1,16 @@
+criterion,status,evidence
+Original acceptance criteria preserved,PASS,53 original files/specifications hash-verified unchanged
+Background method equivalence,FAIL,Pooling probe/codeword counts and minimum-two threshold are not the 10x per-control mean
+Run-specific background calibration,NOT EVALUABLE,Missing verified control-target denominator and per-control profiles
+Alternative estimand and prospective protocol,PASS,Separate hash-frozen protocol before response construction or model fitting
+Authoritative eight-patient paired mapping,NOT EVALUABLE,S1 download blocked; workbook provisional; no slide-based grouping
+Independent receiver identity and type competence,NOT EVALUABLE,Must audit target-excluded identity and type-specific external receptor/function evidence
+External response dictionary and reproducibility,NOT EVALUABLE,Three DEG tables and GSE307526 payload unavailable
+Two mechanistically distinct response programmes,NOT EVALUABLE,Must quantify shared genes and test distinct-target coverage
+New context support coverage,NOT EVALUABLE,No calibrated neighbourhood exposure computed
+Independent anatomical-region confounding control,NOT EVALUABLE,No verified independent anatomical labels/outlines
+Held-out improvement versus all strong baselines,NOT EVALUABLE,No fitting performed
+Spatial-null preservation and performance,NOT EVALUABLE,No fitting or null performance evaluation performed
+Patient uncertainty and stability,NOT EVALUABLE,No held-out results available
+Direct causal signalling interpretation,NOT IDENTIFIABLE,Static association cannot separate prior exposure and epigenetic persistence
+Alternative overall decision,BLOCKED / NOT EVALUABLE,Do not infer scientific failure from access blocker

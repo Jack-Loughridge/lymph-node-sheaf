@@ -1,0 +1,14 @@
+test_complete_pairs (test_protocol.ProtocolTests.test_complete_pairs) ... ok
+test_html_not_csv (test_protocol.ProtocolTests.test_html_not_csv) ... ok
+test_no_slide_surrogate (test_protocol.ProtocolTests.test_no_slide_surrogate) ... ok
+test_original_and_protocol_frozen (test_protocol.ProtocolTests.test_original_and_protocol_frozen) ... ok
+test_pair_holdout (test_protocol.ProtocolTests.test_pair_holdout) ... ok
+test_probe_denominator (test_protocol.ProtocolTests.test_probe_denominator) ... ok
+test_reject_duplicate (test_protocol.ProtocolTests.test_reject_duplicate) ... ok
+test_requires_s1 (test_protocol.ProtocolTests.test_requires_s1) ... ok
+test_reuse_rejected (test_protocol.ProtocolTests.test_reuse_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

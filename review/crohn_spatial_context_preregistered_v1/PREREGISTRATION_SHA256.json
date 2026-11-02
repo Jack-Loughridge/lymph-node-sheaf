@@ -1,0 +1,8 @@
+{
+  "review/crohn_spatial_context_preregistered_v1/PREREGISTRATION.md": "2cea2da001c893d03d738b27a809a37e2906889de8d1251e1b0fade23b5ad5aa",
+  "review/crohn_spatial_context_preregistered_v1/BACKGROUND_METHOD_AUDIT.md": "75819077a9a68ba0daccdcbf8058a6e62b5e1a78d1f16f8433b4909a60b90fcd",
+  "review/crohn_spatial_context_preregistered_v1/protocol_checks.py": "a2adc64b8ca6ab24fd10a7b78ffea498261d05b184e032005eccd6e66290ffd4",
+  "review/crohn_spatial_context_preregistered_v1/background_audit.py": "d515f50357cbb07a8bba9ccfe15e2f76e62c854144070f00ec5d0fe075eac9c5",
+  "review/crohn_spatial_context_preregistered_v1/test_protocol.py": "830be2d848f54d2c2e7294fad5c3b184bff5457a3af9e0ceca341e8b54acf827",
+  "review/crohn_spatial_context_preregistered_v1/retrieve_supporting_files.py": "d41a17a0ea801792736d284ead3dd1afbbbddefc6cda0013eea314e7b0615d53"
+}

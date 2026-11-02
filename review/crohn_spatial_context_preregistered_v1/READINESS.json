@@ -1,0 +1,12 @@
+{
+  "status": "BLOCKED_NOT_EVALUABLE",
+  "missing_reviewed_artifacts": [
+    "verified_S1_crosswalk_PRIVATE.json",
+    "verified_response_dictionary_PRIVATE.json",
+    "verified_competence_ledger_PRIVATE.json",
+    "verified_anatomy_and_controls_PRIVATE.json"
+  ],
+  "prediction_fitted": false,
+  "original_NO_GO_unchanged": true,
+  "preregistration_hashes_verified": true
+}
