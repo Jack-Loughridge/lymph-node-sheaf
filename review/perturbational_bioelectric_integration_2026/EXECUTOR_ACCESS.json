@@ -1,0 +1,13 @@
+{
+  "free_bytes": 17793187840,
+  "meminfo": {
+    "MemTotal": "16379052 kB",
+    "MemAvailable": "13782364 kB"
+  },
+  "initial_download_budget_bytes": 50000000,
+  "absolute_without_further_gate_budget_bytes": 150000000,
+  "raw_volume_downloads_allowed": false,
+  "probe_url": "https://datadryad.org/api/v2/datasets/doi:10.5061/dryad.83bk3jb0j",
+  "status": "EXECUTOR_NETWORK_BLOCKED",
+  "error": "HTTPSConnectionPool(host='datadryad.org', port=443): Max retries exceeded with url: /api/v2/datasets/doi:10.5061/dryad.83bk3jb0j (Caused by NameResolutionError(\"HTTPSConnection(host='datadryad.org', port=443): Failed to resolve 'datadryad.org' ([Errno -2] Name or service not known)\"))"
+}

@@ -1,0 +1,167 @@
+{
+  "scope": "Own code, tests and aggregate evidence only; excludes this manifest itself",
+  "files": [
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/ACCESS_FILE_MANIFEST.csv",
+      "bytes": 3005,
+      "sha256": "2731d7e62de924d05e8d3f91702f647beaeb3143555bf5eef208449c7b5ee2b7",
+      "git_blob_sha1": "2046124498462e3dad3992e91d3512e7057723be"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/ACTUAL_DATA_AUDIT.json",
+      "bytes": 773,
+      "sha256": "36be3d764e9d7d0cf6a00b7014c3864bdc17e6475c90058bcec47806b5dabf0c",
+      "git_blob_sha1": "5cd014f9287f69d9654c58e812e3010803b1e9bc"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/AUTHOR_CODE_INTEGRITY.json",
+      "bytes": 131,
+      "sha256": "e33f0378b69a67e91423eb9b7c407ebcb251f1db58c593ea246dd6768729b4aa",
+      "git_blob_sha1": "4c5eeb2d4cc6757daaf119cc335ab9ed0433a347"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/AUTHOR_EXPORT_SCHEMA_AUDIT.json",
+      "bytes": 1084,
+      "sha256": "051c0010abb35bb79ee854b9a764226b7f999f7c5c9d821dfeb9f25665b19eaa",
+      "git_blob_sha1": "1ff0d603c8c6b3bd088bf219e83ab8bdedaaef93"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/AUTHOR_EXPORT_SCHEMA_AUDIT_before_exact_byte_reconciliation.json",
+      "bytes": 999,
+      "sha256": "234ab6e40c8e980ec8da68cab2660d6525fba29a8a03972be28ac7c431b9cc6c",
+      "git_blob_sha1": "9817deffc129dc8d3b76a7874db3618784c763ae"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/AUTHOR_REQUESTS.md",
+      "bytes": 5193,
+      "sha256": "8813a26bba34465d017f6878f92d2559d1b15b66fc68cb5ce68ca41a8bd0506b",
+      "git_blob_sha1": "2a97d98dc81228c78133bd83477afee33893cc7a"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/CANDIDATE_RANKING.csv",
+      "bytes": 8401,
+      "sha256": "d61eadbe111f36d6433ecb86c77a904995e96de17edfb1870a6d02eabbf4218f",
+      "git_blob_sha1": "f599f92edbe1fecc02c7abf00fc87d463f22fd3c"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/CLEANUP_AGGREGATE.json",
+      "bytes": 905,
+      "sha256": "546efcf65fc30478a51f95c4d13b693e807ec4a2b6deef51dc4f00c19d811795",
+      "git_blob_sha1": "1a7fe9563dabdde8fd6b00e541ff32fbfd1859a9"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/CLEANUP_NOTES.md",
+      "bytes": 2684,
+      "sha256": "39f5a304539aa5096f46a3b490e78a9b76e769eadda2ff4fe59a9904912faa49",
+      "git_blob_sha1": "6a903d36bbb547b8cc1cbb52398abeca05099cc7"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/DECISION.json",
+      "bytes": 1010,
+      "sha256": "9f09a77b9247e6b73e52c2afad653d24ef61625d86f71a611ba94948a2599d58",
+      "git_blob_sha1": "a05d1d96cdc7b6708163ce378beaa98e83c43f82"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/EXECUTOR_ACCESS.json",
+      "bytes": 688,
+      "sha256": "68ca8ee20b63d7f516548a1548dd7b2010ad1753c322a3584b6dc538b4892cb4",
+      "git_blob_sha1": "ee67cf04dc195665dae3ebcbf05c1d09387765de"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/FINAL_STORAGE_STATUS.json",
+      "bytes": 262,
+      "sha256": "44c4734cd7c52884c6786eb143c593157bcf045111ef37ca1e944fbbedfb9556",
+      "git_blob_sha1": "b4a53aa04de56cae1724cc0eafa2bd4296d140e6"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/HARD_GATE_LEDGER.csv",
+      "bytes": 22883,
+      "sha256": "ca53adb5bfe9e034e565303ff9b4644b0c12254cb104a42fd4b69e2e376a23d1",
+      "git_blob_sha1": "f2aa5478fa647d44597df799575cef68f8147852"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/MANUAL_TRANSFER.md",
+      "bytes": 3876,
+      "sha256": "2f21ef19e9423965b791b2568c986a40a81cdd8b25f3f32244eecbd41bb82528",
+      "git_blob_sha1": "7eafd907238105335078699790b2d902f93d4c3f"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/MATHEMATICAL_DESIGN.md",
+      "bytes": 9003,
+      "sha256": "cb9b565ed30e7e3e5de67182fb3fa807b5bf3b9dd442e5bad39e4209e812dbbe",
+      "git_blob_sha1": "ac73210a3e06aa6906904addf65637b5b317c2b1"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/PRESERVATION_CHECK.json",
+      "bytes": 450,
+      "sha256": "449f822e08cbec9f3153ba15744c568256f6e06ff26c30611ed3be1aa9ef2efe",
+      "git_blob_sha1": "838841568288b1a2f11986fd6ff06acd620727cb"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/REPORT.md",
+      "bytes": 14003,
+      "sha256": "6a47b778a304228407e959bb4d61aab62c11675d7a102a6c064da0b320370fc8",
+      "git_blob_sha1": "0a51786129b7604d01fc452f69b92ed43a472f16"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/REPRODUCTION.md",
+      "bytes": 3675,
+      "sha256": "61e2c28659f32089e51acaee3154240a98e3e1207c6f3f5441ccc6125f5f18cb",
+      "git_blob_sha1": "149ae0c2535d69285dd2628d814658c9d4aac0c1"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/RETRIEVED_CODE_INVENTORY.json",
+      "bytes": 1329,
+      "sha256": "545e98c4db56bd6f7dfc970e1393b37c19ad0107fcc12ab44cf3a97669771f30",
+      "git_blob_sha1": "788b92df51c9767a993ac207e3195f544d56ba18"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/TARGETED_ACCESS_DIAGNOSTICS.json",
+      "bytes": 1213,
+      "sha256": "88c30e1b332bcb77832737e6465a6413471ba967a5f6ae040509ba15d06f5634",
+      "git_blob_sha1": "68642b5edf9980af8da4af26e07bf51d28087745"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/TEST_RESULTS.json",
+      "bytes": 271,
+      "sha256": "8c1a02648efb3ac08635c258c971634835c68ed0d34c0372cff233285ac03d2e",
+      "git_blob_sha1": "b0bb34b9c762074d3140c9183e9e1d82d16f8238"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/VALIDATION_PROTOCOL.md",
+      "bytes": 7762,
+      "sha256": "ffa146d5af77ba5ab2c6db95480510860d448b0870eacfc65a3a3b33785c9d0c",
+      "git_blob_sha1": "6eaada2d56dcb3e39260b641f09b6561f064a8e9"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/audit_author_exporter.py",
+      "bytes": 1842,
+      "sha256": "f0f783af625842c8f1506876c17475af235cb419f4cf71db57d34b6c57a7e3df",
+      "git_blob_sha1": "ccdf33f2464385785472a210e8b2f19349cfccd9"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/audit_small_payload.py",
+      "bytes": 6074,
+      "sha256": "43155250ba6896b6df2e98c863655a82842b5eb1689ee7e1d2cb4a21832e314b",
+      "git_blob_sha1": "ed39ac81c99b97123184f163e38e7e34caa69886"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/cleanup_readonly_archive_NORMAL_SSH.py",
+      "bytes": 1778,
+      "sha256": "b395b68a6aac4fd87481b010f19fa656c6329e8aecdc622240b8de39ea2ecb11",
+      "git_blob_sha1": "dc02836d64c2d67f5ec6860c8b4834b24d34be6c"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/cleanup_verified.py",
+      "bytes": 6746,
+      "sha256": "517f33c83aad9a1b77dee7f0869d7d818fd435cf6f9e69d541d3dac2b7bd0013",
+      "git_blob_sha1": "e62c330addb4c86960da999c25f3e22430761ea3"
+    },
+    {
+      "path": "review/perturbational_bioelectric_integration_2026/test_safeguards.py",
+      "bytes": 3377,
+      "sha256": "f766c1b7e4370c4c5e9382c99503d75ea4edffa7854ca03498dae8f57fca0931",
+      "git_blob_sha1": "c0bdb646f3f761f01be065f915acc25ec12f4239"
+    }
+  ]
+}

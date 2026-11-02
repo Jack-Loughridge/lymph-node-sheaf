@@ -1,0 +1,16 @@
+{
+  "removed_files": 31,
+  "removed_logical_bytes": 981031258,
+  "free_before_bytes": 16813309952,
+  "free_after_bytes": 17793581056,
+  "measured_free_space_increase_bytes": 980271104,
+  "preserved_code_reports_specs_and_forecasting_outputs_hash_checked": 767,
+  "Dryad_recoverability": "Public30-file manifest verified; original per-file/ZIP integrity receipts retained privately",
+  "Crohn_count_caches_recoverability": "Original H5AD public SCP3259 source and extraction code/shape/reference metadata retained",
+  "private_exact_manifest": "data/perturbational_bioelectric_integration_2026/cleanup_manifest_PRIVATE.json",
+  "NWB_files": "RETAINED current recovery access unverified",
+  "Julia_tools": "RETAINED",
+  "microbiome_project": "UNTOUCHED",
+  "old_IBD_archive": "RETAINED READ_ONLY; guarded normal-SSH command supplied",
+  "Crohn_8_98GB_H5AD": "Already absent; not counted as reclaimed now"
+}

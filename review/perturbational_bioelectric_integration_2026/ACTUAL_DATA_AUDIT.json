@@ -1,0 +1,16 @@
+{
+  "UTC": "2026-11-02T19:52:04.622405+00:00",
+  "physiological_payloads_inspected": 0,
+  "data_GO_candidates": 0,
+  "status": "BLOCKED_BEFORE_PHYSIOLOGICAL_ARRAY_INSPECTION",
+  "actual_verified_author_code_files": 6,
+  "author_code_git_hashes_match": true,
+  "independent_sample_counts_from_recordings": null,
+  "simultaneous_cell_coverage_from_recordings": null,
+  "sampling_intervals_from_recordings": null,
+  "original_preprocessing_and_observation_masks_from_recordings": null,
+  "perturbational_response_effect_from_recordings": null,
+  "not_fabricated_from_publication_or_figure_means": true,
+  "next_minimal_action": "Ruhl SourceData ZIP browser transfer if<=50MB; otherwise actual size check before acquisition",
+  "all_large_biological_downloads_avoided": true
+}

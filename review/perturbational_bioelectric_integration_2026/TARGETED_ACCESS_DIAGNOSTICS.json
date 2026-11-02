@@ -1,0 +1,16 @@
+[
+  {
+    "candidate": "ruhl_source_zip",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-76758-z/MediaObjects/41467_2026_76758_MOESM10_ESM.zip",
+    "request": "ONE_HEAD_NO_RETRIES",
+    "status": "EXECUTOR_ACCESS_BLOCKED",
+    "error": "HTTPSConnectionPool(host='media.springernature.com', port=443): Max retries exceeded with url: /original/springer-static/esm/art%3A10.1038%2Fs41467-026-76758-z/MediaObjects/41467_2026_76758_MOESM10_ESM.zip (Caused by NameResolutionError(\"HTTPSConnection(host='media.springernature.com', port=443): Failed to resolve 'media.springernature.com' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "candidate": "yale_small_workbook",
+    "url": "https://dataverse.yale.edu/api/access/datafile/48635?format=original",
+    "request": "ONE_HEAD_NO_RETRIES",
+    "status": "EXECUTOR_ACCESS_BLOCKED",
+    "error": "HTTPSConnectionPool(host='dataverse.yale.edu', port=443): Max retries exceeded with url: /api/access/datafile/48635?format=original (Caused by NameResolutionError(\"HTTPSConnection(host='dataverse.yale.edu', port=443): Failed to resolve 'dataverse.yale.edu' ([Errno -2] Name or service not known)\"))"
+  }
+]

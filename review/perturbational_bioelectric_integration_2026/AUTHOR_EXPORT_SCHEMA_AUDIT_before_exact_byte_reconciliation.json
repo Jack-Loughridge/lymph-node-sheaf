@@ -1,0 +1,26 @@
+{
+  "evidence_type": "ACTUAL_AUTHOR_CODE_NOT_PHYSIOLOGICAL_ARRAYS",
+  "source_url": "https://github.com/poskanzerlab/astro-network-encoding/blob/v1.0/python/conversion/aqua_extract.m",
+  "pinned_git_blob": "8ceb1189bc62bf1d637cb76fbc08529297157e52",
+  "cached_UTF8_sha256": "b22b1a25b3aa4f607761600e49cbeeccf4594759766afdce2ff3859357c1e536",
+  "literal_export_fields": [
+    "eventCells",
+    "eventFrames",
+    "fs",
+    "imageSize",
+    "pixelUM",
+    "uncageCell",
+    "uncagePixelX",
+    "uncagePixelY"
+  ],
+  "event_marks_dynamically_copied": true,
+  "uncaging_frame_presets_copied_from_export_options": true,
+  "raw_laser_voltage_log_exported": false,
+  "continuous_fluorescence_trace_exported": false,
+  "all_cell_catalog_or_masks_exported": false,
+  "zero_event_cells_safely_distinguishable_from_unobserved": false,
+  "cell_identity_is_local_event_membership_not_global_cell_type": true,
+  "entire12GB_MAT_schema_verified": false,
+  "physiological_files_downloaded": 0,
+  "DATA_GO": false
+}
