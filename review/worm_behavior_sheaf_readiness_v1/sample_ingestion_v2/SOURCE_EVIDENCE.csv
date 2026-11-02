@@ -1,0 +1,7 @@
+source,version,URL,interpretation_limit
+Transferred author loader,Original transferred bytes verified against Windows receipt,Private recordings/load_data_example.jl,Actual JLD2 root and native lookup semantics inspected; no Julia execution yet
+ANTSUN public notebook,47c1d667291b8e73960d726686b31c232c2e6ace,https://github.com/flavell-lab/ANTSUN/tree/47c1d667291b8e73960d726686b31c232c2e6ace,Interpolation-enabled example pipeline; not a verified candidate-specific run log
+CaAnalysis source,30fec8c0234ea9a2552a0156a3dd231ea399aadc,https://github.com/flavell-lab/CaAnalysis.jl/blob/30fec8c0234ea9a2552a0156a3dd231ea399aadc/src/noise_correction.jl,Optional interpolation/channel division/bleach operations establish provenance risk; exact per-file settings unknown
+Historical HDF5 exporter,f08dbd2eb85fbb97b759aa900f2bfdb05e9f14d3,https://github.com/flavell-lab/AtanasKim-Cell2023/blob/f08dbd2eb85fbb97b759aa900f2bfdb05e9f14d3/src/CePNEM/ANTSUNDataJLD2.jl/src/data_h5.jl,Reversal conventions and original field semantics; candidate includes extra fields and mean normalization
+Behaviour timing and units,260db1335cab1361bbf12e645a09fad831ed6a65,https://github.com/flavell-lab/BehaviorDataNIR.jl/tree/260db1335cab1361bbf12e645a09fad831ed6a65,Shared timestamp averaging and stage-unit convention; hardware triggers absent in current exports
+Julia official archive,1.9.2 Linux glibc x86_64,https://julialang.org/downloads/oldreleases/,Pinned reproduction runtime; checksum independently checked against official listing; installation not executed here

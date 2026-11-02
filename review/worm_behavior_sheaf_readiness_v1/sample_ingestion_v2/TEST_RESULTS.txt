@@ -1,0 +1,12 @@
+test_event_table_axes (test_sample_layout.SampleLayoutTests.test_event_table_axes) ... ok
+test_initial_left_censor (test_sample_layout.SampleLayoutTests.test_initial_left_censor) ... ok
+test_julia_hdf5_axes (test_sample_layout.SampleLayoutTests.test_julia_hdf5_axes) ... ok
+test_no_nonbinary (test_sample_layout.SampleLayoutTests.test_no_nonbinary) ... ok
+test_no_uncensored_terminal_guess (test_sample_layout.SampleLayoutTests.test_no_uncensored_terminal_guess) ... ok
+test_reject_axis_guess (test_sample_layout.SampleLayoutTests.test_reject_axis_guess) ... ok
+test_source_reversal_convention (test_sample_layout.SampleLayoutTests.test_source_reversal_convention) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.028s
+
+OK

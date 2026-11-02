@@ -1,44 +1,12 @@
 {
-  "time_UTC": "2026-11-02T15:07:23.850273+00:00",
-  "files": [
-    {
-      "file": "2023-03-30-01-cudata.h5",
-      "url": "https://datadryad.org/downloads/file_stream/4707115",
-      "listed_MB_rounded": 9.71,
-      "repository_checksum": null,
-      "status": "ACCESS_BLOCKED",
-      "error": "HTTPSConnectionPool(host='datadryad.org', port=443): Max retries exceeded with url: /downloads/file_stream/4707115 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7226d77240d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
-    },
-    {
-      "file": "2023-06-21-01-cudata.h5",
-      "url": "https://datadryad.org/downloads/file_stream/4707119",
-      "listed_MB_rounded": 11.38,
-      "repository_checksum": null,
-      "status": "NOT_RETRIED_SAME_HOST_BLOCKED"
-    },
-    {
-      "file": "2023-06-23-08-cudata.h5",
-      "url": "https://datadryad.org/downloads/file_stream/4707120",
-      "listed_MB_rounded": 10.17,
-      "repository_checksum": null,
-      "status": "NOT_RETRIED_SAME_HOST_BLOCKED"
-    },
-    {
-      "file": "NeuroPAL_labels.jld2",
-      "url": "https://datadryad.org/downloads/file_stream/4707122",
-      "listed_MB_rounded": 41.61,
-      "repository_checksum": null,
-      "status": "NOT_RETRIED_SAME_HOST_BLOCKED"
-    },
-    {
-      "file": "load_data_example.jl",
-      "url": "https://datadryad.org/downloads/file_stream/4707124",
-      "listed_MB_rounded": 0.00161,
-      "repository_checksum": null,
-      "status": "NOT_RETRIED_SAME_HOST_BLOCKED"
-    }
-  ],
-  "acquired_recordings": 0,
-  "all27_download_authorized_only_after_sample_QC": true,
-  "network_retries": 0
+  "source": "User-transferred Candidate C processed sample",
+  "files_present": 5,
+  "HDF5_recordings_present": 3,
+  "identity_dictionary_present": true,
+  "author_loader_present": true,
+  "windows_to_vm_sizes_and_sha256": "PASS 5/5",
+  "private_receipt": "data/worm_behavior_sheaf_readiness_v1/transfer_receipt_PRIVATE.json",
+  "detailed_inventory": "data/worm_behavior_sheaf_readiness_v1/sample_ingestion_v2/source_inventory_PRIVATE.json",
+  "dataset_redownloads_this_phase": 0,
+  "full_cohort_acquisition_started": false
 }

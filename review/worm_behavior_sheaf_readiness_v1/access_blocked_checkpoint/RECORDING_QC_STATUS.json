@@ -1,0 +1,13 @@
+{
+  "recordings_inspected": 0,
+  "genuine_usable_animal_count": null,
+  "neuron_classes_observed_in_metadata": 0,
+  "common_15class_15recording_numerical_gate": null,
+  "identity_dictionary_received": false,
+  "physiological_baselines_fitted": false,
+  "behavioral_event_alignment_verified": false,
+  "status": "BLOCKED_NO_RECORDINGS",
+  "missing_evidence": [
+    "actual physiological payloads"
+  ]
+}

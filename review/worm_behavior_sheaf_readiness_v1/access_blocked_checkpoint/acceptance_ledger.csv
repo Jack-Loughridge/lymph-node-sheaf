@@ -1,0 +1,17 @@
+criterion,status,numerical_evidence_or_blocker
+Storage inventory,PASS,Two exact named downloads inventoried; larger microbiome directories inventoried but preserved
+Authorized Crohn download cleanup,PASS,8984620838 logical bytes removed after matching frozen SHA256; no detected accessible open users
+Authorized GEO archive cleanup,BLOCKED,6464275219 bytes and SHA256 verified; unlink failed with read-only filesystem; archive preserved
+Preservation,PASS,53 frozen prior review/specification files unchanged; three existing NWBs and patient workbook retained with private hashes
+Dataset manifest,PASS METADATA ONLY,27 named per-animal HDF5 files and identity/loader files listed; approximately 320.03 MB
+Representative acquisition,BLOCKED,0 new physiological files acquired; DNS in shell and 403 in web reader; retries stopped
+A independent replication,NOT EVALUABLE,0 recordings inspected; >=15 usable independent animals required; 27 are listed only
+B common neural coverage,NOT EVALUABLE,No actual identity dictionary; >=15 classes in a common >=15 usable-animal group unverified
+B bilateral identities,NOT EVALUABLE,Separate individual and class joins specified; no observed coverage count available
+C timestamps and genuine signal,NOT EVALUABLE,No arrays or observation/reconstruction provenance inspected
+D behavioural validation,NOT EVALUABLE,No aligned copper-entry/reversal/velocity events counted; no animal-level variation verified
+E prospective split and evaluation protocol,PASS DESIGN ONLY,15 train plus 6 validation plus 6 final test frozen using public IDs before payload inspection
+E actual independent diagnostics,NOT EVALUABLE,No baseline fitted; no MSE improvement or confidence interval claimed
+F anatomy and distance,NOT EVALUABLE,External named reference graph available from prior audit; actual neuron identity overlap and geometry unverified
+Mathematical specification,PREPARED NOT VALIDATED,Explicit affine factors and incidence restrictions; no sheaf metrics computed
+Overall modelling readiness,NOT EVALUABLE ACCESS BLOCKED,No GO or scientific NO-GO warranted without actual recordings

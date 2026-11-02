@@ -1,0 +1,33 @@
+{
+  "transfer_integrity": "PASS",
+  "windows_vm_hashes_and_sizes_matching": 5,
+  "recordings_numerically_inspected": 3,
+  "neuron_count_range": [
+    139,
+    150
+  ],
+  "total_neuron_recordings": 439,
+  "independent_animals_not_neurons": 3,
+  "frames_per_recording": [
+    1600
+  ],
+  "all_raw_and_normalised_values_finite": true,
+  "constant_neuron_recordings": 0,
+  "neural_timestamp_gaps_over_1_5_median": 0,
+  "valid_numerical_10history_windows": 698010,
+  "normalisation_relationships_verified": true,
+  "reversal_event_count_range": [
+    32,
+    42
+  ],
+  "total_reversal_intervals": 113,
+  "initial_left_censored_reversal_animals": 2,
+  "clock_frames_jointly_matched": 4800,
+  "clock_frames_with_unique_joint_match": 4799,
+  "clock_ambiguous_frames": 1,
+  "identity_status": "NOT EVALUABLE until native Julia/JLD2",
+  "genuine_observation_fraction": null,
+  "full_sample_technical_gate": "PENDING_IDENTITY_AND_OBSERVATION_PROVENANCE",
+  "full_27_acquisition_started": false,
+  "model_fitted": false
+}
