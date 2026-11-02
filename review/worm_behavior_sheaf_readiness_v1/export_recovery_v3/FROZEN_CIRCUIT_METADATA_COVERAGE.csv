@@ -1,0 +1,13 @@
+individual_neuron,dictionary_animals,training_animals,validation_animals,test_animals,measured_state_QC_not_completed_for_full_cohort
+ASHL,7,5,1,1,True
+ASHR,5,3,2,0,True
+AVAL,19,9,5,5,True
+AVAR,20,9,5,6,True
+AIBL,18,10,3,5,True
+AIBR,19,8,5,6,True
+RIML,3,0,1,2,True
+RIMR,4,2,2,0,True
+RIBL,3,2,1,0,True
+RIBR,2,1,1,0,True
+AVBL,1,1,0,0,True
+AVBR,4,2,1,1,True

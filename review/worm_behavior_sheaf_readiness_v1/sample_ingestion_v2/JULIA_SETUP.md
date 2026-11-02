@@ -1,3 +1,5 @@
+> Recovery update: Julia 1.9.2/JLD2 0.6.7 are installed and native validation now succeeds. Do not reinstall. See [recovery reproduction](../export_recovery_v3/REPRODUCTION.md) and the consolidated report. The setup instructions below are historical.
+
 # Native Julia identity decoding: minimal isolated setup
 
 All five Windows/VM hashes and sizes match. Do not repeat the dataset downloads.

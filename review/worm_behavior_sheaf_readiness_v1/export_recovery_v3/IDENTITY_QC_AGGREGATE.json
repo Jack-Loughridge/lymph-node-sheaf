@@ -1,0 +1,57 @@
+{
+  "native_dictionary_animals": 27,
+  "native_rows": 2595,
+  "two_view_entries_cross_checked": 2595,
+  "valid_identity_rows": 2588,
+  "quarantined_rows": 7,
+  "duplicate_individual_label_groups": 3,
+  "duplicate_rows_quarantined": 6,
+  "confidence_counts": {
+    "4": 515,
+    "5": 1299,
+    "2": 183,
+    "6": 1,
+    "3": 597
+  },
+  "observed_confidence_range": [
+    2,
+    6
+  ],
+  "accepted_confidence_range": [
+    1,
+    5
+  ],
+  "invalid_confidence_not_clamped": 1,
+  "class_refinements": {
+    "individual_label": 181,
+    "coarse_class": 1692,
+    "dorsoventral_refinement": 722
+  },
+  "sample_recordings_inspected": 3,
+  "sample_primary_individual_count_range": [
+    49,
+    87
+  ],
+  "sample_primary_individuals_total": 198,
+  "sample_primary_class_count_range": [
+    29,
+    45
+  ],
+  "sample_common_primary_classes": 24,
+  "sample_common_primary_individuals": 23,
+  "sample_common_complete_LR_DV_groups": 5,
+  "sample_quarantined_rows": 0,
+  "all27_native_valid_high_confidence_rows": 1813,
+  "all27_annotation_note_holds": 120,
+  "region_field_is_not_reliable_anatomical_annotation": true,
+  "all27_primary_unambiguous_high_confidence_rows": 1693,
+  "all27_metadata_classes": 66,
+  "all27_metadata_common_classes": 0,
+  "same15_classes_in_same15_animals_METADATA_ONLY": true,
+  "same15_individuals_in_same15_animals_METADATA_ONLY": false,
+  "full_cohort_recording_quality_evaluated": false,
+  "julia_version": "1.9.2",
+  "JLD2_version": "0.6.7",
+  "genuine_observation_mask_available": false,
+  "full_sheaf_fitted": false
+}

@@ -1,0 +1,10 @@
+{
+  "julia_assertions_passed": 20,
+  "new_python_tests_passed": 6,
+  "frozen_python_tests_passed": 15,
+  "prior_layout_tests_passed": 7,
+  "windows_sha256_and_size_checks_passed": 5,
+  "frozen_protocol_hashes_unchanged": 6,
+  "raw_or_individual_data_published": false,
+  "full_cohort_recordings_inspected": false
+}

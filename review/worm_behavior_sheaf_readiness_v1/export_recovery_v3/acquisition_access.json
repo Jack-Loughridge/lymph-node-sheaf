@@ -1,0 +1,7 @@
+{
+  "purpose": "Bounded full processed-cohort metadata request after native sample reconciliation",
+  "url": "https://datadryad.org/api/v2/datasets/doi:10.5061/dryad.w9ghx3g4v",
+  "retries": 0,
+  "status": "ACCESS_BLOCKED",
+  "error": "HTTPSConnectionPool(host='datadryad.org', port=443): Max retries exceeded with url: /api/v2/datasets/doi:10.5061/dryad.w9ghx3g4v (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x732af8aea650>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+}

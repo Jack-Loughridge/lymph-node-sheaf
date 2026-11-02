@@ -1,0 +1,18 @@
+criterion,status,evidence
+Five-file presence,PASS,All three selected HDF5 recordings plus original identity JLD2 and author Julia loader exist
+Windows-to-VM transfer integrity,PASS,5 of 5 SHA256 digests and byte counts match the private Windows receipt
+Actual numerical signals,PASS,Three recordings; 439 ROI-recordings; 1600 samples each; all four fluorescence arrays finite; no constant traces
+Julia-HDF5 layout interpretation,PASS,Explicit matrix transpose adapter validated against timestamps and normalization relationships; original protocol unchanged
+Neural timestamps,PASS NUMERICAL,All increasing; median interval about 0.600019 seconds; zero gaps above 1.5 median
+Cross-resolution clock reconciliation,PASS WITH ONE AMBIGUITY,4800 joint timestamp and stage-mean matches; 4799 unique; one ambiguous bin retained
+Reversal table consistency,PASS,113 intervals reproduce author-export conventions; 2 initially left-censored; 111 later onsets
+Genuine observations versus interpolation,NOT EVALUABLE,No per-frame detection mask in actual files; public processing supports interpolation and bleaching; exact candidate provenance pending
+Native NeuroPAL identity interpretation,BLOCKED,Original dictionary present; native Julia runtime absent; no heuristic Python decoding used
+A at least 15 usable independent animals,NOT EVALUABLE,Only three sample recordings inspected; full-cohort acquisition remains conditional
+B same 15 classes in at least 15 animals,NOT EVALUABLE,Native dictionary and full-cohort measured-state QC pending
+C causal signal preprocessing,NOT EVALUABLE,Whole-record normalization verified; upstream observation/bleach provenance unresolved
+D copper encounters and avoidance targets,NOT EVALUABLE,Behaviour and reversals present but exact boundary geometry and event definition not independently verified
+E frozen evaluation protocol,PASS DESIGN,15/6/6 allocation and all original parameter thresholds preserved
+E actual held-out diagnostics,NOT EVALUABLE,No model fitted while prerequisites are pending
+F anatomical identity alignment,NOT EVALUABLE,Native labels and side-resolved mapping not yet verified
+Overall,PARTIAL GO,Numerical sample passes; full sample technical gate and modelling readiness remain pending

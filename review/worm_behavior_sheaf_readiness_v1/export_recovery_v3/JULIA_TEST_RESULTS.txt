@@ -1,0 +1,5 @@
+Native identity views agree: 1 animals; 1 rows checked; 1 rows explicitly quarantined.
+Native identity views agree: 1 animals; 2 rows checked; 2 rows explicitly quarantined.
+Native identity views agree: 1 animals; 1 rows checked; 1 rows explicitly quarantined.
+Test Summary:                                        | Pass  Total  Time
+Native exporter function scope and scientific guards |   20     20  8.0s

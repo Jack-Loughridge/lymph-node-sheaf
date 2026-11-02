@@ -1,0 +1,12 @@
+{
+  "recordings_inspected": 3,
+  "numerical_integrity": "PASS",
+  "transfer_integrity": "PASS 5/5",
+  "genuine_usable_animal_count": null,
+  "native_identity_dictionary_present": true,
+  "native_identity_dictionary_decoded": false,
+  "common_15class_15animal_gate": null,
+  "baseline_models_fitted": 0,
+  "status": "PENDING_NATIVE_JULIA_AND_OBSERVATION_PROVENANCE",
+  "detail_report": "sample_ingestion_v2/REPORT.md"
+}

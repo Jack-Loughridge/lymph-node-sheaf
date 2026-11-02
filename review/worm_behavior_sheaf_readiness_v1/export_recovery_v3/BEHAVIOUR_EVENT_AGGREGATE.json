@@ -1,0 +1,47 @@
+[
+  {
+    "band_mm": 0.1,
+    "sample_animals": 3,
+    "animals_with_any_event": 2,
+    "animals_with_repeated_events": 0,
+    "event_count_range": [
+      0,
+      1
+    ],
+    "total_events": 2,
+    "secondary_at_risk_events": 2,
+    "secondary_positive_events": 1,
+    "geometry_independently_verified": false,
+    "not_stimulus_TTL": true
+  },
+  {
+    "band_mm": 0.2,
+    "sample_animals": 3,
+    "animals_with_any_event": 2,
+    "animals_with_repeated_events": 0,
+    "event_count_range": [
+      0,
+      1
+    ],
+    "total_events": 2,
+    "secondary_at_risk_events": 2,
+    "secondary_positive_events": 0,
+    "geometry_independently_verified": false,
+    "not_stimulus_TTL": true
+  },
+  {
+    "band_mm": 0.3,
+    "sample_animals": 3,
+    "animals_with_any_event": 2,
+    "animals_with_repeated_events": 1,
+    "event_count_range": [
+      0,
+      3
+    ],
+    "total_events": 4,
+    "secondary_at_risk_events": 3,
+    "secondary_positive_events": 0,
+    "geometry_independently_verified": false,
+    "not_stimulus_TTL": true
+  }
+]

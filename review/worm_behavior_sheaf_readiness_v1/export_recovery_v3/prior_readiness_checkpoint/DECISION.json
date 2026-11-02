@@ -1,0 +1,19 @@
+{
+  "category": "PARTIAL GO",
+  "scope": "Actual three-recording ingestion; full modelling readiness unresolved",
+  "transfer_integrity": "PASS: five of five Windows/VM sizes and SHA256 digests match",
+  "numerical_sample_integrity": "PASS for performed array/timestamp/normalization tests",
+  "new_recordings_inspected": 3,
+  "ROI_recordings": 439,
+  "native_identity_validation": "PENDING: Julia runtime absent; native author-method exporter prepared",
+  "genuine_observation_fraction": null,
+  "full_sample_technical_gate": "PENDING IDENTITY AND OBSERVATION PROVENANCE",
+  "full_cohort_acquisition_started": false,
+  "models_fitted": 0,
+  "full_sheaf_fitted": false,
+  "scientific_NO_GO_supported": false,
+  "minimum_animals": 15,
+  "minimum_common_classes": 15,
+  "frozen_evaluation_protocol_unchanged": true,
+  "next_action": "Run the project-local official Julia/JLD2 installer using the normal tda-vm SSH session, validate native metadata, then finish the sample gate before acquiring the remaining processed recordings"
+}

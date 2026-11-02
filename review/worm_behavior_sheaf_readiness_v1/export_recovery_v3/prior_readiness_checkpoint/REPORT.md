@@ -1,0 +1,19 @@
+# Candidate C readiness — actual sample ingestion checkpoint
+
+**End-to-end transfer integrity PASS. Actual numerical QC of three recordings is complete. Full technical readiness is PARTIAL GO, pending native identity decoding and observation/preprocessing provenance. No full sheaf or predictive model has been fitted.**
+
+All five supplied files are present. Their Windows byte counts and SHA-256 digests match exactly. The receipt, original files, all per-animal/per-neuron results and hashes remain private under ignored data/. Dataset downloads were not repeated. The previous access-blocked report is preserved in access_blocked_checkpoint/.
+
+The sample contains **439 ROI-recordings across three animals**, 139–150 per animal, each with 1,600 time points. All four fluorescence arrays are finite; none of the original-array traces is constant; no neural timestamp interval exceeds the frozen 1.5-median threshold. The original/normalized array relationships were verified. The actual Julia/HDF5 storage axes required a new tested adapter; the frozen eligibility, masking, confidence, 15/6/6 split and validation protocol were not edited.
+
+There are **113 stored reversal intervals**, including two initially left-censored intervals. Their indexing reproduces the author exporter. All 4,800 neural timestamps have NIR-bin matches also reproducing stored stage-position means; 4,799 are unique and one is ambiguous. This is meaningful exported-clock evidence, not a claim that original hardware triggers or all event geometry were recovered. Copper-encounter counts remain unverified.
+
+**Native Julia is the immediate installation dependency.** No runtime is visible here, its download request fails DNS, and this executor does not resolve the user's `tda-vm` alias. These findings do not determine whether the normal Windows SSH session has internet access. The isolated installer uses the official Linux x86_64 Julia archive and only JLD2; it does not modify existing Python environments. [JULIA_SETUP.md](sample_ingestion_v2/JULIA_SETUP.md) gives the normal SSH command, verified archive checksum and Windows/SCP fallback. The native exporter uses the actual author loading operation and checks the two original identity lookup views. It has not been executed yet; no heuristic Python dictionary decoding was substituted.
+
+The second outstanding issue is provenance: the actual HDF5s lack per-frame detection masks, while the public processing code permits interpolation, reference-channel division and bleaching. Exact candidate-specific run settings are not verified, and the native metadata could contain additional provenance. Finite signals cannot be called 100% genuinely observed. Nor does the `_original` name prove causal/raw preprocessing. These are unresolved checks, not established scientific failures.
+
+**The remaining 24 recordings have not been acquired:** numerical integrity passes, but the full three-sample technical gate has not passed without native identity and observation-provenance checks. The >=15-animal/>=15-class readiness criteria remain unchanged. No broader dataset search or repeated download loop is needed.
+
+Read the [detailed actual-data audit](sample_ingestion_v2/REPORT.md), [updated acceptance ledger](acceptance_ledger.csv), and [native Julia setup](sample_ingestion_v2/JULIA_SETUP.md). Seven new layout/index tests and the fifteen existing tests pass. Julia/package/native-identity execution is explicitly not counted as a passed test. The [mathematical specification](MATHEMATICAL_SPECIFICATION.md) remains prospective and unchanged.
+
+The previous cleanup remains intact: the verified obsolete Crohn H5AD was removed, recovering about 8.98 GB; the separate 6.46 GB IBD archive remains preserved because its directory is read-only here. No further cleanup occurred. Existing worm NWBs, microbiome work, patient linkage, source specifications and earlier experiments remain unchanged.
