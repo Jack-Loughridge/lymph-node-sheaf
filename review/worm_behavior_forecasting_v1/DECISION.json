@@ -1,0 +1,17 @@
+{
+  "decision": "NO-GO for direct progression to a dynamical sheaf on this evidence",
+  "dataset_scope": "PARTIAL GO for processed-signal research",
+  "primary_unconditioned_gain_percent": 1.1854466742910907,
+  "primary_conditional_gain_percent": 0.1858042648904434,
+  "primary_conditional_CI95_percent": [
+    -0.5344684690131651,
+    1.0588248255989123
+  ],
+  "conditional_directions_meeting_5percent_and_positive_CI": 0,
+  "eligible_directed_relationships": 20,
+  "evaluated_training_animals": 14,
+  "validation_test_opened": false,
+  "higher_order_effects_ruled_out": false,
+  "full_sheaf_fitted": false,
+  "recommendation": "Do not unlock held-out cohorts or fit sheaf; any multivariate synergy question requires a separate prospective missing-state-aware experiment"
+}

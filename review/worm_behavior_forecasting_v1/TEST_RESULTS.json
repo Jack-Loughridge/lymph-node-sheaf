@@ -1,0 +1,11 @@
+{
+  "synthetic_tests_passed": 13,
+  "test_modules": [
+    "test_diagnostic.py",
+    "test_reporting.py"
+  ],
+  "independent_saved_prediction_MSE_checks": 3654,
+  "private_prediction_files_verified": 261,
+  "prefit_model_code_unchanged": true,
+  "validation_test_recordings_opened": false
+}

@@ -1,0 +1,81 @@
+{
+  "eligible_unordered_pairs": 10,
+  "directed_relationships": 20,
+  "evaluated_training_animals_union": 14,
+  "union_acquisition_days": 11,
+  "primary": {
+    "AR_beh_vs_AR": {
+      "directions": 20,
+      "directions_positive_point_estimate": 16,
+      "directions_CI_excluding_zero_positive": 9,
+      "directions_meeting_5percent_and_positive_CI": 8,
+      "directions_improve_majority_animals": 16,
+      "median_direction_reduction_percent": 9.565288686453172
+    },
+    "AR_vs_persistence": {
+      "directions": 20,
+      "directions_positive_point_estimate": 10,
+      "directions_CI_excluding_zero_positive": 2,
+      "directions_meeting_5percent_and_positive_CI": 1,
+      "directions_improve_majority_animals": 15,
+      "median_direction_reduction_percent": 0.2620365694491922
+    },
+    "VAR_beh_vs_AR_beh": {
+      "directions": 20,
+      "directions_positive_point_estimate": 8,
+      "directions_CI_excluding_zero_positive": 2,
+      "directions_meeting_5percent_and_positive_CI": 0,
+      "directions_improve_majority_animals": 9,
+      "median_direction_reduction_percent": -0.334655984896326
+    },
+    "VAR_beh_vs_persistence": {
+      "directions": 20,
+      "directions_positive_point_estimate": 14,
+      "directions_CI_excluding_zero_positive": 7,
+      "directions_meeting_5percent_and_positive_CI": 7,
+      "directions_improve_majority_animals": 15,
+      "median_direction_reduction_percent": 5.2620966474506705
+    },
+    "VAR_vs_AR": {
+      "directions": 20,
+      "directions_positive_point_estimate": 11,
+      "directions_CI_excluding_zero_positive": 5,
+      "directions_meeting_5percent_and_positive_CI": 3,
+      "directions_improve_majority_animals": 13,
+      "median_direction_reduction_percent": 0.9266586857506698
+    },
+    "VAR_vs_persistence": {
+      "directions": 20,
+      "directions_positive_point_estimate": 9,
+      "directions_CI_excluding_zero_positive": 4,
+      "directions_meeting_5percent_and_positive_CI": 4,
+      "directions_improve_majority_animals": 11,
+      "median_direction_reduction_percent": -0.6521291879521107
+    },
+    "graph_vs_AR": {
+      "directions": 20,
+      "directions_positive_point_estimate": 3,
+      "directions_CI_excluding_zero_positive": 1,
+      "directions_meeting_5percent_and_positive_CI": 0,
+      "directions_improve_majority_animals": 5,
+      "median_direction_reduction_percent": 0.0
+    },
+    "rank1_vs_AR": {
+      "directions": 20,
+      "directions_positive_point_estimate": 13,
+      "directions_CI_excluding_zero_positive": 6,
+      "directions_meeting_5percent_and_positive_CI": 3,
+      "directions_improve_majority_animals": 12,
+      "median_direction_reduction_percent": 0.827601430243019
+    }
+  },
+  "bootstrap_draws": 10000,
+  "interval_caveats": [
+    "descriptive unadjusted direction intervals",
+    "3-6 coobserved animals per pair",
+    "conditional on CV predictions without refitting every bootstrap",
+    "overlapping CV training folds"
+  ],
+  "validation_test_recordings_used": false,
+  "full_sheaf_fitted": false
+}

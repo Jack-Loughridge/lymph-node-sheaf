@@ -1,0 +1,11 @@
+{
+  "UTC": "2026-11-02T18:31:09.264419+00:00",
+  "real_data_model_fit_started": false,
+  "synthetic_regression_tests_passed": 9,
+  "SHA256": {
+    "models.py": "4c23229ad6662586fc25cd3706f8ed56cd33a92f9390a53cdcb3e299826ac649",
+    "run_diagnostic.py": "078c42eccf723c7d02f0b78bc921cd706809ee2ccb28a830be3575fa1fbcc7c6",
+    "test_diagnostic.py": "e9e6ffb497414a70ce98307343a8d806adfe4b89f9a3cf07aa69b9bdf4ef52a3",
+    "IMPLEMENTATION_PREREGISTRATION.md": "c09ae5602d097e2a0fa38d05a36f8f686c72134b0ee40218527b6be05fb7578c"
+  }
+}

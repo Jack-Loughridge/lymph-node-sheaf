@@ -1,0 +1,13 @@
+criterion,status,evidence
+training-only recording access,PASS,All14 opened recordings allocated train; held-out12 unopened
+frozen protocol and pre-fit implementation,PASS,Six original hashes and pre-fit code hashes unchanged
+complete eligible pair reporting,PASS,10 pairs20 directions; all56 unsupported pairs reported
+nested acquisition-day analysis,PASS WITH LIMIT,Nine pairs evaluable; one has only two dates
+numerical model and prediction integrity,PASS,13 tests;261 prediction hashes;3654 direct MSE checks
+reproducible unconditioned information,SMALL DESCRIPTIVE EFFECT,Pooled1.19percent; interval0.48to2.40
+conditional information beyond prior behaviour,NOT SUPPORTED,Pooled0.19percent; interval minus0.53to1.06
+practical fivepercent conditional target,NOT MET IN DIAGNOSTIC,Zero of20 directions meets point and positive interval
+confirmatory held-out biological gate,NOT EVALUABLE,Validation6 and test6 untouched
+genuine observation provenance,NOT EVALUABLE,Original masks and exact processing settings absent
+sheaf or higher-order added value,NOT EVALUABLE,No sheaf or higher-order model fitted
+direct progression to dynamical sheaf,NO-GO,Conditional evidence insufficient; no favourable pair selection

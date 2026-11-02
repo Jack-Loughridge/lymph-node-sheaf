@@ -1,0 +1,11 @@
+{
+  "prediction_files_hash_checked": 261,
+  "directed_model_MSE_checks_passed": 3654,
+  "target_windows_across_all_descriptive_sensitivities": 414990,
+  "not_independent_replicates": true,
+  "outer_animal_and_day_exclusions_checked": true,
+  "recording_sources_all_frozen_training": true,
+  "prefit_code_hashes_unchanged": true,
+  "six_original_protocol_hashes_unchanged": true,
+  "validation_test_recordings_opened": false
+}

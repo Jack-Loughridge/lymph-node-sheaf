@@ -1,0 +1,67 @@
+neuron_1,neuron_2,training_coobserved_animals,nested_animal_folds_possible,status
+ASHL,ASHR,0,False,NOT EVALUABLE: fewer than three training animals
+ASHL,AVAL,2,False,NOT EVALUABLE: fewer than three training animals
+ASHL,AVAR,4,True,EVALUATED
+ASHL,AIBL,3,True,EVALUATED
+ASHL,AIBR,2,False,NOT EVALUABLE: fewer than three training animals
+ASHL,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+ASHL,RIMR,2,False,NOT EVALUABLE: fewer than three training animals
+ASHL,RIBL,2,False,NOT EVALUABLE: fewer than three training animals
+ASHL,RIBR,0,False,NOT EVALUABLE: fewer than three training animals
+ASHL,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+ASHL,AVBR,1,False,NOT EVALUABLE: fewer than three training animals
+ASHR,AVAL,2,False,NOT EVALUABLE: fewer than three training animals
+ASHR,AVAR,1,False,NOT EVALUABLE: fewer than three training animals
+ASHR,AIBL,3,True,EVALUATED
+ASHR,AIBR,3,True,EVALUATED
+ASHR,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+ASHR,RIMR,0,False,NOT EVALUABLE: fewer than three training animals
+ASHR,RIBL,0,False,NOT EVALUABLE: fewer than three training animals
+ASHR,RIBR,1,False,NOT EVALUABLE: fewer than three training animals
+ASHR,AVBL,0,False,NOT EVALUABLE: fewer than three training animals
+ASHR,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+AVAL,AVAR,5,True,EVALUATED
+AVAL,AIBL,5,True,EVALUATED
+AVAL,AIBR,6,True,EVALUATED
+AVAL,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+AVAL,RIMR,1,False,NOT EVALUABLE: fewer than three training animals
+AVAL,RIBL,1,False,NOT EVALUABLE: fewer than three training animals
+AVAL,RIBR,1,False,NOT EVALUABLE: fewer than three training animals
+AVAL,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+AVAL,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+AVAR,AIBL,6,True,EVALUATED
+AVAR,AIBR,4,True,EVALUATED
+AVAR,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+AVAR,RIMR,1,False,NOT EVALUABLE: fewer than three training animals
+AVAR,RIBL,2,False,NOT EVALUABLE: fewer than three training animals
+AVAR,RIBR,0,False,NOT EVALUABLE: fewer than three training animals
+AVAR,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+AVAR,AVBR,2,False,NOT EVALUABLE: fewer than three training animals
+AIBL,AIBR,6,True,EVALUATED
+AIBL,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+AIBL,RIMR,2,False,NOT EVALUABLE: fewer than three training animals
+AIBL,RIBL,0,False,NOT EVALUABLE: fewer than three training animals
+AIBL,RIBR,1,False,NOT EVALUABLE: fewer than three training animals
+AIBL,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+AIBL,AVBR,2,False,NOT EVALUABLE: fewer than three training animals
+AIBR,RIML,0,False,NOT EVALUABLE: fewer than three training animals
+AIBR,RIMR,1,False,NOT EVALUABLE: fewer than three training animals
+AIBR,RIBL,1,False,NOT EVALUABLE: fewer than three training animals
+AIBR,RIBR,1,False,NOT EVALUABLE: fewer than three training animals
+AIBR,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+AIBR,AVBR,1,False,NOT EVALUABLE: fewer than three training animals
+RIML,RIMR,0,False,NOT EVALUABLE: fewer than three training animals
+RIML,RIBL,0,False,NOT EVALUABLE: fewer than three training animals
+RIML,RIBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIML,AVBL,0,False,NOT EVALUABLE: fewer than three training animals
+RIML,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIMR,RIBL,0,False,NOT EVALUABLE: fewer than three training animals
+RIMR,RIBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIMR,AVBL,1,False,NOT EVALUABLE: fewer than three training animals
+RIMR,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIBL,RIBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIBL,AVBL,0,False,NOT EVALUABLE: fewer than three training animals
+RIBL,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+RIBR,AVBL,0,False,NOT EVALUABLE: fewer than three training animals
+RIBR,AVBR,0,False,NOT EVALUABLE: fewer than three training animals
+AVBL,AVBR,0,False,NOT EVALUABLE: fewer than three training animals

@@ -1,0 +1,21 @@
+{
+  "run_hash": "2d9b714be597cb7dfe6b23f8d1194177b144c840212be95af4c6a05525b549c3",
+  "status": "COMPLETE",
+  "eligible_pairs": 10,
+  "directions": 20,
+  "histories": [
+    10,
+    5,
+    15
+  ],
+  "groupings": [
+    "animal",
+    "day"
+  ],
+  "training_recordings_opened": 14,
+  "validation_test_recordings_opened": false,
+  "total_candidate_model_fits": 14430,
+  "rank1_nonconverged_candidate_fits": 0,
+  "maximum_rank1_objective_increase": 0.0,
+  "full_sheaf_fitted": false
+}

@@ -1,0 +1,13 @@
+{
+  "created_UTC": "2026-11-02T18:28:25.930262+00:00",
+  "model_fitting_started": false,
+  "reference_SHA256": {
+    "review/worm_behavior_sheaf_readiness_v1/full_cohort_qc_v5/REPORT.md": "000506acccd9c3c161a3769ac32e74f6c3ea10b9f832ad9f12d3538bf083ebf2",
+    "review/worm_behavior_sheaf_readiness_v1/full_cohort_qc_v5/NEXT_EXPERIMENT.md": "a676838457afd7af644c3635ebd45f8b458a4e379c6174547025cefc1f6c763b",
+    "review/worm_behavior_sheaf_readiness_v1/VALIDATION_DESIGN.md": "07e6fedbd0245b846d1203aa58b29105b6591f7b34f6b43d4d387cd80e088dfb",
+    "review/worm_behavior_sheaf_readiness_v1/MATHEMATICAL_SPECIFICATION.md": "ccfe5fe786bf6bd2b753c114ac8b25728354fc3fa650c2a23df50b4e934e37b3",
+    "review/worm_behavior_sheaf_readiness_v1/READINESS_PROTOCOL.json": "31eae526ec413163e5e939c48b1958e443865a22e3168d0c28e92c0caf5be17c",
+    "review/worm_behavior_forecasting_v1/IMPLEMENTATION_PREREGISTRATION.md": "c09ae5602d097e2a0fa38d05a36f8f686c72134b0ee40218527b6be05fb7578c",
+    "data/bioelectric_focused_feasibility_2026/white_whole.tsv": "c8aac78756b71f6337629951e5f4211448e85d148f6db9b367b2cd0450bb403a"
+  }
+}

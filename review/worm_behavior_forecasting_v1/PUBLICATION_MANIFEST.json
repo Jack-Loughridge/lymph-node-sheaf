@@ -1,0 +1,197 @@
+{
+  "scope": "Only reviewed code and aggregate outputs; manifest excludes itself",
+  "files": [
+    {
+      "path": "review/worm_behavior_forecasting_v1/ALL_DIRECTIONS_PRIMARY.csv",
+      "bytes": 3633,
+      "sha256": "9a1ae71d451f6022bb7401cfc8831dff108b004cdadd4d930c9ba82805e0e3d6",
+      "git_blob_sha1": "d11d3643edbcb273385e9050c3507232490ec48d"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/ANATOMICAL_COMPARATOR.csv",
+      "bytes": 637,
+      "sha256": "2c418a06c22b98bb33b873a90de9b28c97b513f83ce8fa65841e2ce24c077396",
+      "git_blob_sha1": "34187e539e1a51a93c9bd9c3f6cad75be9d6aea0"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/DAY_MATCHED_POOL.csv",
+      "bytes": 11831,
+      "sha256": "4920a3daa9d3d62f87333949a529c5afcaa3b593166a277ce4536a31edb7e27a",
+      "git_blob_sha1": "1a07e1f2b37d4d3cf1b74e886485ef67b85ba511"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/DECISION.json",
+      "bytes": 775,
+      "sha256": "0493adae6e81d850171c8f91336a60d7e66fdf71d450796cf93678b349cc2526",
+      "git_blob_sha1": "6b09f29fb24cf280b4e2247b8089bbcbad91d47d"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/DIRECTED_CONTRASTS.csv",
+      "bytes": 482781,
+      "sha256": "c7d517ca1ae23529c45aab02fd3d280040ccb305a85ce5ebeb9cac5d41559aec",
+      "git_blob_sha1": "e7c821c1976b1046969081c0815857263fcb6588"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/ELIGIBILITY_ALL_66.csv",
+      "bytes": 4104,
+      "sha256": "e18065121651263b5b80b2f1448f68befd5b591662ef28ee216afec16f116d6f",
+      "git_blob_sha1": "be07187b6799643406d8738b6a006032d59d2e8e"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/ENVIRONMENT.json",
+      "bytes": 134,
+      "sha256": "82e5e4dd9c754527134eb5bb37a8b9a1fffe88c0eb75fdcd54654f15299973a4",
+      "git_blob_sha1": "e0bc33920ae3c25a0fa968db8a9ee78c9644988a"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/FORECAST_DIAGNOSTIC.pdf",
+      "bytes": 26474,
+      "sha256": "832097273ac791bd0fd5562c6c3126e6d5c82d1e07ce9fdb144fd5fade40dcb8",
+      "git_blob_sha1": "536eeb4dac3803c87e9147b4e6eb8bbc3ef1fbc9"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/FORECAST_DIAGNOSTIC.png",
+      "bytes": 190813,
+      "sha256": "5bd63f02498253be8ba366b9cfff3aee9639ae973605123ff7d5c325824059c5",
+      "git_blob_sha1": "ca6eefe20fc5618bc8be54379b5f8ff2b846a90d"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/IMPLEMENTATION_PREREGISTRATION.md",
+      "bytes": 6057,
+      "sha256": "c09ae5602d097e2a0fa38d05a36f8f686c72134b0ee40218527b6be05fb7578c",
+      "git_blob_sha1": "238950db9981829ce1af2d4f160bbc2251e5a382"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/MODEL_COMPARISONS.csv",
+      "bytes": 115769,
+      "sha256": "46950a046329158ed08938fbe39ead3032dc5dc5e2e1a1f6173d6a1bf150c5a2",
+      "git_blob_sha1": "7207ed983c242a363ec62b70bb1e64df1eb10582"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/PAIR_EVALUABILITY.csv",
+      "bytes": 1906,
+      "sha256": "5d17142ffcc63ea449c6a8b406fb61c086607f3f01197cca3261a45a5f5b29cb",
+      "git_blob_sha1": "5327a9ca8dab6061902d9570aac01f6c123bd12a"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/POOLED_CONTRASTS.csv",
+      "bytes": 14173,
+      "sha256": "cc111a67ff65cbe19e29285d63f3811fd3b19927564849bda4f156b7e41be4a5",
+      "git_blob_sha1": "95c544d23c663d7416c73f6fd1af5a2871b16d86"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/PREDICTION_INTEGRITY.json",
+      "bytes": 426,
+      "sha256": "149039865884dc2f0467efe6ea8f4d2c0e35c88c4f7489180fd686ce8a508242",
+      "git_blob_sha1": "be71c91145bd9d2772c2dc91ebebce36f23392fb"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/PREFIT_CODE_RECEIPT.json",
+      "bytes": 529,
+      "sha256": "2a8fbf5ceb03199331870601356b91d140566253b031b42c2824bc739592e112",
+      "git_blob_sha1": "3d9316b0e3069a50cb3f051757e7b6fd61aa0c9a"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/PREREGISTRATION_RECEIPT.json",
+      "bytes": 1111,
+      "sha256": "662db81a588765c230019a084643cf39dd9fa233e1ab472279bb3b2e4ba4fd74",
+      "git_blob_sha1": "bb9f6ea83301a2d16792e487d7cc0025fc5a8ed1"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/PRESERVATION_CHECK.json",
+      "bytes": 330,
+      "sha256": "c5ebb7c054e1bcc0b01784ce6e226cce6af11dfab7a337df797868ee6a77e209",
+      "git_blob_sha1": "76b3819b85ad9a4f2186c931a84a95cfdcc33294"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/REPORT.md",
+      "bytes": 13619,
+      "sha256": "afc7f92851d7f03ed2bd7dc4cbdd6fbf3f10440973b0d3518590db789bdccf11",
+      "git_blob_sha1": "524675723a3e571fa8fa55e3216005af935fdd28"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/REPORTING_CODE_RECEIPT.json",
+      "bytes": 568,
+      "sha256": "5e87eeb589a37ab3d8bdb2d6187e466198e1ff4602c8fa2dd470393a3d75530a",
+      "git_blob_sha1": "6f29af608222bf8658ccbd1bfa3f921918cbc1c3"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/REPRODUCTION.md",
+      "bytes": 4222,
+      "sha256": "cb85441b19ff6c203851f6a0b85ecfe58fb24ef6a11914df56c683be8383a735",
+      "git_blob_sha1": "5bbe839ffac7046ed55442dbc2b61b969062f21d"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/RESULTS_SUMMARY.json",
+      "bytes": 3041,
+      "sha256": "5f8d63b56b0a6eb2e9007f96531e8d81abc2af6e64ba311023135fdf2c8c6ae3",
+      "git_blob_sha1": "001d3d143a38c6c12213225e749f9325acb83fd8"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/RUN_AGGREGATE.json",
+      "bytes": 479,
+      "sha256": "c489764f0d63bfec8f8ff2fadd7bec7e0e01fe95351845a8702c50a0c8891f54",
+      "git_blob_sha1": "3a696f49c0e98fd52d808f6da88ffc8ea8f385ba"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/TEST_RESULTS.json",
+      "bytes": 290,
+      "sha256": "2b5aa44c3848fb97e3be2e83052e37f8c20cb64324e0ca531ea7a0a391d622c1",
+      "git_blob_sha1": "3274362d540084edff3294f877e0de0e758ab706"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/acceptance_ledger.csv",
+      "bytes": 1212,
+      "sha256": "dc54fb45b1050b161792be9ef9554a9ec403d80a0f1ade12438374149282daa9",
+      "git_blob_sha1": "cf63c254e648004fb4c8f0c6becef014a33a102f"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/audit_predictions.py",
+      "bytes": 2516,
+      "sha256": "d0b7306ed928dd34e805cabe6603d6b3d829b88c64e3a909ed3f9c1bef814155",
+      "git_blob_sha1": "57825378569009f8d4999294de3210e36dc94124"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/make_report.py",
+      "bytes": 17321,
+      "sha256": "cc7caa9bf291f1ec1ccdd556a50ab4409b89733c9a3adf820634cec0fcfd3ee3",
+      "git_blob_sha1": "37062d0334245bb33d26ff14a6de399e545649af"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/models.py",
+      "bytes": 4657,
+      "sha256": "4c23229ad6662586fc25cd3706f8ed56cd33a92f9390a53cdcb3e299826ac649",
+      "git_blob_sha1": "321661ec9b29ae85bad519e7cc63c32211e59630"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/plot_aggregates.py",
+      "bytes": 2282,
+      "sha256": "eead6c5cb65728cb67447c3ab5695410bed1c06e10462baaa46dbe415737cb8d",
+      "git_blob_sha1": "7f43f177ffcdb727271543d66a1bae6e2ee93332"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/run_diagnostic.py",
+      "bytes": 11728,
+      "sha256": "078c42eccf723c7d02f0b78bc921cd706809ee2ccb28a830be3575fa1fbcc7c6",
+      "git_blob_sha1": "e0c38a5756f14ec995ac27ae7d5d0795196a51e5"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/summarise.py",
+      "bytes": 8543,
+      "sha256": "998727fb581c380e2b236a0eed8ee2182da95ceed4d2a6d9179f509c61b88d6e",
+      "git_blob_sha1": "719402cf1e63dffc11eba86d0150c33505e7a48f"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/test_diagnostic.py",
+      "bytes": 3824,
+      "sha256": "e9e6ffb497414a70ce98307343a8d806adfe4b89f9a3cf07aa69b9bdf4ef52a3",
+      "git_blob_sha1": "97941d85f6893b05fcb76729f76c86284bb162a0"
+    },
+    {
+      "path": "review/worm_behavior_forecasting_v1/test_reporting.py",
+      "bytes": 921,
+      "sha256": "699027f5a4b704106b9a4b859d5e047888487fac6b8ab0ab9bcef30fed26e545",
+      "git_blob_sha1": "d424dedc8c60be3787a99056272c30e5665af421"
+    }
+  ]
+}

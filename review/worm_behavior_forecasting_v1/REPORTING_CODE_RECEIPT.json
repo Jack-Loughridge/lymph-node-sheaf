@@ -1,0 +1,11 @@
+{
+  "created_after_model_fitting": true,
+  "model_parameters_changed": false,
+  "reporting_SHA256": {
+    "audit_predictions.py": "d0b7306ed928dd34e805cabe6603d6b3d829b88c64e3a909ed3f9c1bef814155",
+    "make_report.py": "cc7caa9bf291f1ec1ccdd556a50ab4409b89733c9a3adf820634cec0fcfd3ee3",
+    "test_reporting.py": "699027f5a4b704106b9a4b859d5e047888487fac6b8ab0ab9bcef30fed26e545",
+    "plot_aggregates.py": "eead6c5cb65728cb67447c3ab5695410bed1c06e10462baaa46dbe415737cb8d",
+    "summarise.py": "998727fb581c380e2b236a0eed8ee2182da95ceed4d2a6d9179f509c61b88d6e"
+  }
+}
