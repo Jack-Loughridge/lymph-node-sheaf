@@ -1,0 +1,69 @@
+{
+  "start_UTC": "2026-11-02T15:05:06.084870+00:00",
+  "free_before_bytes": 9270730752,
+  "targets": [
+    {
+      "path": "/home/Jack/Real_Data/lymph_node_sheaf/data/crohn_xenium/scp3259/xenium5k_scVI_CellCharter_batch2_reannot_SCP.h5ad",
+      "expected_bytes": 8984620838,
+      "existing_sha256": "74759d2d474964dcb537533127f0683bdb9180030f3b94a8f3f8271a061494bb",
+      "source_url": "https://singlecell.broadinstitute.org/single_cell/study/SCP3259",
+      "recoverability": "Same named public processed object; source hash and prior source inventory preserved",
+      "completed_analysis": "review/crohn_xenium_biological_validation_v1/REPORT.md",
+      "status": "REMOVED",
+      "bytes": 8984620838,
+      "allocated_bytes": 8985174016,
+      "inode": 2361169,
+      "device": 2049,
+      "open_handles_before_hash": {
+        "pids": [],
+        "lsof_exit": 1,
+        "lsof_warnings": "",
+        "inaccessible_proc_fd_directories": 0,
+        "scope": "Accessible proc descriptors and lsof; no claim of privileged inspection"
+      },
+      "sha256": "74759d2d474964dcb537533127f0683bdb9180030f3b94a8f3f8271a061494bb",
+      "open_handles_before_delete": {
+        "pids": [],
+        "lsof_exit": 1,
+        "lsof_warnings": "",
+        "inaccessible_proc_fd_directories": 0,
+        "scope": "Accessible proc descriptors and lsof; no claim of privileged inspection"
+      }
+    },
+    {
+      "path": "/home/Jack/Real_Data/spatial_ibd_sheaf/archives/GSE312415_files.tar.gz",
+      "expected_bytes": 6464275219,
+      "existing_sha256": null,
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312415",
+      "recoverability": "GEO supplementary payloads; archive member list retained in spatial_ibd_sheaf/metadata/GSE312415_archive_members.txt; regenerated bundle bytes may differ",
+      "completed_analysis": "review/signalling_sheaf/BIOLOGICAL_FINAL_DECISION.txt",
+      "status": "PRESERVED_CHECK_FAILED",
+      "bytes": 6464275219,
+      "allocated_bytes": 6464315392,
+      "inode": 1104653,
+      "device": 2049,
+      "open_handles_before_hash": {
+        "pids": [],
+        "lsof_exit": 1,
+        "lsof_warnings": "",
+        "inaccessible_proc_fd_directories": 0,
+        "scope": "Accessible proc descriptors and lsof; no claim of privileged inspection"
+      },
+      "sha256": "32fa2857563a117f974ed507083a996c34a260b52633b30fc3a9e1bc334c7cc6",
+      "open_handles_before_delete": {
+        "pids": [],
+        "lsof_exit": 1,
+        "lsof_warnings": "",
+        "inaccessible_proc_fd_directories": 0,
+        "scope": "Accessible proc descriptors and lsof; no claim of privileged inspection"
+      },
+      "error": "[Errno 30] Read-only file system: '/home/Jack/Real_Data/spatial_ibd_sheaf/archives/GSE312415_files.tar.gz'"
+    }
+  ],
+  "policy": "Exact user-named obsolete downloads only; preserve derived caches/results, all metadata and worm recordings",
+  "free_after_bytes": 18255200256,
+  "finished_UTC": "2026-11-02T15:06:09.776435+00:00",
+  "removed_logical_bytes": 8984620838,
+  "removed_allocated_bytes": 8985174016,
+  "observed_free_increase_bytes": 8984469504
+}

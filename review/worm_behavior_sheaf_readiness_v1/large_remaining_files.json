@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/home/Jack/Real_Data/spatial_ibd_sheaf/archives/GSE312415_files.tar.gz",
+    "bytes": 6464275219,
+    "allocated_bytes": 6464315392,
+    "disposition": "PRESERVED; no additional deletions authorized by this script"
+  },
+  {
+    "path": "/home/Jack/Real_Data/lymph_node_sheaf/data/crohn_xenium/biological_validation_v1/selected_raw_counts.int32.memmap",
+    "bytes": 323926896,
+    "allocated_bytes": 323944448,
+    "disposition": "PRESERVED; no additional deletions authorized by this script"
+  }
+]

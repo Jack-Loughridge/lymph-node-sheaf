@@ -1,0 +1,8 @@
+{
+  "review/worm_behavior_sheaf_readiness_v1/READINESS_PROTOCOL.json": "31eae526ec413163e5e939c48b1958e443865a22e3168d0c28e92c0caf5be17c",
+  "review/worm_behavior_sheaf_readiness_v1/VALIDATION_DESIGN.md": "07e6fedbd0245b846d1203aa58b29105b6591f7b34f6b43d4d387cd80e088dfb",
+  "review/worm_behavior_sheaf_readiness_v1/MATHEMATICAL_SPECIFICATION.md": "ccfe5fe786bf6bd2b753c114ac8b25728354fc3fa650c2a23df50b4e934e37b3",
+  "review/worm_behavior_sheaf_readiness_v1/qc_primitives.py": "24763f89e9e23ca62a503bac069c8a9fbe064680b2de5b2b1e945e024f5e3015",
+  "review/worm_behavior_sheaf_readiness_v1/offline_recording_audit.py": "b742ba83b4a09d742f4521983ecfba495ef11798b03b2f8e37854b53b82bc54a",
+  "review/worm_behavior_sheaf_readiness_v1/test_readiness.py": "e9e7d0a15967923946cbb8b8f8f6188d3f85b6ba178bc04bd2c721c2802a18a2"
+}

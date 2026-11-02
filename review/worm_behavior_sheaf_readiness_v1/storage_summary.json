@@ -1,0 +1,14 @@
+{
+  "removed_downloads": 1,
+  "removed_logical_bytes": 8984620838,
+  "removed_allocated_bytes": 8985174016,
+  "observed_free_increase_at_cleanup_bytes": 8984469504,
+  "free_after_cleanup_bytes": 18255200256,
+  "pending_archive_bytes": 6464275219,
+  "pending_reason": "Read-only filesystem outside the executor writable project root",
+  "large_derived_caches_deleted": false,
+  "microbiome_files_deleted": false,
+  "worm_recordings_deleted": false,
+  "patient_linkage_deleted": false,
+  "new_physiological_bytes_downloaded": 0
+}

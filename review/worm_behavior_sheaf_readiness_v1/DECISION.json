@@ -1,0 +1,22 @@
+{
+  "scope": "Candidate C actual-data modelling readiness",
+  "category": "PARTIAL GO",
+  "category_scope": "Acquisition and frozen preparation only; no demonstrated narrower circuit feasibility",
+  "modelling_readiness": "NOT EVALUABLE: ACCESS BLOCKED",
+  "ready_to_construct_full_sheaf": false,
+  "scientific_NO_GO_supported": false,
+  "workflow_complete": false,
+  "incomplete_reason": "Representative processed recordings, identity dictionary and author loader cannot be retrieved in this executor; the second cleanup target is on a read-only mount",
+  "actual_new_recordings_acquired": 0,
+  "usable_independent_animals": null,
+  "shared_neuron_classes_in_15_animals": null,
+  "behavioral_event_counts": null,
+  "baseline_models_fitted": 0,
+  "compatibility_metrics_computed": false,
+  "minimum_animals": 15,
+  "minimum_shared_classes": 15,
+  "frozen_split": {"train":15,"validation":6,"test":6},
+  "next_action": "Transfer the three fixed HDF5 samples plus identity JLD2 and author loader through tda-vm, verify hashes, then inspect actual arrays and run Julia identity reconciliation",
+  "additional_network_retries_recommended": false,
+  "additional_dataset_search_recommended": false
+}

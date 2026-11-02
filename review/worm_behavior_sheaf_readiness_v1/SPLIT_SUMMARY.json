@@ -1,0 +1,9 @@
+{
+  "manifest_animals": 27,
+  "train": 15,
+  "validation": 6,
+  "test": 6,
+  "identity_only_split": true,
+  "no_physiological_outcomes_seen": true,
+  "private_split_sha256": "18c7731916127900f3c96f51c21d21bdf352c73289922dcf71da219ae7d2bb1d"
+}
