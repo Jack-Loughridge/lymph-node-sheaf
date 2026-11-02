@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_MISSING_COHORT_OR_WRONG_RECEIPT",
+  "receipt_entries": 5,
+  "receipt_entries_verified": 5,
+  "receipt_missing_files": 0,
+  "receipt_hash_or_size_failures": 0,
+  "receipt_matches_exact_remaining24_manifest": false,
+  "expected_independent_animals": 27,
+  "actual_recordings_present": 3,
+  "expected_recordings_missing": 24,
+  "unexpected_recordings": 0,
+  "full_cohort_QC_run": false,
+  "previous_QC_overwritten": false,
+  "failed_acquisition_journals_present": 1,
+  "existing_journals_preserved": true
+}

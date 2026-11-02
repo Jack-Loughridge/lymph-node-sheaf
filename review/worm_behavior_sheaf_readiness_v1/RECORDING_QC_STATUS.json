@@ -1,9 +1,9 @@
 {
-  "status": "THREE_SAMPLE_NATIVE_QC_COMPLETE_FULL_COHORT_PENDING",
-  "transfer": "PASS",
-  "numerical_QC": "PASS_IN_SAMPLE",
-  "identity_QC": "PASS_WITH_EXPLICIT_QUARANTINES_AND_NOTE_HOLDS",
-  "observation_provenance": "UNRESOLVED",
-  "behaviour_primary_events": 2,
+  "status": "FULL_27_COHORT_QC_COMPLETE",
+  "processed_state_technical_gate": "PASS",
+  "original_observation_provenance": "NOT EVALUABLE",
+  "behavioural_validation": "PARTIAL GO",
+  "independent_animals": 27,
+  "frozen_split_preserved": true,
   "model_fitted": false
 }

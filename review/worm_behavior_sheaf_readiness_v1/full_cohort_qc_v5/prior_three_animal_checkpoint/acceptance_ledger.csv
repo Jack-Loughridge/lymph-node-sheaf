@@ -1,0 +1,14 @@
+criterion,status,evidence
+transfer integrity,PASS,5 of 5 Windows SHA256 and sizes agree
+native structural identity validation,PASS,2595 entries across27 keys;7 rows quarantined
+minimum15 usable animals,NOT EVALUABLE,Only3 actual recordings inspected
+15 classes jointly across15 measured animals,NOT EVALUABLE,Native metadata possible;24 recordings unavailable
+individual identity consistency,PASS IN SAMPLE,23 exact individuals and24 classes across3;no bilateral averaging
+numerical neural timing and finite values,PASS IN SAMPLE,439 ROI records;4800 frames;no threshold gaps
+genuine observation masks,NOT EVALUABLE,Absent;processed interpolation provenance unresolved
+behavioural alignment,PASS WITH LIMITS,Clock matches;one ambiguous;head geometry unresolved
+repeated primary boundary events,FAIL IN SAMPLE,2 events across2 animals;0 repeat-event animals;0 reversal positives
+animal split preservation,PASS,15 training6 validation6 test unchanged;no fitting
+independent predictive benefit,NOT EVALUABLE,No model fitted
+anatomical interpretation,PARTIAL,Template identities supported;no per-animal3D or conductance
+full multiscale sheaf readiness,NOT EVALUABLE,Acquisition and biological gates pending

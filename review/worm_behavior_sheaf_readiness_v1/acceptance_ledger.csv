@@ -1,14 +1,16 @@
 criterion,status,evidence
-transfer integrity,PASS,5 of 5 Windows SHA256 and sizes agree
-native structural identity validation,PASS,2595 entries across27 keys;7 rows quarantined
-minimum15 usable animals,NOT EVALUABLE,Only3 actual recordings inspected
-15 classes jointly across15 measured animals,NOT EVALUABLE,Native metadata possible;24 recordings unavailable
-individual identity consistency,PASS IN SAMPLE,23 exact individuals and24 classes across3;no bilateral averaging
-numerical neural timing and finite values,PASS IN SAMPLE,439 ROI records;4800 frames;no threshold gaps
-genuine observation masks,NOT EVALUABLE,Absent;processed interpolation provenance unresolved
-behavioural alignment,PASS WITH LIMITS,Clock matches;one ambiguous;head geometry unresolved
-repeated primary boundary events,FAIL IN SAMPLE,2 events across2 animals;0 repeat-event animals;0 reversal positives
-animal split preservation,PASS,15 training6 validation6 test unchanged;no fitting
-independent predictive benefit,NOT EVALUABLE,No model fitted
-anatomical interpretation,PARTIAL,Template identities supported;no per-animal3D or conductance
-full multiscale sheaf readiness,NOT EVALUABLE,Acquisition and biological gates pending
+ZIP exact24 membership,PASS,24 unique matches; only24 files extracted; CRC and SHA checks pass
+Complete independent cohort,PASS,27 distinct recording hashes and animal keys
+Minimum15 technically usable animals,PASS_FOR_PROCESSED_SIGNALS,27 eligible;15/6/6 unchanged
+Same15 classes in same15 usable animals,PASS,Actual identity-joined numerically eligible traces; private witness
+Same15 individual neurons in same15 animals,NOT SATISFIED,Separate stronger representation condition; no class-to-side substitution
+Trace timing and finite windows,PASS,3984 ROI records; no neural threshold gaps
+Original genuine observation provenance,NOT EVALUABLE,No original masks or candidate-specific correction configuration
+Detector clipping and saturation,NOT EVALUABLE,No flat runs found; detector metadata absent
+Neural-behavioural clock alignment,PASS WITH LIMITS,43200 matches;2 ambiguous;11260 high-rate NIR gaps
+Independently calibrated boundary geometry,NOT EVALUABLE,Author radial proxy; source unit conversion only
+Repeated primary behavioural events,LIMITED,28 entries in16 animals;7 repeated;test4 entries in2 animals
+Animal-held-out predictive benefit,NOT EVALUABLE,No fit; future5percent criterion unchanged
+Next processed-signal forecasting diagnostic,GO,Narrow pair-panel protocol; training-only nested evaluation
+Original measured-state sheaf readiness,PARTIAL GO,Numerical/class gates pass; provenance and full individual panel limited
+Behavioural confirmatory validation,PARTIAL GO,Geometry unresolved and sparse independent final-test support

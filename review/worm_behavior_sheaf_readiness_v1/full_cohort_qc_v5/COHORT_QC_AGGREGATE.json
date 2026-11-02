@@ -1,0 +1,85 @@
+{
+  "actual_independent_animals": 27,
+  "single_sessions": 27,
+  "technical_processed_state_usable_animals": 27,
+  "usable_animals_by_frozen_split": {
+    "train": 15,
+    "test": 6,
+    "validation": 6
+  },
+  "total_ROI_recordings": 3984,
+  "ROI_count_range": [
+    132,
+    163
+  ],
+  "frames_per_recording": [
+    1600
+  ],
+  "duration_range_seconds": [
+    941.3020559959114,
+    961.9552044547163
+  ],
+  "median_sampling_interval_range_seconds": [
+    0.5950187034904957,
+    0.6000188988400623
+  ],
+  "minimum_maximum_sampling_interval_seconds": [
+    0.447513849940151,
+    0.7531487520318478
+  ],
+  "all_original_and_normalised_finite": true,
+  "all_normalisation_relationships_verified": true,
+  "constant_ROI_recordings": 0,
+  "neural_gap_count": 0,
+  "NIR_gap_count": 11260,
+  "numerically_usable_ROI_recordings": 3984,
+  "eligible_identified_individual_recordings": 1693,
+  "eligible_individuals_per_animal_range": [
+    11,
+    94
+  ],
+  "eligible_classes_per_animal_range": [
+    9,
+    50
+  ],
+  "side_resolved_eligible_recordings": 1574,
+  "coverage": {
+    "classes": {
+      "distinct": 66,
+      "common_all27": 0,
+      "same15_in_same15_usable_animals": true,
+      "identities_in_at_least15_animals": 39
+    },
+    "individuals": {
+      "distinct": 139,
+      "common_all27": 0,
+      "same15_in_same15_usable_animals": false,
+      "identities_in_at_least15_animals": 61
+    }
+  },
+  "valid_numerical_windows_by_history": {
+    "5": 6354480,
+    "10": 6334560,
+    "15": 6314640
+  },
+  "clock_frames": 43200,
+  "clock_unique_frames": 43198,
+  "clock_ambiguous_frames": 2,
+  "clock_unmatched_frames": 0,
+  "reversal_intervals": 1162,
+  "initial_left_censored_animals": 7,
+  "subsequent_reversal_onsets": 1155,
+  "max_exact_constant_run_samples": 1,
+  "ROIs_with_negative_samples": 0,
+  "original_observation_masks_available": false,
+  "saturation_detector_metadata_available": false,
+  "candidate_specific_preprocessing_available": false,
+  "frozen_protocol_hashes_unchanged": true,
+  "model_fitted": false,
+  "distinct_recording_SHA256": 27,
+  "distinct_acquisition_dates": 20,
+  "dates_spanning_frozen_splits": 2,
+  "exported_dataset_counts": [
+    30
+  ]
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "band_mm": 0.1,
+    "animals": 27,
+    "animals_with_events": 15,
+    "animals_with_repeated_events": 6,
+    "total_events": 25,
+    "event_count_range": [
+      0,
+      4
+    ],
+    "secondary_at_risk": 20,
+    "secondary_positives": 5,
+    "velocity_target_std": 0.06450799903005686,
+    "by_split": {
+      "train": {
+        "animals_with_events": 9,
+        "events": 13,
+        "secondary_at_risk": 10,
+        "secondary_positives": 2
+      },
+      "validation": {
+        "animals_with_events": 4,
+        "events": 9,
+        "secondary_at_risk": 8,
+        "secondary_positives": 2
+      },
+      "test": {
+        "animals_with_events": 2,
+        "events": 3,
+        "secondary_at_risk": 2,
+        "secondary_positives": 1
+      }
+    },
+    "independently_calibrated_head_geometry": false,
+    "stimulus_TTL": false,
+    "animals_with_at_risk_event": 13,
+    "animals_with_secondary_positive": 5,
+    "secondary_negatives": 15
+  },
+  {
+    "band_mm": 0.2,
+    "animals": 27,
+    "animals_with_events": 16,
+    "animals_with_repeated_events": 7,
+    "total_events": 28,
+    "event_count_range": [
+      0,
+      4
+    ],
+    "secondary_at_risk": 24,
+    "secondary_positives": 6,
+    "velocity_target_std": 0.07509297164542554,
+    "by_split": {
+      "train": {
+        "animals_with_events": 10,
+        "events": 15,
+        "secondary_at_risk": 12,
+        "secondary_positives": 3
+      },
+      "validation": {
+        "animals_with_events": 4,
+        "events": 9,
+        "secondary_at_risk": 8,
+        "secondary_positives": 1
+      },
+      "test": {
+        "animals_with_events": 2,
+        "events": 4,
+        "secondary_at_risk": 4,
+        "secondary_positives": 2
+      }
+    },
+    "independently_calibrated_head_geometry": false,
+    "stimulus_TTL": false,
+    "animals_with_at_risk_event": 14,
+    "animals_with_secondary_positive": 5,
+    "secondary_negatives": 18
+  },
+  {
+    "band_mm": 0.3,
+    "animals": 27,
+    "animals_with_events": 18,
+    "animals_with_repeated_events": 10,
+    "total_events": 41,
+    "event_count_range": [
+      0,
+      7
+    ],
+    "secondary_at_risk": 36,
+    "secondary_positives": 11,
+    "velocity_target_std": 0.0640127405130242,
+    "by_split": {
+      "train": {
+        "animals_with_events": 11,
+        "events": 21,
+        "secondary_at_risk": 17,
+        "secondary_positives": 7
+      },
+      "validation": {
+        "animals_with_events": 4,
+        "events": 14,
+        "secondary_at_risk": 13,
+        "secondary_positives": 1
+      },
+      "test": {
+        "animals_with_events": 3,
+        "events": 6,
+        "secondary_at_risk": 6,
+        "secondary_positives": 3
+      }
+    },
+    "independently_calibrated_head_geometry": false,
+    "stimulus_TTL": false,
+    "animals_with_at_risk_event": 17,
+    "animals_with_secondary_positive": 7,
+    "secondary_negatives": 25
+  }
+]

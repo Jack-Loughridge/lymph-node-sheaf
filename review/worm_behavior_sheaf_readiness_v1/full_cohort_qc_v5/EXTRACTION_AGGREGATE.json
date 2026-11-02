@@ -1,0 +1,14 @@
+{
+  "archive_bytes": 320036215,
+  "archive_sha256": "d1a158c2263ea3d6ab7894e93fe6d4042b5767f440072f48145197338acbfb6c",
+  "manifest_entries": 30,
+  "expected_selected_files": 24,
+  "uniquely_matched_files": 24,
+  "extracted_files": 24,
+  "extracted_bytes": 247141792,
+  "CRC_and_post_extraction_SHA256_checks": "PASS",
+  "expected_animal_recordings": 27,
+  "actual_animal_recordings": 27,
+  "historical_receipts_and_journals_unchanged": true,
+  "windows_archive_hash_match": "USER_REPORTED_NOT_INDEPENDENTLY_RECHECKED"
+}

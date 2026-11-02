@@ -1,0 +1,19 @@
+{
+  "overall_decision": "PARTIAL GO",
+  "next_processed_signal_neural_forecasting_diagnostic": "GO",
+  "original_measured_neural_state_sheaf": "PARTIAL GO",
+  "behavioural_validation": "PARTIAL GO",
+  "direct_bioelectric_conductance": "NO-GO",
+  "actual_recordings_audited": 27,
+  "same15_classes_in_same15_usable_animals": true,
+  "same15_individuals_in_same15_animals": false,
+  "frozen_split": {
+    "train": 15,
+    "validation": 6,
+    "test": 6
+  },
+  "original_observation_masks_available": false,
+  "full_sheaf_fitted": false,
+  "diagnostic_model_fitted": false,
+  "frozen_protocol_changed": false
+}

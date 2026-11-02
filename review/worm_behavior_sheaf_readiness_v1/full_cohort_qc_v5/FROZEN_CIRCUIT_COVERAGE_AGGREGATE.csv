@@ -1,0 +1,13 @@
+individual_neuron,all_eligible_animals,train_animals,validation_animals,test_animals
+ASHL,7,5,1,1
+ASHR,5,3,2,0
+AVAL,19,9,5,5
+AVAR,20,9,5,6
+AIBL,18,10,3,5
+AIBR,19,8,5,6
+RIML,3,0,1,2
+RIMR,4,2,2,0
+RIBL,3,2,1,0
+RIBR,2,1,1,0
+AVBL,1,1,0,0
+AVBR,4,2,1,1

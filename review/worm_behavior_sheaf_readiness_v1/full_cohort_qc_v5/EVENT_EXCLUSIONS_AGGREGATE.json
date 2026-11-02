@@ -1,0 +1,20 @@
+[
+  {
+    "band_mm": 0.1,
+    "candidate_entries": 28,
+    "retained": 25,
+    "not_six_seconds_continuously_outside": 3
+  },
+  {
+    "band_mm": 0.2,
+    "candidate_entries": 31,
+    "retained": 28,
+    "not_six_seconds_continuously_outside": 3
+  },
+  {
+    "band_mm": 0.3,
+    "candidate_entries": 46,
+    "retained": 41,
+    "not_six_seconds_continuously_outside": 5
+  }
+]

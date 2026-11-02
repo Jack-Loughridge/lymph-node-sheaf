@@ -1,0 +1,11 @@
+{
+  "new_full_cohort_tests_passed": 8,
+  "native_Julia_assertions_passed": 20,
+  "frozen_readiness_tests_passed": 15,
+  "prior_layout_tests_passed": 7,
+  "native_recovery_python_tests_passed": 6,
+  "transfer_preflight_tests_passed": 2,
+  "total_assertions_or_test_cases": 58,
+  "old_readiness_fixture_ResourceWarning": "existing unclosed-file warning; tests pass",
+  "no_model_fitted": true
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "PARTIAL GO",
+  "native_identity_export": "PASS_WITH_QUARANTINE",
+  "transfer_integrity": "PASS_5_OF_5",
+  "actual_recordings_inspected": 3,
+  "full_cohort_acquisition": "PENDING_EXTERNAL_TRANSFER_24",
+  "full_sheaf_fitted": false,
+  "predictive_model_fitted": false,
+  "strict_genuine_observation_gate": "NOT EVALUABLE",
+  "behaviour_validation": "NOT READY",
+  "direct_electrical_conductance_claim": "NO-GO",
+  "frozen_protocol_changed": false
+}
